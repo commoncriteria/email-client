@@ -6,7 +6,7 @@
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[1]"The Targe"/h:p[2]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[1]"The Targe"/h:p[3]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Conformance_Claims[1]""/cclaims[1]""/cclaim[3]""/description[1]"This PP-M"/h:p[1]""
-* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Objectives[1]"This PP-M"/section[1]""/h:p[1]""
+* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Objectives[1]""/section[1]""/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/sec:mod_fcs[1]""/f-component[1]""/f-element[1]""/aactivity[1]""/no-tests[1]"There is "/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/sec:mod_fcs[1]""/f-component[2]""/f-element[1]""/aactivity[1]""/no-tests[1]"There is "/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/sec:mod_fia[1]""/f-component[1]""/f-element[1]""/aactivity[1]""/no-tests[1]"There is "/h:p[1]""
