@@ -5,6 +5,7 @@ output/email-client-release-linkable.html: ActiveSync
 output/email-client-release-linkable.html: AppPP
 output/email-client-release-linkable.html: CAPA
 output/email-client-release-linkable.html: CDH
+output/email-client-release-linkable.html: CEM
 output/email-client-release-linkable.html: CSPs
 output/email-client-release-linkable.html: ContentEncryptionAlgorithmIdentifier
 output/email-client-release-linkable.html: DRBGs
@@ -36,6 +37,7 @@ output/email-client-release.html: ActiveSync
 output/email-client-release.html: AppPP
 output/email-client-release.html: CAPA
 output/email-client-release.html: CDH
+output/email-client-release.html: CEM
 output/email-client-release.html: ContentEncryptionAlgorithmIdentifier
 output/email-client-release.html: IMAP4
 output/email-client-release.html: Novemeber
@@ -59,6 +61,7 @@ output/email-client-release.html: v4
 output/email-client-sd.html: AGD
 output/email-client-sd.html: ActiveSync
 output/email-client-sd.html: AppPP
+output/email-client-sd.html: CEM
 output/email-client-sd.html: CSPs
 output/email-client-sd.html: ContentEncryptionAlgorithmIdentifier
 output/email-client-sd.html: DRBGs
@@ -81,6 +84,7 @@ output/email-client.html: ActiveSync
 output/email-client.html: AppPP
 output/email-client.html: CAPA
 output/email-client.html: CDH
+output/email-client.html: CEM
 output/email-client.html: CSPs
 output/email-client.html: ContentEncryptionAlgorithmIdentifier
 output/email-client.html: DRBGs
