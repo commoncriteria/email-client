@@ -121,3 +121,5 @@
 * Warning: fdp_not_ext.2 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fdp[1]""/f-component[1]""
 * Warning: fdp_pst_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fdp[1]""/f-component[2]""
 * Warning: fdp_ren_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fdp[1]""/f-component[3]""
+* Warning: Since FPT_AON_EXT.1.1 has an 'id' attribute in a descendant node in the title, you probably need to define an alternative 'ext-comp-def-title'.
+                       
