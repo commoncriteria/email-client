@@ -10,7 +10,6 @@ output/email-client-release-linkable.html: CSPs
 output/email-client-release-linkable.html: ContentEncryptionAlgorithmIdentifier
 output/email-client-release-linkable.html: DRBGs
 output/email-client-release-linkable.html: IMAP4
-output/email-client-release-linkable.html: Novemeber
 output/email-client-release-linkable.html: OCSP
 output/email-client-release-linkable.html: OXCMAPIHTTP
 output/email-client-release-linkable.html: OXCRPC
@@ -32,13 +31,11 @@ output/email-client-release.html: 38F
 output/email-client-release.html: 56A
 output/email-client-release.html: 56B
 output/email-client-release.html: ActiveSync
-output/email-client-release.html: AppPP
 output/email-client-release.html: CAPA
 output/email-client-release.html: CDH
 output/email-client-release.html: CEM
 output/email-client-release.html: ContentEncryptionAlgorithmIdentifier
 output/email-client-release.html: IMAP4
-output/email-client-release.html: Novemeber
 output/email-client-release.html: OCSP
 output/email-client-release.html: OXCMAPIHTTP
 output/email-client-release.html: OXCRPC
@@ -85,7 +82,6 @@ output/email-client.html: CSPs
 output/email-client.html: ContentEncryptionAlgorithmIdentifier
 output/email-client.html: DRBGs
 output/email-client.html: IMAP4
-output/email-client.html: Novemeber
 output/email-client.html: OCSP
 output/email-client.html: OXCMAPIHTTP
 output/email-client.html: OXCRPC
