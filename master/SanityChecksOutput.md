@@ -5,7 +5,6 @@
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[1]"The Targe"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[1]"The Targe"/h:p[2]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Introduction[1]""/section[1]"The Targe"/h:p[3]""
-* Warning: Detected an empty _p_ element./Module[1]""/sec:Conformance_Claims[1]""/cclaims[1]""/cclaim[3]""/description[1]"This PP-M"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Objectives[1]""/section[1]""/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/sec:mod_fcs[1]""/f-component[1]""/f-element[1]""/aactivity[1]""/no-tests[1]"There is "/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/modified-sfrs[1]""/sec:mod_fcs[1]""/f-component[2]""/f-element[1]""/aactivity[1]""/no-tests[1]"There is "/h:p[1]""
@@ -115,12 +114,13 @@
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fpt[1]""/f-component[1]""/dependencies[1]""/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fpt[1]""/f-component[1]""/f-element[3]""/aactivity[1]""/TSS[1]"The evalu"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fpt[1]""/f-component[1]""/f-element[3]""/aactivity[1]""/Guidance[1]"The evalu"/h:p[1]""
+* Warning: Detected 1 Conformance Claims sections in this PP. There should be exactly 1 "Conformance Claims" section.
+      
 * Warning: fcs_ivg_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fcs[1]""/f-component[1]""
 * Warning: fcs_nog_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fcs[1]""/f-component[2]""
 * Warning: fcs_sag_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fcs[1]""/f-component[3]""
 * Warning: fdp_not_ext.2 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fdp[1]""/f-component[1]""
 * Warning: fdp_pst_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fdp[1]""/f-component[2]""
 * Warning: fdp_ren_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fdp[1]""/f-component[3]""
- Failed to find a reference to bibCEM.
 * Warning: Since FPT_AON_EXT.1.1 has an 'id' attribute in a descendant node in the title, you probably need to define an alternative 'ext-comp-def-title'.
                        
