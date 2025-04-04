@@ -632,15 +632,16 @@ for destroying all keying material and cryptographic security parameters when no
 	          for destroying all keying material and cryptographic security parameters when no longer needed.</title>
 	      </ext-comp-def-title>
 	      <note role="application">
-		
+		<h:p></h:p>
 		  For the purpose of this requirement, keying material refers to
 		  authentication data, passwords, symmetric keys, data used to derive keys, etc.
-		<h:p/>
+		</h:p><h:p>
 		
 		  The destruction indicated above applies to each intermediate storage area for
 		  keys and cryptographic critical security parameters (i.e., any storage, such as memory
 		  buffers, that is included in the path of such data) upon the transfer of the
 		  keys and cryptographic critical security parameter to another memory location.
+      </h:p>
 	      </note>
 	      <aactivity>
 		<TSS>
@@ -1624,7 +1625,7 @@ for destroying all keying material and cryptographic security parameters when no
       <sec:sel_fcs title="Cryptographic Support (FCS)">
         <!-- as modified by TD0266 with minor rearrangement of EAs -->
         <!-- editor's note: moved to sel-based because of FCS_KYC_EXT.1.1 selections -->
-        <f-component cc-id="fcs_ckm_ext.5" name="Cryptographic Key Derivation (password or passphrase Conditioning)">
+        <f-component cc-id="fcs_ckm_ext.5" name="Cryptographic Key Derivation (password/passphrase Conditioning)">
           <depends on="kyc1_password"></depends>
           
           <consistency-rationale>This SFR defines restrictions on password composition and key derivation mechanisms. It defines functionality similar to FCS_PBKDF_EXT.1 in the Base-PP but has additional details 
@@ -1644,10 +1645,10 @@ for destroying all keying material and cryptographic security parameters when no
           
           <f-element>
             <title>
-              The TSF shall support a password or passphrase of up to <assignable>maximum password size, positive integer of 64 or more</assignable> characters used to generate a password authorization factor.
+              The TSF shall support a password/passphrase of up to <assignable>maximum password size, positive integer of 64 or more</assignable> characters used to generate a password authorization factor.
             </title>
             <note role="application">
-              The password or passphrase is represented on the host machine as a sequence of characters whose encoding depends on the TOE and the underlying OS. 
+              The password/passphrase is represented on the host machine as a sequence of characters whose encoding depends on the TOE and the underlying OS. 
               The ST author assigns the maximum size of the password or passphrase it supports; it must support at least 64 characters.
             </note>
           </f-element>
@@ -1660,6 +1661,7 @@ for destroying all keying material and cryptographic security parameters when no
                 <selectable>no other characters</selectable>
               </selectables>
             </title>
+            <note role='application'><h:i>The ST author assigns any other supported characters; if there are no other supported characters, they should select "no other characters".</h:i></note>
             <!-- editor's note: app note here is superfluous and was not included -->
           </f-element>
           <f-element>
@@ -1674,7 +1676,7 @@ for destroying all keying material and cryptographic security parameters when no
             </title>
             <note role="application">
               The ST author selects the parameters based on the password-based key derivation function (PBKDF) used by the TSF. 
-              The password or passphrase must be conditioned into a string of bits that forms the submask to be used as input into a key. 
+              The password/passphrase must be conditioned into a string of bits that forms the submask to be used as input into a key. 
               Conditioning can be performed using one of the identified hash functions or the process described in NIST SP 800-132; 
               the method used is selected by the ST author. SP 800-132 requires the use of a pseudorandom function (PRF) consisting of HMAC with an approved hash function. 
               The ST author must select the hash function and ensure that appropriate claims are made for FCS_COP.1/Hash and FCS_COP.1/KeyedHash in the Base-PP.
@@ -1693,51 +1695,38 @@ for destroying all keying material and cryptographic security parameters when no
               </selectables> and greater than the maximum password length defined in FCS_CKM_EXT.5.1.
             </title>
             <note role="application">
-              This selection-based SFR is claimed when "a password as specified in FCS_CKM_EXT.5" is selected in FCS_KYC_EXT.1.1.
-              <h:p/>
-              If the minimum password length is settable, then the ST author chooses "a value settable by the administrator for this component," 
-              as well as the "configure password or passphrase complexity setting" item for FMT_SMF.1.1. If the minimum length is not settable, 
-              the ST author fills in the assignment with the minimum length the password must be (zero-length passwords are not allowed for compliant TOEs).
+              <h:i>If the minimum password length is settable, then ST author chooses "a value settable by the administrator for this component," as well as the "configure password/passphrase complexity setting" item for FMT_SMF.1.1. If the minimum length is not settable, the ST author fills in the assignment with the minimum length the password must be (zero-length passwords are not allowed for compliant TOEs).</h:i>
             </note>
             
             
             <aactivity>
               <TSS>
-                For FCS_CKM_EXT.5.1, there are two aspects of this component that require evaluation: that passwords or passphrases of the length specified in the requirement (at least 64 characters) are supported, 
-                and that the characters that are input are subject to the selected conditioning function. These activities are separately addressed in the text below.
+                There are two aspects of this component that require evaluation: passwords/passphrases of the length specified in the requirement (at least 64 characters) are supported, and that the characters that are input are subject to the selected conditioning function. These activities are separately addressed in the text below.
                 <h:p/>
-                Support for password or passphrase length: The evaluator shall ensure that the TSS describes the allowable ranges for password or passphrase lengths, and that at least 64 characters may be specified by the user.
+                Support for Password/Passphrase length: The evaluator shall check to ensure that the TSS describes the allowable ranges for password/passphrase lengths, and that at least 64 characters may be specified by the user.
                 <h:p/>
-                Support for PBKDF: The evaluator shall ensure that the password hierarchy described in the TSS describes the formation of all keys and that the key sizes match that described by the ST author.
+                Support for PBKDF: The evaluator shall examine the password hierarchy TSS to ensure that the formation of all keys is described and that the key sizes match that described by the ST author.
                 <h:p/>
-                The evaluator shall check that the TSS describes the method by which the password or passphrase is first encoded and then fed to the SHA algorithm. 
-                The settings for the algorithm (padding, blocking, etc.) shall be described, and the evaluator shall verify that these are supported by the selections in this component as well as the selections concerning the hash function itself. 
-                The evaluator shall verify that the TSS contains a description of how the output of the hash function is used to form the submask that will be input into the function and is the same length as the KEK as specified in FCS_CKM_EXT.4.
+                The evaluator shall check that the TSS describes the method by which the password/passphrase is first encoded and then fed to the SHA algorithm. The settings for the algorithm (padding, blocking, etc.) shall be described, and the evaluator shall verify that these are supported by the selections in this component as well as the selections concerning the hash function itself. The evaluator shall verify that the TSS contains a description of how the output of the hash function is used to form the submask that will be input into the function and is the same length as the KEK as specified in FCS_CKM_EXT.4.
                 <h:p/>
-                For the NIST SP 800-132-based conditioning of the password or passphrase, the required assurance activities will be performed when doing the assurance activities for the appropriate requirements (FCS_COP.1.1/KeyedHash) from the [AppPP]). 
-                If any manipulation of the key is performed in forming the submask that will be used to form the file encryption key or key encryption key, that process shall be described in the TSS. 
-                For the claimed iteration count, the evaluator shall verify that the iteration count for PBKDFs performed by the TOE comply with NIST SP 800-132 by ensuring that the TSS contains a description of the estimated time required 
-                to derive key material from passwords and how the TOE increases the computation time for password-based key derivation (including but not limited to increasing the iteration count).
+                For the NIST SP 800-132-based conditioning of the password/passphrase, the required assurance activities will be performed when doing the assurance activities for the appropriate requirements (FCS_COP.1.1(4) from the [AppPP]). If any manipulation of the key is performed in forming the submask that will be used to form the FEK or KEK, that process shall be described in the TSS.
                 <h:p/>
+                <h:p>No explicit testing of the formation of the submask from the input password is required.</h:p><h:p>Conditioning: No explicit testing of the formation of the authorization factor from the input password/passphrase is required. Iteration count: The evaluator shall verify that the iteration count for PBKDFs performed by the TOE comply with NIST SP 800-132 by ensuring that the TSS contains a description of the estimated time required to derive key material from passwords and how the TOE increases the computation time for password-based key derivation (including but not limited to increasing the iteration count).</h:p>
               </TSS>
               <Guidance>
-                The evaluator shall verify that the operational guidance has instructions on how to generate large passwords/passphrases, 
-                and instructions on how to configure the password or passphrase length (and optional complexity settings) to provide entropy commensurate with the keys that the authorization factor is protecting. 
-                This is important because many default settings for passwords or passphrases will not meet the necessary entropy needed as specified in this PP-Module
+                The evaluator shall check the Operational Guidance to determine that there are instructions on how to generate large passwords/passphrases, and instructions on how to configure the password/passphrase length (and optional complexity settings) to provide entropy commensurate with the keys that the authorization factor is protecting. This is important because many default settings for passwords/passphrases will not meet the necessary entropy needed as specified in this EP.
                 <h:p/>
               </Guidance>
-              <Tests>The evaluator shall compose different passwords that meet the requirements and that fail to meet the requirements 
-                and shall verify in each case that the TOE's behavior is consistent with the requirements. 
-                While the evaluator is not required (nor is it feasible) to test all possible compositions of passwords, 
-                the evaluator shall ensure that all characters and minimum and maximum lengths listed in the requirement are supported, and justify the subset of those characters chosen for testing.
-                <h:p/>
-                Support for password or passphrase characteristics: In addition to the analysis above, the evaluator shall also perform the following tests on a TOE configured according to the Operational Guidance
+              <Tests>
+              <h:p>The evaluator shall compose passwords that either meet the requirements, or fail to meet the requirements, and shall verify that the TOE's behavior is consistent with the requirements. While the evaluator is not required (nor is it feasible) to test all possible compositions of passwords, the evaluator shall ensure that all characters, and minimum and maximum lengths listed in the requirement, are supported, and justify the subset of those characters chosen for testing.</h:p>
+              <h:p>Support for Password/Passphrase characteristics: In addition to the analysis above, the evaluator shall also perform the following tests on a TOE configured according to the Operational Guidance.</h:p>
+                
                 <testlist>
-                  <test>The evaluator shall ensure that the TOE supports passwords/passphrases of exactly 64 characters.</test>
-                  <test>The evaluator shall ensure that the TOE does not accept more than the maximum number of characters specified in FCS_CKM_EXT.5.1.</test>
-                  <test>The evaluator shall ensure that the TOE does not accept less than the minimum number of characters specified in FCS_CKM_EXT.5.4. 
-                    If the minimum length is settable by the administrator, the evaluator determines the minimum length or lengths to test.</test>
-                  <test>The evaluator shall ensure that the TOE supports passwords consisting of all characters listed in FCS_CKM_EXT.5.2 and of varying lengths within the range specified in FCS_CKM_EXT.5.4.</test>
+                  <test>Ensure that the TOE supports passwords/passphrases of 64 characters.</test>
+                  <test>Ensure that the TOE does not accept more than the maximum number of characters specified in FCS_CKM_EXT.5.1.</test>
+                  <test>Ensure that the TOE does not accept less than the minimum number of characters specified in FCS_CKM_EXT.5.4. If the minimum length is settable by the administrator, the evaluator determines the minimum length or lengths to test.
+                  </test>
+                  <test>Ensure that the TOE supports passwords consisting of all characters listed in FCS_CKM_EXT.5.2 and of varying lengths within the range specified in FCS_CKM_EXT.5.4.</test>
                 </testlist>
                 No explicit testing of the formation of the submask from the input password is required.
                 <h:p/>
