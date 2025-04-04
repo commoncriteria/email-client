@@ -1,4 +1,4 @@
 /home/runner/work/email-client/email-client/output/effective.xml:7:38: error: character content of element "PPPubDate" invalid; must be an ISO date
 /home/runner/work/email-client/email-client/output/effective.xml:20:20: error: element "using-cc2022" not allowed here; expected the element end-tag or element "audit-events-in-sfrs" or "display-audit-with-sfrs"
 /home/runner/work/email-client/email-client/output/effective.xml:341:44: error: element "sec:Organizational_Security_Policies" incomplete; missing required element "OSPs"
-/home/runner/work/email-client/email-client/output/effective.xml:369:39: error: element "base-pp" missing required attributes "name", "product" and "version"
+/home/runner/work/email-client/email-client/output/effective.xml:365:39: error: element "base-pp" missing required attributes "name", "product" and "version"
