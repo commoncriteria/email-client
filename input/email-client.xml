@@ -2043,7 +2043,7 @@ Support for 256-bit AES key sizes will be required for
       <!-- todo: update with proper date -->
       <description>
         <h:a href="https://www.niap-ccevs.org/MMO/PP/PP_APP_v2.0.pdf"
-	     >Protection Profile for Application Software, Version 2.0</h:a>, TBD
+	     >Protection Profile for Application Software, Version 2.0</h:a>, TBD<comment>once the link has been finalized/made public, plesase update the link for app-pp2</comment>
       </description>
     </entry>
     <entry id="bibmapispec">
