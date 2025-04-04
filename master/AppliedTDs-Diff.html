@@ -43,7 +43,7 @@
         </h3>
         <h2>Contents</h2>
         <div class="toc" id="toc">
-            <a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#usecases" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">2<span>Security Problem Definition</span></a><a href="#Threats" style="text-indent:10px">2.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">2.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">2.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">3<span>Security Objectives</span></a><a href="#objectivesEnvironment" style="text-indent:10px">3.1<span>Security Objectives for the Operational Environment</span></a><a href="#SOR" style="text-indent:10px">3.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">4<span>Security Requirements</span></a><a href="#secreq-AppPP" style="text-indent:10px">4.1<span> Protection Profile for Email Client Security Functional Requirements Direction </span></a><a href="#modsfr-AppPP" style="text-indent:20px">4.1.1<span> Modified SFRs </span></a><a href="#mod_fcs" style="text-indent:30px">4.1.1.1<span>Cryptographic Support (FCS)</span></a><a href="#mod_fia" style="text-indent:30px">4.1.1.2<span>Identification and Authentication (FIA)</span></a><a href="#mod_ftp" style="text-indent:30px">4.1.1.3<span>Trusted Path/Channels (FTP)</span></a><a href="#man-sfrs" style="text-indent:10px">4.2<span>TOE Security Functional Requirements</span></a><a href="#man_fcs" style="text-indent:20px">4.2.1<span>Cryptographic Support (FCS)</span></a><a href="#man_fdp" style="text-indent:20px">4.2.2<span>User Data Protection (FDP)</span></a><a href="#man_fia" style="text-indent:20px">4.2.3<span>Identification and Authentication (FIA)</span></a><a href="#man_fmt" style="text-indent:20px">4.2.4<span>Security Management (FMT)</span></a><a href="#man_fpt" style="text-indent:20px">4.2.5<span>Protection of the TSF (FPT)</span></a><a href="#man_ftp" style="text-indent:20px">4.2.6<span>Trusted Path/Channels (FTP)</span></a><a href="#mod-conrat" style="text-indent:0px">5<span>Consistency Rationale</span></a><a href="#conrat-AppPP" style="text-indent:10px">5.1<span> Protection Profile for Email Client</span></a><a href="#contoe-AppPP" style="text-indent:20px">5.1.1<span> Consistency of TOE Type </span></a><a href="#consecprob-AppPP" style="text-indent:20px">5.1.2<span> Consistency of Security Problem Definition </span></a><a href="#conobj-AppPP" style="text-indent:20px">5.1.3<span> Consistency of Objectives </span></a><a href="#conreq-AppPP" style="text-indent:20px">5.1.4<span> Consistency of Requirements </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements </span></a><a href="#opt_fcs" style="text-indent:20px">A.1.1<span>Cryptographic Support (FCS)</span></a><a href="#opt_fdp" style="text-indent:20px">A.1.2<span>User Data Protection (FDP)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements </span></a><a href="#sel_fcs" style="text-indent:10px">B.1<span>Cryptographic Support (FCS)</span></a><a href="#sel_fia" style="text-indent:10px">B.2<span>Identification and Authentication (FIA)</span></a><a href="#sel_fpt" style="text-indent:10px">B.3<span>Protection of the TSF (FPT)</span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FCS" style="text-indent:20px">C.2.1<span>Cryptographic Support (FCS)</span></a><a href="#ext-comp-FCS_CKM_EXT" style="text-indent:30px">C.2.1.1<span>FCS_CKM_EXT Cryptographic Key Management</span></a><a href="#ext-comp-FCS_KYC_EXT" style="text-indent:30px">C.2.1.2<span>FCS_KYC_EXT Cryptographic Key Chaining</span></a><a href="#ext-comp-FCS_SMIME_EXT" style="text-indent:30px">C.2.1.3<span>FCS_SMIME_EXT Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></a><a href="#ext-comp-FCS_IVG_EXT" style="text-indent:30px">C.2.1.4<span>FCS_IVG_EXT Initialization Vector Generation</span></a><a href="#ext-comp-FCS_NOG_EXT" style="text-indent:30px">C.2.1.5<span>FCS_NOG_EXT Cryptographic Nonce Generation</span></a><a href="#ext-comp-FCS_SAG_EXT" style="text-indent:30px">C.2.1.6<span>FCS_SAG_EXT Cryptographic Salt Generation</span></a><a href="#ext-comp-FCS_COP_EXT" style="text-indent:30px">C.2.1.7<span>FCS_COP_EXT Cryptographic Operation</span></a><a href="#ext-comp-FCS_SMC_EXT" style="text-indent:30px">C.2.1.8<span>FCS_SMC_EXT Submask Combining</span></a><a href="#ext-comp-FIA" style="text-indent:20px">C.2.2<span>Identification and Authentication (FIA)</span></a><a href="#ext-comp-FIA_X509_EXT" style="text-indent:30px">C.2.2.1<span>FIA_X509_EXT X.509 Certificate Services</span></a><a href="#ext-comp-FIA_SASL_EXT" style="text-indent:30px">C.2.2.2<span>FIA_SASL_EXT Simple Authentication and Security Layer (SASL)</span></a><a href="#ext-comp-FPT" style="text-indent:20px">C.2.3<span>Protection of the TSF (FPT)</span></a><a href="#ext-comp-FPT_AON_EXT" style="text-indent:30px">C.2.3.1<span>FPT_AON_EXT Add-Ons</span></a><a href="#ext-comp-FMT" style="text-indent:20px">C.2.4<span>Security Management (FMT)</span></a><a href="#ext-comp-FMT_MOF_EXT" style="text-indent:30px">C.2.4.1<span>FMT_MOF_EXT Management of Functions Behavior</span></a><a href="#ext-comp-FTP" style="text-indent:20px">C.2.5<span>Trusted Path/Channels (FTP)</span></a><a href="#ext-comp-FTP_ITC_EXT" style="text-indent:30px">C.2.5.1<span>FTP_ITC_EXT Inter-TSF Trusted Channel</span></a><a href="#ext-comp-FDP" style="text-indent:20px">C.2.6<span>User Data Protection (FDP)</span></a><a href="#ext-comp-FDP_NOT_EXT" style="text-indent:30px">C.2.6.1<span>FDP_NOT_EXT Notifications</span></a><a href="#ext-comp-FDP_SMIME_EXT" style="text-indent:30px">C.2.6.2<span>FDP_SMIME_EXT Use of Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></a><a href="#ext-comp-FDP_PST_EXT" style="text-indent:30px">C.2.6.3<span>FDP_PST_EXT Storage of Persistent Information</span></a><a href="#ext-comp-FDP_REN_EXT" style="text-indent:30px">C.2.6.4<span>FDP_REN_EXT Rendering of Message Content</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Implicitly Satisfied Requirements</span></a><a href="#EAR" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a>
+            <a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#usecases" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#Threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#objectivesEnvironment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#SOR" style="text-indent:10px">4.2<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-AppPP" style="text-indent:10px">5.1<span> Protection Profile for Email Client Security Functional Requirements Direction </span></a><a href="#modsfr-AppPP" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#mod_fcs" style="text-indent:30px">5.1.1.1<span>Cryptographic Support (FCS)</span></a><a href="#mod_fia" style="text-indent:30px">5.1.1.2<span>Identification and Authentication (FIA)</span></a><a href="#mod_ftp" style="text-indent:30px">5.1.1.3<span>Trusted Path/Channels (FTP)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#man_fcs" style="text-indent:20px">5.2.1<span>Cryptographic Support (FCS)</span></a><a href="#man_fdp" style="text-indent:20px">5.2.2<span>User Data Protection (FDP)</span></a><a href="#man_fia" style="text-indent:20px">5.2.3<span>Identification and Authentication (FIA)</span></a><a href="#man_fmt" style="text-indent:20px">5.2.4<span>Security Management (FMT)</span></a><a href="#man_fpt" style="text-indent:20px">5.2.5<span>Protection of the TSF (FPT)</span></a><a href="#man_ftp" style="text-indent:20px">5.2.6<span>Trusted Path/Channels (FTP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-AppPP" style="text-indent:10px">6.1<span> Protection Profile for Email Client</span></a><a href="#contoe-AppPP" style="text-indent:20px">6.1.1<span> Consistency of TOE Type </span></a><a href="#consecprob-AppPP" style="text-indent:20px">6.1.2<span> Consistency of Security Problem Definition </span></a><a href="#conobj-AppPP" style="text-indent:20px">6.1.3<span> Consistency of OE Objectives </span></a><a href="#conreq-AppPP" style="text-indent:20px">6.1.4<span> Consistency of Requirements </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements </span></a><a href="#opt_fcs" style="text-indent:20px">A.1.1<span>Cryptographic Support (FCS)</span></a><a href="#opt_fdp" style="text-indent:20px">A.1.2<span>User Data Protection (FDP)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements </span></a><a href="#sel_fcs" style="text-indent:10px">B.1<span>Cryptographic Support (FCS)</span></a><a href="#sel_fia" style="text-indent:10px">B.2<span>Identification and Authentication (FIA)</span></a><a href="#sel_fpt" style="text-indent:10px">B.3<span>Protection of the TSF (FPT)</span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FCS" style="text-indent:20px">C.2.1<span>Cryptographic Support (FCS)</span></a><a href="#ext-comp-FCS_CKM_EXT" style="text-indent:30px">C.2.1.1<span>FCS_CKM_EXT Cryptographic Key Management</span></a><a href="#ext-comp-FCS_KYC_EXT" style="text-indent:30px">C.2.1.2<span>FCS_KYC_EXT Cryptographic Key Chaining</span></a><a href="#ext-comp-FCS_SMIME_EXT" style="text-indent:30px">C.2.1.3<span>FCS_SMIME_EXT Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></a><a href="#ext-comp-FCS_IVG_EXT" style="text-indent:30px">C.2.1.4<span>FCS_IVG_EXT Initialization Vector Generation</span></a><a href="#ext-comp-FCS_NOG_EXT" style="text-indent:30px">C.2.1.5<span>FCS_NOG_EXT Cryptographic Nonce Generation</span></a><a href="#ext-comp-FCS_SAG_EXT" style="text-indent:30px">C.2.1.6<span>FCS_SAG_EXT Cryptographic Salt Generation</span></a><a href="#ext-comp-FCS_COP_EXT" style="text-indent:30px">C.2.1.7<span>FCS_COP_EXT Cryptographic Operation</span></a><a href="#ext-comp-FCS_SMC_EXT" style="text-indent:30px">C.2.1.8<span>FCS_SMC_EXT Submask Combining</span></a><a href="#ext-comp-FIA" style="text-indent:20px">C.2.2<span>Identification and Authentication (FIA)</span></a><a href="#ext-comp-FIA_X509_EXT" style="text-indent:30px">C.2.2.1<span>FIA_X509_EXT X.509 Certificate Services</span></a><a href="#ext-comp-FIA_SASL_EXT" style="text-indent:30px">C.2.2.2<span>FIA_SASL_EXT Simple Authentication and Security Layer (SASL)</span></a><a href="#ext-comp-FPT" style="text-indent:20px">C.2.3<span>Protection of the TSF (FPT)</span></a><a href="#ext-comp-FPT_AON_EXT" style="text-indent:30px">C.2.3.1<span>FPT_AON_EXT Add-Ons</span></a><a href="#ext-comp-FMT" style="text-indent:20px">C.2.4<span>Security Management (FMT)</span></a><a href="#ext-comp-FMT_MOF_EXT" style="text-indent:30px">C.2.4.1<span>FMT_MOF_EXT Management of Functions Behavior</span></a><a href="#ext-comp-FTP" style="text-indent:20px">C.2.5<span>Trusted Path/Channels (FTP)</span></a><a href="#ext-comp-FTP_ITC_EXT" style="text-indent:30px">C.2.5.1<span>FTP_ITC_EXT Inter-TSF Trusted Channel</span></a><a href="#ext-comp-FDP" style="text-indent:20px">C.2.6<span>User Data Protection (FDP)</span></a><a href="#ext-comp-FDP_NOT_EXT" style="text-indent:30px">C.2.6.1<span>FDP_NOT_EXT Notifications</span></a><a href="#ext-comp-FDP_SMIME_EXT" style="text-indent:30px">C.2.6.2<span>FDP_SMIME_EXT Use of Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></a><a href="#ext-comp-FDP_PST_EXT" style="text-indent:30px">C.2.6.3<span>FDP_PST_EXT Storage of Persistent Information</span></a><a href="#ext-comp-FDP_REN_EXT" style="text-indent:30px">C.2.6.4<span>FDP_REN_EXT Rendering of Message Content</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Implicitly Satisfied Requirements</span></a><a href="#EAR" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a>
         </div>
         <h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
         <h2 class="indexable" data-level="2" id="Overview">1.1 Overview</h2>
@@ -222,9 +222,53 @@
             </dd>
         </dl>
          
-        <h1 class="indexable" data-level="1" id="Security_Problem_Definition">2 Security Problem Definition</h1>
+        <h1 class="indexable" data-level="1" id="sec-cclaims">2 Conformance Claims</h1>
+         
+        <dl>
+            <dt>Conformance Statement</dt>
+            <p></p>
+            <dd>
+                An <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> must claim exact conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+            </dd>
+            <p></p>
+            <dd>
+                The evaluation methods used for evaluating the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> are a combination of the workunits defined in <a href="#bibCEM">[CEM]</a> as well as the Evaluation Activities for ensuring that individual <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SAR">SARs</a></abbr> have a sufficient level of supporting evidence in the Security Target and guidance documentation and have been sufficiently tested by the laboratory as part of completing ATE_IND.1. Any functional packages this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> claims similarly contain their own Evaluation Activities that are used in this same manner. 
+            </dd>
+            <dt>CC Conformance Claims</dt>
+            <p></p>
+            <dd>
+                This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is conformant to Part 2 (extended) and Part 3 (extended) of Common Criteria <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1. 
+            </dd>
+            <dt>PP Claim</dt>
+            <p></p>
+            <dd>
+                 This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not claim conformance to any Protection Profile. 
+            </dd>
+            <p></p>
+            <dd>
+                There are no <abbr class="dyn-abbr"><a href="#abbr_PP">PPs</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Modules that are allowed in a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
+            </dd>
+            <dt>Package Claim</dt>
+            <p></p>
+            <dd>
+                <ul>
+                    <li>
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not conform to any functional packages.
+                    </li>
+                    <li>
+                        This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not conform to any assurance packages.
+                    </li>
+                </ul>
+            </dd>
+            <p></p>
+            <dd>
+                 The functional packages to which the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> conforms may include <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are not mandatory to claim for the sake of conformance. An <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> that claims one or more of these functional packages may include any non-mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are appropriate to claim based on the capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> and on any triggers for their inclusion based inherently on the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> selections made. 
+            </dd>
+        </dl>
+         
+        <h1 class="indexable" data-level="1" id="Security_Problem_Definition">3 Security Problem Definition</h1>
          The security problem is described in terms of the threats that the email client is expected to address, assumptions about the operational environment, and any organizational security policies that it is expected to enforce. 
-        <h2 class="indexable" data-level="2" id="Threats">2.1 Threats</h2>
+        <h2 class="indexable" data-level="2" id="Threats">3.1 Threats</h2>
          The following threat is specific to email clients, and represents an addition to those identified in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
         <dl>
             <dt class="threat defined" id="T.FLAWED_ADDON">T.FLAWED_ADDON</dt>
@@ -245,28 +289,24 @@
             </dd>
         </dl>
          
-        <h2 class="indexable" data-level="2" id="Assumptions">2.2 Assumptions</h2>
+        <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2>
          This document does not define any additional assumptions. 
-        <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">2.3 Organizational Security Policies</h2>
-        <p>
-            An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to satisfy the organizational security policy listed below in addition to all organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
-        </p>
-         This document does not define any additional OSPs. 
-        <h1 class="indexable" data-level="1" id="Security_Objectives">3 Security Objectives</h1>
-        <h2 class="indexable" data-level="2" id="objectivesEnvironment">3.1 Security Objectives for the Operational Environment</h2>
+        <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2>
+        <h1 class="indexable" data-level="1" id="Security_Objectives">4 Security Objectives</h1>
+        <h2 class="indexable" data-level="2" id="objectivesEnvironment">4.1 Security Objectives for the Operational Environment</h2>
          This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any objectives for the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>. 
         <p></p>
-        <h2 id="SOR" class="indexable,h2" data-level="2">3.2 Security Objectives Rationale</h2>
-         This section describes how the assumptions, threats, and organizational security policies map to the security objectives. 
+        <h2 id="SOR" class="indexable,h2" data-level="2">4.2 Security Objectives Rationale</h2>
+         This section describes how the assumptions and organizational security policies map to operational environment security objectives. 
         <table>
             <caption>
                 <span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale
             </caption>
             <tr class="header">
-                <td>Threat, Assumption, or OSP</td><td>Security Objectives</td><td>Rationale</td>
+                <td>Assumption or OSP</td><td>Security Objectives</td><td>Rationale</td>
             </tr>
         </table>
-        <h1 id="Security_Requirements" class="indexable" data-level="1">4 Security Requirements</h1>
+        <h1 id="Security_Requirements" class="indexable" data-level="1">5 Security Requirements</h1>
          This chapter describes the security requirements which have to be fulfilled by the product under evaluation. Those requirements comprise functional components from Part 2 and assurance components from Part 3 of <a href="#bibCC">[CC]</a>. The following conventions are used for the completion of operations: 
         <ul>
             <li>
@@ -282,11 +322,11 @@
                  <b>Iteration</b> operation: Is indicated by appending the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> name with a slash and unique identifier suggesting the purpose of the operation, e.g. "/EXAMPLE1." 
             </li>
         </ul>
-        <h2 id="secreq-AppPP" class="indexable" data-level="2">4.1 Protection Profile for Email Client Security Functional Requirements Direction </h2>
-         In a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> that includes the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to rely on some of the security functions implemented by the as a whole and evaluated against the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. The following sections describe any modifications that the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must make to the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined in the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> in addition to what is mandated by <a class="dynref" href="#man-sfrs">Section 4.2 TOE Security Functional Requirements</a>. 
-        <h3 id="modsfr-AppPP" class="indexable" data-level="3">4.1.1 Modified SFRs </h3>
+        <h2 id="secreq-AppPP" class="indexable" data-level="2">5.1 Protection Profile for Email Client Security Functional Requirements Direction </h2>
+         In a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> that includes the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to rely on some of the security functions implemented by the as a whole and evaluated against the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. The following sections describe any modifications that the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must make to the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined in the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> in addition to what is mandated by <a class="dynref" href="#man-sfrs">Section 5.2 TOE Security Functional Requirements</a>. 
+        <h3 id="modsfr-AppPP" class="indexable" data-level="3">5.1.1 Modified SFRs </h3>
          The <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> listed in this section are defined in the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> and relevant to the secure operation of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. 
-        <h4 id="mod_fcs" class="indexable" data-level="4">4.1.1.1 Cryptographic Support (FCS)</h4>
+        <h4 id="mod_fcs" class="indexable" data-level="4">5.1.1.1 Cryptographic Support (FCS)</h4>
         <div class="comp" id="FCS_CKM_EXT.1">
             <h4>FCS_CKM_EXT.1 Cryptographic Key Generation Services</h4>
             <div class="element">
@@ -333,7 +373,7 @@
                 </div>
             </div>
         </div>
-        <h4 id="mod_fia" class="indexable" data-level="4">4.1.1.2 Identification and Authentication (FIA)</h4>
+        <h4 id="mod_fia" class="indexable" data-level="4">5.1.1.2 Identification and Authentication (FIA)</h4>
         <div class="comp" id="FIA_X509_EXT.1">
             <h4>FIA_X509_EXT.1 X.509 Certificate Validation</h4>
             <div class="element">
@@ -356,7 +396,7 @@
                 </div>
             </div>
         </div>
-        <h4 id="mod_ftp" class="indexable" data-level="4">4.1.1.3 Trusted Path/Channels (FTP)</h4>
+        <h4 id="mod_ftp" class="indexable" data-level="4">5.1.1.3 Trusted Path/Channels (FTP)</h4>
         <div class="comp" id="FTP_DIT_EXT.1">
             <h4>FTP_DIT_EXT.1 Protection of Data in Transit</h4>
             <div class="element">
@@ -382,9 +422,9 @@
                 </div>
             </div>
         </div>
-        <h2 id="man-sfrs" class="indexable" data-level="2">4.2 TOE Security Functional Requirements</h2>
+        <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
          The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. 
-        <h3 id="man_fcs" class="indexable" data-level="3">4.2.1 Cryptographic Support (FCS)</h3>
+        <h3 id="man_fcs" class="indexable" data-level="3">5.2.1 Cryptographic Support (FCS)</h3>
         <div class="comp" id="FCS_CKM_EXT.3">
             <h4>FCS_CKM_EXT.3 Protection of Key and Key Material</h4>
             <div class="element">
@@ -677,7 +717,7 @@
                 </div>
             </div>
         </div>
-        <h3 id="man_fdp" class="indexable" data-level="3">4.2.2 User Data Protection (FDP)</h3>
+        <h3 id="man_fdp" class="indexable" data-level="3">5.2.2 User Data Protection (FDP)</h3>
         <div class="comp" id="FDP_NOT_EXT.1">
             <h4>FDP_NOT_EXT.1 Notification of S/MIME Status</h4>
             <div class="element">
@@ -706,7 +746,7 @@
                 </div>
             </div>
         </div>
-        <h3 id="man_fia" class="indexable" data-level="3">4.2.3 Identification and Authentication (FIA)</h3>
+        <h3 id="man_fia" class="indexable" data-level="3">5.2.3 Identification and Authentication (FIA)</h3>
         <div class="comp" id="FIA_X509_EXT.3">
             <h4>FIA_X509_EXT.3 X.509 Authentication and Encryption</h4>
             <div class="element">
@@ -753,7 +793,7 @@
                 </div>
             </div>
         </div>
-        <h3 id="man_fmt" class="indexable" data-level="3">4.2.4 Security Management (FMT)</h3>
+        <h3 id="man_fmt" class="indexable" data-level="3">5.2.4 Security Management (FMT)</h3>
         <div class="comp" id="FMT_MOF_EXT.1">
             <h4>FMT_MOF_EXT.1 Management of Functions Behavior</h4>
             <div class="element">
@@ -930,7 +970,7 @@
                 </div>
             </div>
         </div>
-        <h3 id="man_fpt" class="indexable" data-level="3">4.2.5 Protection of the TSF (FPT)</h3>
+        <h3 id="man_fpt" class="indexable" data-level="3">5.2.5 Protection of the TSF (FPT)</h3>
         <div class="comp" id="FPT_AON_EXT.1">
             <h4>FPT_AON_EXT.1 Support for Only Trusted Add-ons</h4>
             <div class="element">
@@ -947,7 +987,7 @@
                 </div>
             </div>
         </div>
-        <h3 id="man_ftp" class="indexable" data-level="3">4.2.6 Trusted Path/Channels (FTP)</h3>
+        <h3 id="man_ftp" class="indexable" data-level="3">5.2.6 Trusted Path/Channels (FTP)</h3>
         <div class="comp" id="FTP_ITC_EXT.1">
             <h4>FTP_ITC_EXT.1 Inter-TSF Trusted Channel</h4>
             <div class="element">
@@ -996,21 +1036,166 @@
                 </div>
             </div>
         </div>
-        <h1 id="mod-conrat" class="indexable" data-level="1">5 Consistency Rationale</h1>
-        <h2 id="conrat-AppPP" class="indexable" data-level="2">5.1 Protection Profile for Email Client</h2>
-        <h3 id="contoe-AppPP" class="indexable" data-level="3">5.1.1 Consistency of TOE Type </h3>
+        <h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2>
+        <p>
+            The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:
+            <br>
+            <table>
+                <caption>
+                    <span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">2</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale
+                </caption>
+                <tr>
+                    <th>Threat</th><th>Addressed by</th><th>Rationale</th>
+                </tr>
+                <tr class="major-row">
+                    <td rowspan="6"><a href="#T.FLAWED_ADDON">T.FLAWED_​ADDON</a></td><td><a href="#FPT_AON_EXT.1">FPT_AON_EXT.1</a></td><td><a href="#FPT_AON_EXT.1">FPT_AON_EXT.1</a> supports the objective by specifying whether or not the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> has the ability to load add-ons.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FPT_AON_EXT.2">FPT_AON_EXT.2</a> (selection-based)</td><td><a href="#FPT_AON_EXT.2">FPT_AON_EXT.2</a> supports the objective by defining a cryptographic method for the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to validate the integrity of add-ons if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports their use.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_NOT_EXT.1">FDP_NOT_EXT.1</a></td><td><a href="#FDP_NOT_EXT.1">FDP_NOT_EXT.1</a> supports the objective by defining a mechanism for users to determine whether a given email has been signed or encrypted.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a> supports the objective by defining the technology-specific management functions that may exist for email client applications.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_NOT_EXT.2">FDP_NOT_EXT.2</a> (optional)</td><td><a href="#FDP_NOT_EXT.2">FDP_NOT_EXT.2</a> supports the objective by optionally requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to enumerate the uniform resource identifier (<abbr class="dyn-abbr"><a href="#abbr_URI">URI</a></abbr>) of embedded links in emails so that a user can determine the source of the link.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> (optional)</td><td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> supports the objective by optionally defining a plaintext-only operational mode that does not allow a user to interact with embedded content in an email message.</td>
+                </tr>
+                <tr class="major-row">
+                    <td rowspan="14"><a href="#T.NETWORK_ATTACK">T.NETWORK_​ATTACK</a> (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>) </td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> supports the objective by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a cryptographic function for asymmetric key generation.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> supports the objective by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a DRBG for secure key generation.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to implement or invoke an X.509 certificate validation service.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> supports the objective by defining the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s use of X.509 certificates and what behavior the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> takes when the revocation status of a certificate cannot be determined.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a> supports the objective by specifying the trusted communications channels used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to protect data in transit.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_SMIME_EXT.1">FCS_SMIME_EXT.1</a></td><td><a href="#FCS_SMIME_EXT.1">FCS_SMIME_EXT.1</a> supports the objective by defining the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s cryptographic implementation of <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> to both assert and validate the confidentiality and integrity of secure email messages.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_SMIME_EXT.1">FDP_SMIME_EXT.1</a></td><td><a href="#FDP_SMIME_EXT.1">FDP_SMIME_EXT.1</a> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to use <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> to protect email message data in transit.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support the use of X.509 certificates for <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FTP_ITC_EXT.1">FTP_ITC_EXT.1</a></td><td><a href="#FTP_ITC_EXT.1">FTP_ITC_EXT.1</a> supports the objective by specifying the trusted communications the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> must implement that are specific to email communications.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> (selection-based)</td><td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> supports the objective by specifying how <abbr class="dyn-abbr"><a href="#abbr_SASL">SASL</a></abbr> is implemented in the case where the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims to support it.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_NOT_EXT.1">FDP_NOT_EXT.1</a></td><td><a href="#FDP_NOT_EXT.1">FDP_NOT_EXT.1</a> supports the objective by defining a mechanism for users to determine whether a given email has been signed or encrypted.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a> supports the objective by defining the technology-specific management functions that may exist for email client applications.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_NOT_EXT.2">FDP_NOT_EXT.2</a> (optional)</td><td><a href="#FDP_NOT_EXT.2">FDP_NOT_EXT.2</a> supports the objective by optionally requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to enumerate the uniform resource identifier (<abbr class="dyn-abbr"><a href="#abbr_URI">URI</a></abbr>) of embedded links in emails so that a user can determine the source of the link.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> (optional)</td><td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> supports the objective by optionally defining a plaintext-only operational mode that does not allow a user to interact with embedded content in an email message.</td>
+                </tr>
+                <tr class="major-row">
+                    <td rowspan="14"><a href="#T.NETWORK_EAVESDROP">T.NETWORK_​EAVESDROP</a> (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>) </td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> supports the objective by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a cryptographic function for asymmetric key generation.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> supports the objective by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a DRBG for secure key generation.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to implement or invoke an X.509 certificate validation service.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> supports the objective by defining the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s use of X.509 certificates and what behavior the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> takes when the revocation status of a certificate cannot be determined.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a> supports the objective by specifying the trusted communications channels used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to protect data in transit.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_SMIME_EXT.1">FCS_SMIME_EXT.1</a></td><td><a href="#FCS_SMIME_EXT.1">FCS_SMIME_EXT.1</a> supports the objective by defining the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s cryptographic implementation of <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> to both assert and validate the confidentiality and integrity of secure email messages.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_SMIME_EXT.1">FDP_SMIME_EXT.1</a></td><td><a href="#FDP_SMIME_EXT.1">FDP_SMIME_EXT.1</a> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to use <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> to protect email message data in transit.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a> supports the objective by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support the use of X.509 certificates for <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FTP_ITC_EXT.1">FTP_ITC_EXT.1</a></td><td><a href="#FTP_ITC_EXT.1">FTP_ITC_EXT.1</a> supports the objective by specifying the trusted communications the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> must implement that are specific to email communications.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> (selection-based)</td><td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> supports the objective by specifying how <abbr class="dyn-abbr"><a href="#abbr_SASL">SASL</a></abbr> is implemented in the case where the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims to support it.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_NOT_EXT.1">FDP_NOT_EXT.1</a></td><td><a href="#FDP_NOT_EXT.1">FDP_NOT_EXT.1</a> supports the objective by defining a mechanism for users to determine whether a given email has been signed or encrypted.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a> supports the objective by defining the technology-specific management functions that may exist for email client applications.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_NOT_EXT.2">FDP_NOT_EXT.2</a> (optional)</td><td><a href="#FDP_NOT_EXT.2">FDP_NOT_EXT.2</a> supports the objective by optionally requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to enumerate the uniform resource identifier (<abbr class="dyn-abbr"><a href="#abbr_URI">URI</a></abbr>) of embedded links in emails so that a user can determine the source of the link.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> (optional)</td><td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> supports the objective by optionally defining a plaintext-only operational mode that does not allow a user to interact with embedded content in an email message.</td>
+                </tr>
+                <tr class="major-row">
+                    <td rowspan="10"><a href="#T.PHYSICAL_ACCESS">T.PHYSICAL_​ACCESS</a> (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>) </td><td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a></td><td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a> supports the objective by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> protects stored key data from unauthorized disclosure.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_CKM_EXT.4">FCS_CKM_EXT.4</a></td><td><a href="#FCS_CKM_EXT.4">FCS_CKM_EXT.4</a> supports the objective by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> securely destroys stored key data.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a></td><td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a> supports the objective by defining any key chain that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> implements to protect a root encryption key.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_IVG_EXT.1">FCS_IVG_EXT.1</a> (optional)</td><td><a href="#FCS_IVG_EXT.1">FCS_IVG_EXT.1</a> supports the objective by optionally specifying the initialization vectors used for various cryptographic modes if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports any of these modes.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_NOG_EXT.1">FCS_NOG_EXT.1</a> (optional)</td><td><a href="#FCS_NOG_EXT.1">FCS_NOG_EXT.1</a> supports the objective by optionally defining the minimum nonce size if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> uses any cryptographic algorithms that require the use of nonces.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_SAG_EXT.1">FCS_SAG_EXT.1</a> (optional)</td><td><a href="#FCS_SAG_EXT.1">FCS_SAG_EXT.1</a> supports the objective by optionally defining the supported methods for salt generation if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> uses any cryptographic algorithms that require the use of salts.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FDP_PST_EXT.1">FDP_PST_EXT.1</a> (optional)</td><td><a href="#FDP_PST_EXT.1">FDP_PST_EXT.1</a> supports the objective by optionally defining the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to operate without persistently storing certain types of data at all.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a> (selection-based)</td><td><a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a> supports the objective by optionally defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> can derive key material using a user-supplied password credential.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a> (selection-based)</td><td><a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a> supports the objective by defining the supported key wrap mechanisms if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> uses key wrapping as part of maintaining a key chain.</td>
+                </tr>
+                <tr>
+                    <td><a href="#FCS_SMC_EXT.1">FCS_SMC_EXT.1</a> (selection-based)</td><td><a href="#FCS_SMC_EXT.1">FCS_SMC_EXT.1</a> supports the objective by defining the supported key combination mechanisms if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> uses key combining as part of maintaining a key chain.</td>
+                </tr>
+            </table>
+        </p>
+        <h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1>
+        <h2 id="conrat-AppPP" class="indexable" data-level="2">6.1 Protection Profile for Email Client</h2>
+        <h3 id="contoe-AppPP" class="indexable" data-level="3">6.1.1 Consistency of TOE Type </h3>
          If this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is used to extend the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> type for the overall <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is still a software application. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> boundary is simply extended to include the email client functionality that is built into the application so that additional security functionality is claimed within the scope of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. 
         <br>
         <br>
          The only asset for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is the software executable and sensitive data that comprises the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. The entire <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> as defined by the combination of the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> and this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is a single asset. The only difference to the threat model is that the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> introduces the concept of add-ons, which introduces the threat of an add-on being flawed in some way. 
-        <h3 id="consecprob-AppPP" class="indexable" data-level="3">5.1.2 Consistency of Security Problem Definition </h3>
+        <h3 id="consecprob-AppPP" class="indexable" data-level="3">6.1.2 Consistency of Security Problem Definition </h3>
          Listed below are the threats, objectives, and OSPs defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> with rationale for their consistency with the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> shares the executable application asset with the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> but defines an additional threat because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines a specific type of software application with potential exploits that are common to the application type. 
         <br>
         <br>
          Note that the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is implicitly consistent with any claimed functional packages because the applicable functional packages do not have security problem definitions of their own; per section 2, any claimed functional package is intended to support the O.PROTECTED_COMMS objective in the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, which helps mitigate the <a href="#T.NETWORK_ATTACK">T.NETWORK_ATTACK</a> and <a href="#T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP</a> threats in that <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. 
         <table>
             <caption>
-                <span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">2</span></span>: Consistency of Security Problem Definition (App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base) 
+                <span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">3</span></span>: Consistency of Security Problem Definition (App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base) 
             </caption>
             <tr>
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th>
@@ -1019,21 +1204,15 @@
                 <td><a href="#T.FLAWED_ADDON">T.FLAWED_ADDON</a></td><td> The threat of a user installing a flawed add-on is consistent with the T.LOCAL_ATTACK threat from the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. A flawed add-on, crafted deliberately or unintentionally, could cause the product to operate in a manner where it or its platform can be compromised. </td>
             </tr>
         </table>
-        <h3 id="conobj-AppPP" class="indexable" data-level="3">5.1.3 Consistency of Objectives </h3>
-        <p>
-             Listed below are the security objectives defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> with rationale for their consistency with the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> extends the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> security objectives because the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines a specific type of software application with security functionality that is common to the application type. 
-            <br>
-            <br>
-             Note that the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is implicitly consistent with any claimed functional packages because the applicable functional packages do not have <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> objectives of their own; per section 2, any claimed functional package is intended to support the O.PROTECTED_COMMS objective in the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. 
-        </p>
+        <h3 id="conobj-AppPP" class="indexable" data-level="3">6.1.3 Consistency of OE Objectives </h3>
         <p>
              This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any objectives for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s operational environment. 
         </p>
-        <h3 id="conreq-AppPP" class="indexable" data-level="3">5.1.4 Consistency of Requirements </h3>
+        <h3 id="conreq-AppPP" class="indexable" data-level="3">6.1.4 Consistency of Requirements </h3>
          This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> that are needed to support Email Client functionality. This is considered to be consistent because the functionality provided by the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is being used for its intended purpose. The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also identifies a number of modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> that are used entirely to provide functionality for Email Client. The rationale for why this does not conflict with the claims defined by the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> are as follows: 
         <table>
             <caption>
-                <span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">3</span></span>: Consistency of Requirements (App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base) 
+                <span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">4</span></span>: Consistency of Requirements (App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base) 
             </caption>
             <tr>
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th>
@@ -1531,7 +1710,7 @@
          All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table: 
         <table class="sort_kids_">
             <caption data-sortkey="#0">
-                <b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">4</span></span>: Extended Component Definitions</b>
+                <b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">5</span></span>: Extended Component Definitions</b>
             </caption>
             <tr data-sortkey="#1">
                 <th>Functional Class</th><th>Functional Components</th>
@@ -2371,7 +2550,7 @@
             </span></span>
         <h1 id="satisfiedreqs" class="indexable" data-level="A">Appendix D - Implicitly Satisfied Requirements</h1>
         <p>
-            This appendix lists requirements that should be considered satisfied by products successfully evaluated against this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. These requirements are not featured explicitly as <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and should not be included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>. They are not included as standalone <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> because it would increase the time, cost, and complexity of evaluation. This approach is permitted by <a href="#bibCC">[CC]</a> Part 1, 8.2 Dependencies between components.
+            This appendix lists requirements that should be considered satisfied by products successfully evaluated against this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. These requirements are not featured explicitly as <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and should not be included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>. They are not included as standalone <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> because it would increase the time, cost, and complexity of evaluation. This approach is permitted by <a href="#bibCC">[CC]</a> Part 1, 8.3 Dependencies between components.
         </p>
         <p>
             This information benefits systems engineering activities which call for inclusion of particular security controls. Evaluation against the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> provides evidence that these controls are present and have been evaluated.
@@ -2392,7 +2571,7 @@
         <h1 id="acronyms" class="indexable" data-level="A">Appendix F - Acronyms</h1>
         <table>
             <caption>
-                <span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">5</span></span>: Acronyms 
+                <span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">6</span></span>: Acronyms 
             </caption>
             <tr class="header">
                 <th>Acronym</th><th>Meaning</th>
@@ -2506,7 +2685,7 @@
         <h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix G - Bibliography</h1>
         <table>
             <caption>
-                <span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">6</span></span>: Bibliography
+                <span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">7</span></span>: Bibliography
             </caption>
             <tr class="header">
                 <th>Identifier</th><th>Title</th>
@@ -2515,13 +2694,28 @@
                 <td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - 
                         <ul>
                             <li>
-                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf">Part 1: Introduction and General Model</a>, CCMB-2017-04-001, Version 3.1 Revision 5, April 2017.
+                                <a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
                             </li>
                             <li>
-                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf">Part 2: Security Functional Components</a>, CCMB-2017-04-002, Version 3.1 Revision 5, April 2017.
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
                             </li>
                             <li>
-                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf">Part 3: Security Assurance Components</a>, CCMB-2017-04-003, Version 3.1 Revision 5, April 2017.
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART3R1.pdf">Part 3: Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
+                            </li>
+                            <li>
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART4R1.pdf">Part 4: Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
+                            </li>
+                            <li>
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART5R1.pdf">Part 5: Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
+                            </li>
+                        </ul>
+                    </span></td>
+            </tr>
+            <tr>
+                <td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - 
+                        <ul>
+                            <li>
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf"> Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
                             </li>
                         </ul>
                     </span></td>

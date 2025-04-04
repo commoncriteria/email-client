@@ -114,8 +114,6 @@
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fpt[1]""/f-component[1]""/dependencies[1]""/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fpt[1]""/f-component[1]""/f-element[3]""/aactivity[1]""/TSS[1]"The evalu"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fpt[1]""/f-component[1]""/f-element[3]""/aactivity[1]""/Guidance[1]"The evalu"/h:p[1]""
-* Warning: Detected 1 Conformance Claims sections in this PP. There should be exactly 1 "Conformance Claims" section.
-      
 * Warning: fcs_ivg_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fcs[1]""/f-component[1]""
 * Warning: fcs_nog_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fcs[1]""/f-component[2]""
 * Warning: fcs_sag_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fcs[1]""/f-component[3]""
