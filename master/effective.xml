@@ -1025,7 +1025,7 @@ for destroying all keying material and cryptographic security parameters when no
 	    
 	    <f-element id="fia-x509-ext-3-1">
 	      <title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support
-	      encryption and authentication for S/MIME. <comment>not sure if this needs to go to the Modified SFR section.</comment></title>
+	      encryption and authentication for S/MIME. <comment>Should this SFR be iterated?</comment></title>
 	    </f-element>
 	    <f-element id="fia-x509-ext-3-2">
 	      <title> The TSF shall prevent the establishment of a trusted communication
