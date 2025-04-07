@@ -617,7 +617,7 @@
          <selectable>single</selectable>
          <selectable>three or more times</selectable></selectables> 
       overwrite of key data storage location consisting of <selectables linebreak="yes">
-         <selectable> a pseudorandom pattern using the email client's RBG (as specified in FCS_RBG_EXT.2 of <xref to="bibAppPP"/></selectable>
+         <selectable> a pseudorandom pattern using the email client's RBG (as specified in FCS_RBG_EXT.2 of <xref to="bibAppPP"/>)</selectable>
 		     <selectable>a pseudorandom pattern using the host platform's RBG</selectable>
          <selectable>a static pattern</selectable></selectables></selectable></selectables></selectable></selectables> 
    that meets the following:<selectables linebreak="yes">
@@ -632,7 +632,7 @@ for destroying all keying material and cryptographic security parameters when no
 	          for destroying all keying material and cryptographic security parameters when no longer needed.</title>
 	      </ext-comp-def-title>
 	      <note role="application">
-		<h:p></h:p>
+		<h:p>
 		  For the purpose of this requirement, keying material refers to
 		  authentication data, passwords, symmetric keys, data used to derive keys, etc.
 		</h:p><h:p>
