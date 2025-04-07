@@ -437,10 +437,10 @@
           <f-component cc-id="fia_x509_ext.1" name="X.509 Certificate Validation">
             <consistency-rationale>This SFR is unchanged from its definition in the Base-PP; the SFR is recategorized from selection-based to mandatory when the TOE conforms to this PP-Module.</consistency-rationale>
             <f-element id="fia=x509-ext-1-1">
-              <title>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.
+              <title>This SFR is selection-based in the <xref to='pkg-x509'/>X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.</title>
               <aactivity>
                 <no-tests>
-                  There is no change to the functional Package EAs for this SFR when this PP-Module is claimed.<h:p/> 
+                  There is no change to the functional Package EAs for this SFR when this PP-Module is claimed.
                 </no-tests>
               </aactivity>
             </f-element>
