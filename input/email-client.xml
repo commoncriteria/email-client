@@ -601,13 +601,13 @@
 	    <dependencies>
 	      No dependencies.
 	    </dependencies>
-	    <f-element id="fcs-ckm-6-1">
+	    <f-element>
       <title>The TSF shall destroy <assignable>list of cryptographic keys (including keying material)</assignable> when <selectables>
       <selectable>no longer needed</selectable>
       <selectable><assignable>other circumstances for key or keying material destruction</assignable></selectable>
       </selectables></title>
       </f-element>
-	    <f-element id="fcs-ckm-6-2">
+	    <f-element>
 <title>The TSF shall <selectables linebreak="yes">
    <selectable>invoke platform-provided key destruction</selectable>     
    <selectable>implement key destruction using <selectables linebreak="yes">
