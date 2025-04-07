@@ -441,7 +441,7 @@ The following sections list Common Criteria and technology terms used in this do
 	          There are no guidance EAs for this component.<p></p>
 	        </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
 	          There are no test EAs for this component.<p></p>
-	        </div></div></span></div><div class="comp" id=""><h4>FCS_CKM_EXT.4 Cryptographic Key Destruction</h4><span class="activity_pane_body"><div class="component-activity-header">FCS_CKM_EXT.4</div>
+	        </div></div></span></div><div class="comp" id=""><h4>FCS_CKM_EXT.6 Cryptographic Key Destruction</h4><span class="activity_pane_body"><div class="component-activity-header">FCS_CKM_EXT.6</div>
 		
 	        
 		
@@ -461,7 +461,7 @@ The following sections list Common Criteria and technology terms used in this do
 	        </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
 		  If the TSF performs its own key destruction, the evaluator shall perform the following test:
 		<span class="testlist-"><ul>
-		<li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FCS_CKM_EXT.4:1</a>:
+		<li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FCS_CKM_EXT.6:1</a>:
       
 		For each type of authorization service, encryption mode, and encryption operation, a known authorization factor and chain of keys must be provided to the evaluator with an associated ciphertext data set 
 		(e.g., if a passphrase is used to create an intermediate key, then the ciphertext containing the encrypted key as well as the intermediate key itself must be provided to the evaluator). 
@@ -730,7 +730,7 @@ The following sections list Common Criteria and technology terms used in this do
                 <p></p>
                 Support for PBKDF: The evaluator shall examine the password hierarchy TSS to ensure that the formation of all keys is described and that the key sizes match that described by the ST author.
                 <p></p>
-                The evaluator shall check that the TSS describes the method by which the password/passphrase is first encoded and then fed to the SHA algorithm. The settings for the algorithm (padding, blocking, etc.) shall be described, and the evaluator shall verify that these are supported by the selections in this component as well as the selections concerning the hash function itself. The evaluator shall verify that the TSS contains a description of how the output of the hash function is used to form the submask that will be input into the function and is the same length as the KEK as specified in FCS_CKM_EXT.4.
+                The evaluator shall check that the TSS describes the method by which the password/passphrase is first encoded and then fed to the SHA algorithm. The settings for the algorithm (padding, blocking, etc.) shall be described, and the evaluator shall verify that these are supported by the selections in this component as well as the selections concerning the hash function itself. The evaluator shall verify that the TSS contains a description of how the output of the hash function is used to form the submask that will be input into the function and is the same length as the KEK as specified in FCS_CKM.6.
                 <p></p>
                 For the NIST SP 800-132-based conditioning of the password/passphrase, the required assurance activities will be performed when doing the assurance activities for the appropriate requirements (FCS_COP.1.1(4) from the [AppPP]). If any manipulation of the key is performed in forming the submask that will be used to form the FEK or KEK, that process shall be described in the TSS.
                 <p></p>

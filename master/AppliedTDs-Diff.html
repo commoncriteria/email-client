@@ -460,65 +460,73 @@
                 </div>
             </div>
         </div>
-        <div class="comp" id="FCS_CKM_EXT.4">
-            <h4>FCS_CKM_EXT.4 Cryptographic Key Destruction</h4>
+        <div class="comp" id="FCS_CKM_EXT.6">
+            <h4>FCS_CKM_EXT.6 Cryptographic Key Destruction</h4>
             <div class="element">
-                <div class="reqid" id="FCS_CKM_EXT.4.1">
-                    <a href="#FCS_CKM_EXT.4.1" class="abbr">FCS_CKM_EXT.4.1</a>
+                <div class="reqid" id="FCS_CKM_EXT.6.1">
+                    <a href="#FCS_CKM_EXT.6.1" class="abbr">FCS_CKM_EXT.6.1</a>
+                </div>
+                <div class="reqdesc">
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall destroy [<b>assignment</b>: <span class="assignable-content">list of cryptographic keys (including keying material)</span>] when [<b>selection</b>: <span class="selectable-content" id="_s_17">no longer needed</span>, <span class="selectable-content" id="_s_18"> other circumstances for key or keying material destructions.</span>]
+                </div>
+            </div>
+            <div class="element">
+                <div class="reqid" id="FCS_CKM_EXT.6.2">
+                    <a href="#FCS_CKM_EXT.6.2" class="abbr">FCS_CKM_EXT.6.2</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_17">invoke platform-provided key destruction</span>
+                            <span class="selectable-content" id="_s_19">invoke platform-provided key destruction</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_18">implement key destruction using [<b>selection</b>: 
+                            <span class="selectable-content" id="_s_20">implement key destruction using [<b>selection</b>: 
                                 <ul>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_19">For volatile memory, the erasure shall be executed by a [<b>selection</b>: 
+                                        <span class="selectable-content" id="_s_21">For volatile memory, the erasure shall be executed by a [<b>selection</b>: 
                                             <ul>
                                                 <li style="">
-                                                    <span class="selectable-content" id="_s_20">single direct overwrite [<b>selection</b>: 
+                                                    <span class="selectable-content" id="_s_22">single direct overwrite [<b>selection</b>: 
                                                         <ul>
                                                             <li style="">
-                                                                <span class="selectable-content" id="_s_21">consisting of a pseudorandom pattern using the email client's RBG</span>
+                                                                <span class="selectable-content" id="_s_23">consisting of a pseudorandom pattern using the email client's RBG</span>
                                                             </li>
                                                             <li style="">
-                                                                <span class="selectable-content" id="_s_22">consisting of a pseudorandom pattern using the host platform's RBG</span>
+                                                                <span class="selectable-content" id="_s_24">consisting of a pseudorandom pattern using the host platform's RBG</span>
                                                             </li>
                                                             <li style="">
-                                                                <span class="selectable-content" id="_s_23">consisting of zeroes</span>
+                                                                <span class="selectable-content" id="_s_25">consisting of zeroes</span>
                                                             </li>
                                                         </ul>
                                                         ]</span>
                                                 </li>
                                                 <li style="">
-                                                    <span class="selectable-content" id="_s_24">destruction of reference to the key directly followed by a request for garbage collection</span>
+                                                    <span class="selectable-content" id="_s_26">destruction of reference to the key directly followed by a request for garbage collection</span>
                                                 </li>
                                             </ul>
                                             ]</span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_25">For non-volatile storage, the erasure shall be executed by [<b>selection</b>: 
+                                        <span class="selectable-content" id="_s_27">For non-volatile storage, the erasure shall be executed by [<b>selection</b>: 
                                             <ul>
                                                 <li style="">
-                                                    <span class="selectable-content" id="_s_26">single</span>
+                                                    <span class="selectable-content" id="_s_28">single</span>
                                                 </li>
                                                 <li style="">
-                                                    <span class="selectable-content" id="_s_27">three or more times</span>
+                                                    <span class="selectable-content" id="_s_29">three or more times</span>
                                                 </li>
                                             </ul>
                                             ] overwrite of key data storage location consisting of [<b>selection</b>: 
                                             <ul>
                                                 <li style="">
-                                                    <span class="selectable-content" id="_s_28"> a pseudorandom pattern using the email client's RBG (as specified in FCS_RBG_EXT.2 of <a href="#bibAppPP">[App PP]</a>)</span>
+                                                    <span class="selectable-content" id="_s_30"> a pseudorandom pattern using the email client's RBG (as specified in FCS_RBG_EXT.2 of <a href="#bibAppPP">[App PP]</a>)</span>
                                                 </li>
                                                 <li style="">
-                                                    <span class="selectable-content" id="_s_29">a pseudorandom pattern using the host platform's RBG</span>
+                                                    <span class="selectable-content" id="_s_31">a pseudorandom pattern using the host platform's RBG</span>
                                                 </li>
                                                 <li style="">
-                                                    <span class="selectable-content" id="_s_30">a static pattern</span>
+                                                    <span class="selectable-content" id="_s_32">a static pattern</span>
                                                 </li>
                                             </ul>
                                             ]</span>
@@ -530,10 +538,10 @@
                     ] that meets the following:[<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_31">NIST SP 800-88</span>
+                            <span class="selectable-content" id="_s_33">NIST SP 800-88</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_32">no standard</span>
+                            <span class="selectable-content" id="_s_34">no standard</span>
                         </li>
                     </ul>
                     ] for destroying all keying material and cryptographic security parameters when no longer needed.
@@ -556,22 +564,22 @@
                      The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall maintain a key chain of: [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_35">one</span>
+                            <span class="selectable-content" id="_s_37">one</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_36">a key stored in platform key storage</span>
+                            <span class="selectable-content" id="_s_38">a key stored in platform key storage</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_37"> intermediate keys originating from: [<b>selection</b>: 
+                            <span class="selectable-content" id="_s_39"> intermediate keys originating from: [<b>selection</b>: 
                                 <ul>
                                     <li style="">
                                         <span class="selectable-content" id="kyc1_password"> a password as specified in <a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a></span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_39">one or more other authorization factors</span>
+                                        <span class="selectable-content" id="_s_41">one or more other authorization factors</span>
                                     </li>
                                     <li style="">
-                                        <span class="selectable-content" id="_s_40">credentials stored in platform key storage</span>
+                                        <span class="selectable-content" id="_s_42">credentials stored in platform key storage</span>
                                     </li>
                                 </ul>
                                 ] </span>
@@ -580,10 +588,10 @@
                     ] to the data encryption and decryption keys using the following methods: [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_41">use of the platform key storage</span>
+                            <span class="selectable-content" id="_s_43">use of the platform key storage</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_42">use of platform key storage that performs key wrap with a <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provided key</span>
+                            <span class="selectable-content" id="_s_44">use of platform key storage that performs key wrap with a <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provided key</span>
                         </li>
                         <li style="">
                             <span class="selectable-content" id="kyc1_wrapped">implement key wrapping as specified in <a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a></span>
@@ -595,10 +603,10 @@
                     ] while maintaining an effective strength of [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_45">128 bits</span>
+                            <span class="selectable-content" id="_s_47">128 bits</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_46">256 bits</span>
+                            <span class="selectable-content" id="_s_48">256 bits</span>
                         </li>
                     </ul>
                     ] 
@@ -628,7 +636,7 @@
                     <a href="#FCS_SMIME_EXT.1.2" class="abbr">FCS_SMIME_EXT.1.2</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall transmit the ContentEncryptionAlgorithmIdentifier for <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, and [<b>selection</b>: <span class="selectable-content" id="_s_47"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_48"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_49">no other</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall transmit the ContentEncryptionAlgorithmIdentifier for <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, and [<b>selection</b>: <span class="selectable-content" id="_s_49"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_50"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_51">no other</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note">Advanced Encryption Standard (<abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>) was added to Cryptographic Message Syntax (<abbr class="dyn-abbr"><a href="#abbr_CMS">CMS</a></abbr>) as defined in RFC 3565.</span>
                     </div>
@@ -639,7 +647,7 @@
                     <a href="#FCS_SMIME_EXT.1.3" class="abbr">FCS_SMIME_EXT.1.3</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall present the digestAlgorithm field with the following Message Digest Algorithm identifiers [<b>selection</b>: <span class="selectable-content" id="_s_50">id-sha256</span>, <span class="selectable-content" id="_s_51">id-sha384</span>, <span class="selectable-content" id="_s_52">id-sha512</span>] and no others as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall present the digestAlgorithm field with the following Message Digest Algorithm identifiers [<b>selection</b>: <span class="selectable-content" id="_s_52">id-sha256</span>, <span class="selectable-content" id="_s_53">id-sha384</span>, <span class="selectable-content" id="_s_54">id-sha512</span>] and no others as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                 </div>
             </div>
             <div class="element">
@@ -650,22 +658,22 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall present the signatureAlgorithm field with the following: sha256withRSAEncryption and [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_53">sha384WithRSAEncryption</span>
+                            <span class="selectable-content" id="_s_55">sha384WithRSAEncryption</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_54">sha512WithRSAEncryption</span>
+                            <span class="selectable-content" id="_s_56">sha512WithRSAEncryption</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_55">ecdsawithsha256</span>
+                            <span class="selectable-content" id="_s_57">ecdsawithsha256</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_56">ecdsawithsha384</span>
+                            <span class="selectable-content" id="_s_58">ecdsawithsha384</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_57">ecdsawithsha512</span>
+                            <span class="selectable-content" id="_s_59">ecdsawithsha512</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_58">no other algorithms</span>
+                            <span class="selectable-content" id="_s_60">no other algorithms</span>
                         </li>
                     </ul>
                     ] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
@@ -700,7 +708,7 @@
                     <a href="#FCS_SMIME_EXT.1.7" class="abbr">FCS_SMIME_EXT.1.7</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and certificate revocation information in accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> [<b>selection</b>: <span class="selectable-content" id="_s_59">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_60"> [<b>assignment</b>: <span class="assignable-content">frequency</span>]</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and certificate revocation information in accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> [<b>selection</b>: <span class="selectable-content" id="_s_61">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_62"> [<b>assignment</b>: <span class="assignable-content">frequency</span>]</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note">In accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> in <a href="#bibAppPP">[App PP]</a>, certificate revocation may use a Certificate Revocation List (<abbr class="dyn-abbr"><a href="#abbr_CRL">CRL</a></abbr>) or Online Certificate Status Protocol (OCSP). The email client can define how this mechanism behaves, including whether it uses the underlying OS, but it is required that a mechanism exists such that revocation status is supported and so that certificates can be retrieved for sending and receiving messages. Frequency is configurable in <a href="#FMT_MOF_EXT.1.1">FMT_MOF_EXT.1.1</a>. In this requirement, frequency can be interpreted as a one-time function with local storage, as a regularly scheduled retrieval, or as a mechanism that requires manual intervention. If the retrieval mechanism is periodic in nature, then the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author will need to include an iteration of FCS for storage of revocation information; storage of certificates is covered in <a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a>. The import of certificates and certificate chains is not included in this requirement, but is covered in <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>. </span>
                     </div>
@@ -801,7 +809,7 @@
                             <td>#</td><td>Management Function</td><td>Administrator</td><td>User</td>
                         </tr>
                         <tr id="_mf_1">
-                            <td>1</td><td style="text-align:left">Enable or disable downloading embedded objects globally and by [<b>selection</b>: <span class="selectable-content" id="_s_61">domain</span>, <span class="selectable-content" id="_s_62">sender</span>, <span class="selectable-content" id="_s_63">no other method</span>] </td><td>
+                            <td>1</td><td style="text-align:left">Enable or disable downloading embedded objects globally and by [<b>selection</b>: <span class="selectable-content" id="_s_63">domain</span>, <span class="selectable-content" id="_s_64">sender</span>, <span class="selectable-content" id="_s_65">no other method</span>] </td><td>
                                 <div class="tooltipped">
                                     O<span class="tooltiptext">Optional/Conditional</span>
                                 </div>
@@ -812,7 +820,7 @@
                             </td>
                         </tr>
                         <tr id="_mf_2">
-                            <td>2</td><td style="text-align:left">Enable or disable plaintext-only mode globally and by [<b>selection</b>: <span class="selectable-content" id="_s_64">domain</span>, <span class="selectable-content" id="_s_65">sender</span>, <span class="selectable-content" id="_s_66">no other method</span>]</td><td>
+                            <td>2</td><td style="text-align:left">Enable or disable plaintext-only mode globally and by [<b>selection</b>: <span class="selectable-content" id="_s_66">domain</span>, <span class="selectable-content" id="_s_67">sender</span>, <span class="selectable-content" id="_s_68">no other method</span>]</td><td>
                                 <div class="tooltipped">
                                     O<span class="tooltiptext">Optional/Conditional</span>
                                 </div>
@@ -823,7 +831,7 @@
                             </td>
                         </tr>
                         <tr id="_mf_3">
-                            <td>3</td><td style="text-align:left"> Enable or disable rendering and execution of attachments globally and by [<b>selection</b>: <span class="selectable-content" id="_s_67">domain</span>, <span class="selectable-content" id="_s_68">sender</span>, <span class="selectable-content" id="_s_69">no other method</span>] </td><td>
+                            <td>3</td><td style="text-align:left"> Enable or disable rendering and execution of attachments globally and by [<b>selection</b>: <span class="selectable-content" id="_s_69">domain</span>, <span class="selectable-content" id="_s_70">sender</span>, <span class="selectable-content" id="_s_71">no other method</span>] </td><td>
                                 <div class="tooltipped">
                                     O<span class="tooltiptext">Optional/Conditional</span>
                                 </div>
@@ -968,7 +976,7 @@
                     <a href="#FPT_AON_EXT.1.1" class="abbr">FPT_AON_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall include the capability to load [<b>selection</b>: <span class="selectable-content" id="addons_supported">trusted add-ons</span>, <span class="selectable-content" id="_s_71">no add-ons</span>].
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall include the capability to load [<b>selection</b>: <span class="selectable-content" id="addons_supported">trusted add-ons</span>, <span class="selectable-content" id="_s_73">no add-ons</span>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note">If "trusted add-ons" is selected in <a href="#FPT_AON_EXT.1.1">FPT_AON_EXT.1.1</a>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must also claim the selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> <a href="#FPT_AON_EXT.2">FPT_AON_EXT.2</a>. 
                             <p></p>
@@ -1005,16 +1013,16 @@
                             <span class="selectable-content" id="saslpop"><abbr class="dyn-abbr"><a href="#abbr_POP">POP</a></abbr></span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_75"><abbr class="dyn-abbr"><a href="#abbr_MAPI">MAPI</a></abbr> Extensions for HTTP</span>
+                            <span class="selectable-content" id="_s_77"><abbr class="dyn-abbr"><a href="#abbr_MAPI">MAPI</a></abbr> Extensions for HTTP</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_76"><abbr class="dyn-abbr"><a href="#abbr_MAPI">MAPI</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_RPC">RPC</a></abbr></span>
+                            <span class="selectable-content" id="_s_78"><abbr class="dyn-abbr"><a href="#abbr_MAPI">MAPI</a></abbr>/<abbr class="dyn-abbr"><a href="#abbr_RPC">RPC</a></abbr></span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_77">ActiveSync</span>
+                            <span class="selectable-content" id="_s_79">ActiveSync</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_78"> [<b>assignment</b>: <span class="assignable-content">other protocol (reference RFC or specification)</span>] </span>
+                            <span class="selectable-content" id="_s_80"> [<b>assignment</b>: <span class="assignable-content">other protocol (reference RFC or specification)</span>] </span>
                         </li>
                     </ul>
                     ].
@@ -1143,7 +1151,7 @@
                     <td rowspan="10"><a href="#T.PHYSICAL_ACCESS">T.PHYSICAL_​ACCESS</a> (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>) </td><td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a></td><td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a> mitigates the threat by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> protects stored key data from unauthorized disclosure.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FCS_CKM_EXT.4">FCS_CKM_EXT.4</a></td><td><a href="#FCS_CKM_EXT.4">FCS_CKM_EXT.4</a> mitigates the threat by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> securely destroys stored key data.</td>
+                    <td>FCS_CKM.6</td><td>FCS_CKM.6 mitigates the threat by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> securely destroys stored key data.</td>
                 </tr>
                 <tr>
                     <td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a></td><td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a> mitigates the threat by defining any key chain that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> implements to protect a root encryption key.</td>
@@ -1238,7 +1246,7 @@
                 <td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines how keys and key material are saved by the email client. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
             </tr>
             <tr>
-                <td><a href="#FCS_CKM_EXT.4">FCS_CKM_EXT.4</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines how email messages are formatted when sent and received by the client. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
+                <td><a href="#FCS_CKM_EXT.6">FCS_CKM_EXT.6</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines how email messages are formatted when sent and received by the client. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
             </tr>
             <tr>
                 <td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a></td><td> This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines how email clients maintain key chains. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
@@ -1329,16 +1337,16 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall create IVs in the following manner: [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_79"><abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>: IVs shall be non-repeating</span>
+                            <span class="selectable-content" id="_s_81"><abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>: IVs shall be non-repeating</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_80">CCM: IV shall be non-repeating</span>
+                            <span class="selectable-content" id="_s_82">CCM: IV shall be non-repeating</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_81">XTS: No IV. Tweak values shall be non-negative integers, assigned consecutively, and starting at an arbitrary non-negative integer</span>
+                            <span class="selectable-content" id="_s_83">XTS: No IV. Tweak values shall be non-negative integers, assigned consecutively, and starting at an arbitrary non-negative integer</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_82"><abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr>: IV shall be non-repeating. The number of invocations of <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr> shall not exceed 2^32 for a given secret key.</span>
+                            <span class="selectable-content" id="_s_84"><abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr>: IV shall be non-repeating. The number of invocations of <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr> shall not exceed 2^32 for a given secret key.</span>
                         </li>
                     </ul>
                     ]
@@ -1369,10 +1377,10 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall only use salts that are generated by a [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_83">DRBG as specified in [<i>FCS_RBG_EXT.2 (as defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</i>]</span>
+                            <span class="selectable-content" id="_s_85">DRBG as specified in [<i>FCS_RBG_EXT.2 (as defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</i>]</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_84">DRBG provided by the host platform</span>
+                            <span class="selectable-content" id="_s_86">DRBG provided by the host platform</span>
                         </li>
                     </ul>
                     ] 
@@ -1401,7 +1409,7 @@
                     <a href="#FDP_PST_EXT.1.1" class="abbr">FDP_PST_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of operating without storing persistent information to the client platform with the following exceptions: [<b>selection</b>: <span class="selectable-content" id="_s_85">credential information</span>, <span class="selectable-content" id="_s_86">administrator-provided configuration information</span>, <span class="selectable-content" id="_s_87">certificate revocation information</span>, <span class="selectable-content" id="_s_88">no exceptions</span>].
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of operating without storing persistent information to the client platform with the following exceptions: [<b>selection</b>: <span class="selectable-content" id="_s_87">credential information</span>, <span class="selectable-content" id="_s_88">administrator-provided configuration information</span>, <span class="selectable-content" id="_s_89">certificate revocation information</span>, <span class="selectable-content" id="_s_90">no exceptions</span>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note">Any data that persists after the email client closes, including temporary files, is considered to be persistent data. Satisfying this requirement would require the use of a protocol such as <abbr class="dyn-abbr"><a href="#abbr_IMAP">IMAP</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_MAPI">MAPI</a></abbr>. It is not compatible with <abbr class="dyn-abbr"><a href="#abbr_POP">POP</a></abbr>.</span>
                     </div>
@@ -1418,16 +1426,16 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall have a plaintext-only mode which disables the rendering and execution of [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_89">HTML</span>
+                            <span class="selectable-content" id="_s_91">HTML</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_90">JavaScript</span>
+                            <span class="selectable-content" id="_s_92">JavaScript</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_91">[<b>assignment</b>: <span class="assignable-content">other embedded content types</span>]</span>
+                            <span class="selectable-content" id="_s_93">[<b>assignment</b>: <span class="assignable-content">other embedded content types</span>]</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_92">no embedded content types</span>
+                            <span class="selectable-content" id="_s_94">no embedded content types</span>
                         </li>
                     </ul>
                     ]. 
@@ -1468,7 +1476,7 @@
                     <a href="#FCS_CKM_EXT.5.2" class="abbr">FCS_CKM_EXT.5.2</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow passwords to be composed of any combination of upper case characters, lower case characters, numbers, and the following special characters: "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and [<b>selection</b>: <span class="selectable-content" id="_s_93">[<b>assignment</b>: <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="_s_94">no other characters</span>] 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow passwords to be composed of any combination of upper case characters, lower case characters, numbers, and the following special characters: "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and [<b>selection</b>: <span class="selectable-content" id="_s_95">[<b>assignment</b>: <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="_s_96">no other characters</span>] 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author assigns any other supported characters; if there are no other supported characters, they should select "no other characters".</i></span>
                     </div>
@@ -1479,7 +1487,7 @@
                     <a href="#FCS_CKM_EXT.5.3" class="abbr">FCS_CKM_EXT.5.3</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<i>HMAC-[<b>selection</b>: <span class="selectable-content" id="_s_95">SHA-256</span>, <span class="selectable-content" id="_s_96">SHA-384</span>, <span class="selectable-content" id="_s_97">SHA-512</span>]</i>], with [<b>assignment</b>: <span class="assignable-content">positive integer of 4096 or more</span>] iterations, and output cryptographic key sizes [<b>selection</b>: <span class="selectable-content" id="_s_98">128</span>, <span class="selectable-content" id="_s_99">256</span>] bits that meet the following: [NIST SP 800-132]. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<i>HMAC-[<b>selection</b>: <span class="selectable-content" id="_s_97">SHA-256</span>, <span class="selectable-content" id="_s_98">SHA-384</span>, <span class="selectable-content" id="_s_99">SHA-512</span>]</i>], with [<b>assignment</b>: <span class="assignable-content">positive integer of 4096 or more</span>] iterations, and output cryptographic key sizes [<b>selection</b>: <span class="selectable-content" id="_s_100">128</span>, <span class="selectable-content" id="_s_101">256</span>] bits that meet the following: [NIST SP 800-132]. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"> The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author selects the parameters based on the password-based key derivation function (<abbr class="dyn-abbr"><a href="#abbr_PBKDF">PBKDF</a></abbr>) used by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. The password/passphrase must be conditioned into a string of bits that forms the submask to be used as input into a key. Conditioning can be performed using one of the identified hash functions or the process described in NIST SP 800-132; the method used is selected by the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author. SP 800-132 requires the use of a pseudorandom function (<abbr class="dyn-abbr"><a href="#abbr_PRF">PRF</a></abbr>) consisting of HMAC with an approved hash function. The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must select the hash function and ensure that appropriate claims are made for FCS_COP.1/Hash and FCS_COP.1/KeyedHash in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
                             <p></p>
@@ -1492,7 +1500,7 @@
                     <a href="#FCS_CKM_EXT.5.4" class="abbr">FCS_CKM_EXT.5.4</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not accept passwords less than [<b>selection</b>: <span class="selectable-content" id="_s_100">a value settable by the administrator</span>, <span class="selectable-content" id="_s_101">[<b>assignment</b>: <span class="assignable-content">minimum password length accepted by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, must be &ge; 1</span>]</span>] and greater than the maximum password length defined in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not accept passwords less than [<b>selection</b>: <span class="selectable-content" id="_s_102">a value settable by the administrator</span>, <span class="selectable-content" id="_s_103">[<b>assignment</b>: <span class="assignable-content">minimum password length accepted by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, must be &ge; 1</span>]</span>] and greater than the maximum password length defined in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"> <i>If the minimum password length is settable, then <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author chooses "a value settable by the administrator for this component," as well as the "configure password/passphrase complexity setting" item for FMT_SMF.1.1. If the minimum length is not settable, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author fills in the assignment with the minimum length the password must be (zero-length passwords are not allowed for compliant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr>).</i> </span>
                     </div>
@@ -1512,58 +1520,58 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_102">use platform-provided functionality to perform Key Wrapping</span>
+                            <span class="selectable-content" id="_s_104">use platform-provided functionality to perform Key Wrapping</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_103">implement functionality to perform Key Wrapping</span>
+                            <span class="selectable-content" id="_s_105">implement functionality to perform Key Wrapping</span>
                         </li>
                     </ul>
                     ] in accordance with a specified cryptographic algorithm [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_104"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> Key Wrap</span>
+                            <span class="selectable-content" id="_s_106"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> Key Wrap</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_105"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> Key Wrap with Padding</span>
+                            <span class="selectable-content" id="_s_107"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> Key Wrap with Padding</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_106">RSA using the KTS-OAEP-basic scheme</span>
+                            <span class="selectable-content" id="_s_108">RSA using the KTS-OAEP-basic scheme</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_107">RSA using the KTS-OAEP-receiver-confirmation scheme</span>
+                            <span class="selectable-content" id="_s_109">RSA using the KTS-OAEP-receiver-confirmation scheme</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_108">ECC CDH</span>
+                            <span class="selectable-content" id="_s_110">ECC CDH</span>
                         </li>
                     </ul>
                     ] and the cryptographic key size [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_109">128 bits (<abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>)</span>
+                            <span class="selectable-content" id="_s_111">128 bits (<abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_110">256 bits (<abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>)</span>
+                            <span class="selectable-content" id="_s_112">256 bits (<abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_111">2048 (RSA)</span>
+                            <span class="selectable-content" id="_s_113">2048 (RSA)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_112">4096 (RSA)</span>
+                            <span class="selectable-content" id="_s_114">4096 (RSA)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_113">256-bit prime modulus (ECC CDH)</span>
+                            <span class="selectable-content" id="_s_115">256-bit prime modulus (ECC CDH)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_114">384-bit prime modulus (ECC CDH)</span>
+                            <span class="selectable-content" id="_s_116">384-bit prime modulus (ECC CDH)</span>
                         </li>
                     </ul>
                     ] that meet the following: [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_115">"NIST SP 800-38F" for Key Wrap (section 6.2) and Key Wrap with Padding (section 6.3)</span>
+                            <span class="selectable-content" id="_s_117">"NIST SP 800-38F" for Key Wrap (section 6.2) and Key Wrap with Padding (section 6.3)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_116">"NIST SP 800-56B" for RSA using the KTS-OAEP-basic (section 9.2.3) and KTS-OAEP-receiver-confirmation (section 9.2.4) scheme, "NIST SP 800-56A rev 2" for ECC CDH (sections 5.6.1.2 and 6.2.2.2) </span>
+                            <span class="selectable-content" id="_s_118">"NIST SP 800-56B" for RSA using the KTS-OAEP-basic (section 9.2.3) and KTS-OAEP-receiver-confirmation (section 9.2.4) scheme, "NIST SP 800-56A rev 2" for ECC CDH (sections 5.6.1.2 and 6.2.2.2) </span>
                         </li>
                     </ul>
                     ]. 
@@ -1596,13 +1604,13 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall combine submasks using the following method [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_119">exclusive OR (XOR)</span>
+                            <span class="selectable-content" id="_s_121">exclusive OR (XOR)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_120">SHA-256</span>
+                            <span class="selectable-content" id="_s_122">SHA-256</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_121">SHA-512</span>
+                            <span class="selectable-content" id="_s_123">SHA-512</span>
                         </li>
                     </ul>
                     ] to generate another key. 
@@ -1672,7 +1680,7 @@
                     <a href="#FPT_AON_EXT.2.1" class="abbr">FPT_AON_EXT.2.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_122">provide the ability</span>, <span class="selectable-content" id="_s_123">leverage the platform</span>] to provide a means to cryptographically verify add-ons using a digital signature mechanism and [<b>selection</b>: <span class="selectable-content" id="_s_124">published hash</span>, <span class="selectable-content" id="_s_125">no other functions</span>] prior to installation and update. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_124">provide the ability</span>, <span class="selectable-content" id="_s_125">leverage the platform</span>] to provide a means to cryptographically verify add-ons using a digital signature mechanism and [<b>selection</b>: <span class="selectable-content" id="_s_126">published hash</span>, <span class="selectable-content" id="_s_127">no other functions</span>] prior to installation and update. 
                 </div>
             </div>
             <div class="element">
@@ -1680,7 +1688,7 @@
                     <a href="#FPT_AON_EXT.2.2" class="abbr">FPT_AON_EXT.2.2</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_126">provide the ability</span>, <span class="selectable-content" id="_s_127">leverage the platform</span>] to query the current version of the add-on.
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_128">provide the ability</span>, <span class="selectable-content" id="_s_129">leverage the platform</span>] to query the current version of the add-on.
                 </div>
             </div>
             <div class="element">
@@ -1774,7 +1782,7 @@
                         <text x="234" fill="black" font-size="15" y="24">3</text>
                         <rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect>
                         <line x1="152" y1="37" x2="231" y2="17" stroke="black"></line>
-                        <text x="234" fill="black" font-size="15" y="44">4</text>
+                        <text x="234" fill="black" font-size="15" y="44">6</text>
                         <rect x="232" y="31" width="12" height="16" fill="none" stroke="black"></rect>
                         <line x1="152" y1="37" x2="231" y2="37" stroke="black"></line>
                         <text x="234" fill="black" font-size="15" y="64">5</text>
@@ -1785,7 +1793,7 @@
                         <a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a>, Protection of Key and Key Material, requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to identify the method that it uses to prevent the plaintext storage of secret key data.
                     </p>
                     <p>
-                        <a href="#FCS_CKM_EXT.4">FCS_CKM_EXT.4</a>, Cryptographic Key Destruction, requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to identify the method that it uses to destroy key data.
+                        <a href="#FCS_CKM_EXT.6">FCS_CKM_EXT.6</a>, Cryptographic Key Destruction, requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to identify the method that it uses to destroy key data.
                     </p>
                     <p>
                         <a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a>, Cryptographic Key Derivation (password/passphrase Conditioning), requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support password or passphrase credentials with certain strength of secret characteristics and to support the use of such credentials as an input to a password-based key derivation function.
@@ -1807,11 +1815,11 @@
                         <h4 id="ext-comp-FCS_CKM_EXT.3.1">FCS_CKM_EXT.3.1</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>assignment</b>: <span class="assignable-content">method of ensuring plaintext key data is not stored in non-volatile memory</span>]. 
                     </div>
-                    <h4>Management: FCS_CKM_EXT.4</h4>
+                    <h4>Management: FCS_CKM_EXT.6</h4>
                     <p>No specific management functions are identified.</p>
-                    <h4>Audit: FCS_CKM_EXT.4</h4>
+                    <h4>Audit: FCS_CKM_EXT.6</h4>
                     <p>There are no auditable events foreseen.</p>
-                    <h4>FCS_CKM_EXT.4 Cryptographic Key Destruction</h4>
+                    <h4>FCS_CKM_EXT.6 Cryptographic Key Destruction</h4>
                     <div style="margin-left: 1em;">
                         <table class="ecd_heir_dep" style="width: 100%">
                             <tr>
@@ -1821,14 +1829,16 @@
                                 <td>Dependencies to:</td><td> No dependencies. </td>
                             </tr>
                         </table>
-                        <h4 id="ext-comp-FCS_CKM_EXT.4.1">FCS_CKM_EXT.4.1</h4>
+                        <h4 id="ext-comp-FCS_CKM_EXT.6.1">FCS_CKM_EXT.6.1</h4>
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall destroy [<b>assignment</b>: <span class="assignable-content">list of cryptographic keys (including keying material)</span>] when [<b>selection</b>: <span class="selectable-content" id="_s_17">no longer needed</span>, <span class="selectable-content" id="_s_18"> other circumstances for key or keying material destructions.</span>]
+                        <h4 id="ext-comp-FCS_CKM_EXT.6.2">FCS_CKM_EXT.6.2</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>assignment</b>: <span class="assignable-content">key destruction method</span>] that meets the following:[<b>selection</b>: 
                         <ul>
                             <li style="">
-                                <span class="selectable-content" id="_s_33">NIST SP 800-88</span>
+                                <span class="selectable-content" id="_s_35">NIST SP 800-88</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_34">no standard</span>
+                                <span class="selectable-content" id="_s_36">no standard</span>
                             </li>
                         </ul>
                         ] for destroying all keying material and cryptographic security parameters when no longer needed.
@@ -1856,11 +1866,11 @@
                         <h4 id="ext-comp-FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</h4>
                          The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support a password/passphrase of up to [<b>assignment</b>: <span class="assignable-content">maximum password size, positive integer of 64 or more</span>] characters used to generate a password authorization factor. 
                         <h4 id="ext-comp-FCS_CKM_EXT.5.2">FCS_CKM_EXT.5.2</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow passwords to be composed of any combination of upper case characters, lower case characters, numbers, and the following special characters: "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and [<b>selection</b>: <span class="selectable-content" id="_s_93">[<b>assignment</b>: <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="_s_94">no other characters</span>] 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow passwords to be composed of any combination of upper case characters, lower case characters, numbers, and the following special characters: "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and [<b>selection</b>: <span class="selectable-content" id="_s_95">[<b>assignment</b>: <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="_s_96">no other characters</span>] 
                         <h4 id="ext-comp-FCS_CKM_EXT.5.3">FCS_CKM_EXT.5.3</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<i>HMAC-[<b>selection</b>: <span class="selectable-content" id="_s_95">SHA-256</span>, <span class="selectable-content" id="_s_96">SHA-384</span>, <span class="selectable-content" id="_s_97">SHA-512</span>]</i>], with [<b>assignment</b>: <span class="assignable-content">positive integer of 4096 or more</span>] iterations, and output cryptographic key sizes [<b>selection</b>: <span class="selectable-content" id="_s_98">128</span>, <span class="selectable-content" id="_s_99">256</span>] bits that meet the following: [NIST SP 800-132]. 
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<i>HMAC-[<b>selection</b>: <span class="selectable-content" id="_s_97">SHA-256</span>, <span class="selectable-content" id="_s_98">SHA-384</span>, <span class="selectable-content" id="_s_99">SHA-512</span>]</i>], with [<b>assignment</b>: <span class="assignable-content">positive integer of 4096 or more</span>] iterations, and output cryptographic key sizes [<b>selection</b>: <span class="selectable-content" id="_s_100">128</span>, <span class="selectable-content" id="_s_101">256</span>] bits that meet the following: [NIST SP 800-132]. 
                         <h4 id="ext-comp-FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not accept passwords less than [<b>selection</b>: <span class="selectable-content" id="_s_100">a value settable by the administrator</span>, <span class="selectable-content" id="_s_101">[<b>assignment</b>: <span class="assignable-content">minimum password length accepted by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, must be &ge; 1</span>]</span>] and greater than the maximum password length defined in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>. 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not accept passwords less than [<b>selection</b>: <span class="selectable-content" id="_s_102">a value settable by the administrator</span>, <span class="selectable-content" id="_s_103">[<b>assignment</b>: <span class="assignable-content">minimum password length accepted by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, must be &ge; 1</span>]</span>] and greater than the maximum password length defined in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>. 
                     </div>
                 </div>
                 <h3 id="ext-comp-FCS_KYC_EXT" class="indexable" data-level="4">C.2.1.2 FCS_KYC_EXT Cryptographic Key Chaining</h3>
@@ -1937,7 +1947,7 @@
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.1">FCS_SMIME_EXT.1.1</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement both a sending and receiving <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> v4.0 Agent as defined in RFC 8551, using <abbr class="dyn-abbr"><a href="#abbr_CMS">CMS</a></abbr> as defined in RFCs 5652, 5754, and 3565. 
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.2">FCS_SMIME_EXT.1.2</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall transmit the ContentEncryptionAlgorithmIdentifier for <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, and [<b>selection</b>: <span class="selectable-content" id="_s_47"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_48"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_49">no other</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall transmit the ContentEncryptionAlgorithmIdentifier for <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, and [<b>selection</b>: <span class="selectable-content" id="_s_49"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_50"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_51">no other</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.3">FCS_SMIME_EXT.1.3</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall present the digestAlgorithm field with the following Message Digest Algorithm identifiers [<b>assignment</b>: <span class="assignable-content">message digest algorithm identifiers</span>] and no others as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.4">FCS_SMIME_EXT.1.4</h4>
@@ -1947,7 +1957,7 @@
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.6">FCS_SMIME_EXT.1.6</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall only accept a signature from a certificate with the digitalSignature bit set as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.7">FCS_SMIME_EXT.1.7</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and certificate revocation information in accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> [<b>selection</b>: <span class="selectable-content" id="_s_59">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_60"> [<b>assignment</b>: <span class="assignable-content">frequency</span>]</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and certificate revocation information in accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> [<b>selection</b>: <span class="selectable-content" id="_s_61">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_62"> [<b>assignment</b>: <span class="assignable-content">frequency</span>]</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                     </div>
                 </div>
                 <h3 id="ext-comp-FCS_IVG_EXT" class="indexable" data-level="4">C.2.1.4 FCS_IVG_EXT Initialization Vector Generation</h3>
@@ -2082,10 +2092,10 @@
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: 
                         <ul>
                             <li style="">
-                                <span class="selectable-content" id="_s_117">use platform-provided functionality to perform Key Wrapping</span>
+                                <span class="selectable-content" id="_s_119">use platform-provided functionality to perform Key Wrapping</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_118">implement functionality to perform Key Wrapping</span>
+                                <span class="selectable-content" id="_s_120">implement functionality to perform Key Wrapping</span>
                             </li>
                         </ul>
                         ] in accordance with a specified cryptographic algorithm [<b>assignment</b>: <span class="assignable-content">cryptographic algorithm</span>] and the cryptographic key size [<b>assignment</b>: <span class="assignable-content"> cryptographic key size</span>] that meet the following: [<b>assignment</b>: <span class="assignable-content">list of standards</span>] 
@@ -2124,13 +2134,13 @@
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall combine submasks using the following method [<b>selection</b>: 
                         <ul>
                             <li style="">
-                                <span class="selectable-content" id="_s_119">exclusive OR (XOR)</span>
+                                <span class="selectable-content" id="_s_121">exclusive OR (XOR)</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_120">SHA-256</span>
+                                <span class="selectable-content" id="_s_122">SHA-256</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_121">SHA-512</span>
+                                <span class="selectable-content" id="_s_123">SHA-512</span>
                             </li>
                         </ul>
                         ] to generate another key. 
@@ -2269,7 +2279,7 @@
                             </tr>
                         </table>
                         <h4 id="ext-comp-FPT_AON_EXT.1.1">FPT_AON_EXT.1.1</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall include the capability to load [<b>selection</b>: <span class="selectable-content" id="addons_supported">trusted add-ons</span>, <span class="selectable-content" id="_s_71">no add-ons</span>].
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall include the capability to load [<b>selection</b>: <span class="selectable-content" id="addons_supported">trusted add-ons</span>, <span class="selectable-content" id="_s_73">no add-ons</span>].
                     </div>
                     <h4>Management: FPT_AON_EXT.2</h4>
                     <p>No specific management functions are identified.</p>
@@ -2288,9 +2298,9 @@
                             </tr>
                         </table>
                         <h4 id="ext-comp-FPT_AON_EXT.2.1">FPT_AON_EXT.2.1</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_122">provide the ability</span>, <span class="selectable-content" id="_s_123">leverage the platform</span>] to provide a means to cryptographically verify add-ons using a digital signature mechanism and [<b>selection</b>: <span class="selectable-content" id="_s_124">published hash</span>, <span class="selectable-content" id="_s_125">no other functions</span>] prior to installation and update. 
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_124">provide the ability</span>, <span class="selectable-content" id="_s_125">leverage the platform</span>] to provide a means to cryptographically verify add-ons using a digital signature mechanism and [<b>selection</b>: <span class="selectable-content" id="_s_126">published hash</span>, <span class="selectable-content" id="_s_127">no other functions</span>] prior to installation and update. 
                         <h4 id="ext-comp-FPT_AON_EXT.2.2">FPT_AON_EXT.2.2</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_126">provide the ability</span>, <span class="selectable-content" id="_s_127">leverage the platform</span>] to query the current version of the add-on.
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_128">provide the ability</span>, <span class="selectable-content" id="_s_129">leverage the platform</span>] to query the current version of the add-on.
                         <h4 id="ext-comp-FPT_AON_EXT.2.3">FPT_AON_EXT.2.3</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the automatic installation of add-ons.
                     </div>
