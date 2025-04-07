@@ -437,10 +437,10 @@
           <f-component cc-id="fia_x509_ext.1" name="X.509 Certificate Validation">
             <consistency-rationale>This SFR is unchanged from its definition in the Base-PP; the SFR is recategorized from selection-based to mandatory when the TOE conforms to this PP-Module.</consistency-rationale>
             <f-element id="fia=x509-ext-1-1">
-              <title>This SFR is selection-based in the <xref to='pkgx509'/>X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.</title>
+              <title>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s SMIME implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.</title>
               <aactivity>
                 <no-tests>
-                  There is no change to the functional Package EAs for this SFR when this PP-Module is claimed.
+                  There is no change to the Functional Package EAs for this SFR when this PP-Module is claimed.
                 </no-tests>
               </aactivity>
             </f-element>
@@ -449,11 +449,11 @@
           <f-component cc-id="fia_x509_ext.2" name="X.509 Certificate Authentication">
             <consistency-rationale>This SFR is unchanged from its definition in the Base-PP; the SFR is recategorized from selection-based to mandatory when the TOE conforms to this PP-Module.</consistency-rationale>
             <f-element id="fia=x509-ext-2-1">
-              <title>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.
+              <title>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s SMIME implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.
               </title>
               <aactivity>
                 <no-tests>
-                  There is no change to the Base-PP EAs for this SFR when this PP-Module is claimed.<h:p/> 
+                  There is no change to the Functional Package EAs for this SFR when this PP-Module is claimed.
                 </no-tests>
               </aactivity>
             </f-element>
@@ -1041,7 +1041,7 @@ for destroying all keying material and cryptographic security parameters when no
 	    
 	    <f-element id='fia-x509-ext-3-1'>
 	      <title>The TSF shall use X.509v3 certificates as defined by RFC 5280 to support
-	      encryption and authentication for S/MIME. </title>
+	      encryption and authentication for S/MIME. <comment>not sure if this needs to go to the Modified SFR section.</comment></title>
 	    </f-element>
 	    <f-element id='fia-x509-ext-3-2'>
 	      <title> The TSF shall prevent the establishment of a trusted communication
@@ -1691,14 +1691,7 @@ for destroying all keying material and cryptographic security parameters when no
             <!-- editor's note: app note here is superfluous and was not included -->
           </f-element>
           <f-element  id='fcs-ckm-ext-5-3'>
-            <title>The TSF shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<h:i>HMAC-<selectables>
-              <selectable>SHA-256</selectable>
-              <selectable>SHA-384</selectable>
-              <selectable>SHA-512</selectable>
-            </selectables></h:i>], with <assignable>positive integer of 4096 or more</assignable> iterations, and output cryptographic key sizes <selectables>
-              <selectable>128</selectable>
-              <selectable>256</selectable>
-            </selectables> bits that meet the following: [NIST SP 800-132].
+            <title>The TSF shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<h:i>HMAC-SHA-384</h:i>], with <assignable>positive integer of 4096 or more</assignable> iterations, and output cryptographic key sizes [<h:i>256</h:i>] bits that meet the following: [<h:i>NIST SP 800-56B</h:i>].
             </title>
             <note role="application">
               The ST author selects the parameters based on the password-based key derivation function (PBKDF) used by the TSF. 
@@ -1802,11 +1795,9 @@ for destroying all keying material and cryptographic security parameters when no
               <selectable>RSA using the KTS-OAEP-receiver-confirmation scheme</selectable>
               <selectable>ECC CDH</selectable>
             </selectables> and the cryptographic key size <selectables linebreak="yes">
-              <selectable>128 bits (AES)</selectable>
               <selectable>256 bits (AES)</selectable>
-              <selectable>2048 (RSA)</selectable>
+              <selectable>3072 (RSA)</selectable>
               <selectable>4096 (RSA)</selectable>
-              <selectable>256-bit prime modulus (ECC CDH)</selectable>
               <selectable>384-bit prime modulus (ECC CDH)</selectable>
             </selectables> that meet the following: <selectables linebreak="yes">
               <selectable>"NIST SP 800-38F" for Key Wrap (section 6.2) and Key Wrap with Padding
