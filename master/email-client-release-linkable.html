@@ -848,6 +848,8 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
             <div class="element"><div class="reqid" id="FCS_CKM_EXT.1.1"><a href="#FCS_CKM_EXT.1.1" class="abbr">FCS_CKM_EXT.1.1</a></div><div class="reqdesc">The application shall [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="sel_invoke_genkey">invoke platform-provided functionality for asymmetric key generation</span></li><li style=""><span class="selectable-content" id="sel_impl_genkey">implement asymmetric key generation</span></li></ul>]<a id="period_81" href="#period_81">. </a>              <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is modified from its <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> definition to remove the selection for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> not requiring asymmetric key generation<a id="period_82" href="#period_82">. </a>              </span></div></div></div>
+            
+            
           </div>
           
           <div class="comp" id="FCS_RBG_EXT.1"><h4>FCS_RBG_EXT.1 Random Bit Generation Services</h4>
@@ -856,6 +858,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
                 [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_3">invoke platform-provided DRBG functionality</span></li><li style=""><span class="selectable-content" id="drbg">implement DRBG functionality</span></li></ul>] for its cryptographic operations<a id="period_83" href="#period_83">. </a><div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is modified from its <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> definition to remove the selection for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> using no DRBG functionality<a id="period_84" href="#period_84">. </a>              </span></div></div></div>
+              
             </div>
           
          
@@ -863,11 +866,13 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
         <h4 id="mod_fia" class="indexable" data-level="4">5.1.1.2 Identification and Authentication (FIA)</h4>
           <div class="comp" id="FIA_X509_EXT.1"><h4>FIA_X509_EXT.1 X.509 Certificate Validation</h4>
             
-            <div class="element"><div class="reqid" id="FIA_X509_EXT.1.1"><a href="#FIA_X509_EXT.1.1" class="abbr">FIA_X509_EXT.1.1</a></div><div class="reqdesc">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_85" href="#period_85">. </a>When the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> conforms to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, it is mandatory because of the modifications that this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> makes to <a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a><a id="period_86" href="#period_86">. </a>              </div></div>
+            <div class="element"><div class="reqid" id="FIA_X509_EXT.1.1"><a href="#FIA_X509_EXT.1.1" class="abbr">FIA_X509_EXT.1.1</a></div><div class="reqdesc">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the <a href="#pkg-x509" class="dynref" data-format=""></a>X.509 Functional Package but mandatory in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s TLS implementation requires appropriate X.509 functionality<a id="period_85" href="#period_85">. </a>The <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is unchanged from its original definition<a id="period_86" href="#period_86">. </a></div></div>
+            
           </div>
           <div class="comp" id="FIA_X509_EXT.2"><h4>FIA_X509_EXT.2 X.509 Certificate Authentication</h4>
             
-            <div class="element"><div class="reqid" id="FIA_X509_EXT.2.1"><a href="#FIA_X509_EXT.2.1" class="abbr">FIA_X509_EXT.2.1</a></div><div class="reqdesc">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_87" href="#period_87">. </a>When the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> conforms to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>, it is mandatory because of the modifications that this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> makes to <a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a><a id="period_88" href="#period_88">. </a>              </div></div>
+            <div class="element"><div class="reqid" id="FIA_X509_EXT.2.1"><a href="#FIA_X509_EXT.2.1" class="abbr">FIA_X509_EXT.2.1</a></div><div class="reqdesc">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is selection-based in the X.509 Functional Package but mandatory in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> because the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s TLS implementation requires appropriate X.509 functionality<a id="period_87" href="#period_87">. </a>The <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is unchanged from its original definition<a id="period_88" href="#period_88">. </a>              </div></div>
+            
           </div>
           
          
@@ -883,6 +888,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
     </span><span class="note">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is modified from its definition in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to require that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports TLS and that its use of TLS is only limited to sensitive data<a id="period_90" href="#period_90">. </a>A conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must support the use of TLS for email 
               encryption but is permitted to send and receive non-sensitive email messages over an untrusted channel<a id="period_91" href="#period_91">. </a><p></p>
               Either the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> or its platform is permitted to implement TLS<a id="period_92" href="#period_92">. </a>If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> implements TLS, FCS_TLS_EXT.1 and FCS_TLSC_EXT.1 from the TLS package must be claimed at minimum<a id="period_93" href="#period_93">. </a></span></div></div></div>
+            
           </div>
           
          
@@ -925,6 +931,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
 	      on the email client or operational environment, the only methods that allow it to play
 	      a security relevant role is if it is a key split or providing additional layers of
 	      wrapping or encryption on keys that have already been protected<a id="period_100" href="#period_100">. </a></span></div></div></div>
+      
 	  </div>
 	  
 	  <div class="comp" id="FCS_CKM.6"><h4>FCS_CKM.6 Cryptographic Key Destruction</h4>
@@ -951,6 +958,7 @@ for destroying all keying material and cryptographic security parameters when no
 		  buffers, that is included in the path of such data) upon the transfer of the
 		  keys and cryptographic critical security parameter to another memory location<a id="period_104" href="#period_104">. </a>      </p>
 	      </span></div></div></div>
+      
 	  </div>
 
 	  
@@ -983,6 +991,7 @@ for destroying all keying material and cryptographic security parameters when no
 	      encryption keys to ultimately secure the data encryption key<a id="period_107" href="#period_107">. </a>The number of
 	      intermediate keys will vary<a id="period_108" href="#period_108">. </a>This applies to all keys that contribute to the ultimate
 	      wrapping or derivation of the data encryption key; including those in protected areas<a id="period_109" href="#period_109">. </a>	      This requirement also describes how keys are stored<a id="period_110" href="#period_110">. </a></span></div></div></div>
+      
 	  </div>
 	  
 	  
@@ -1040,6 +1049,7 @@ for destroying all keying material and cryptographic security parameters when no
 	        nature, then the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author will need to include an iteration of FCS
 	        for storage of revocation information; storage of certificates is covered in <a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a><a id="period_130" href="#period_130">. </a>	        The import of certificates and certificate chains is not included in this requirement,
 	        but is covered in <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a><a id="period_131" href="#period_131">. </a></span></div></div></div>
+      
 	  </div>
 	
 	<h3 id="man_fdp" class="indexable" data-level="3">5.2.2 User Data Protection (FDP)</h3>
@@ -1061,6 +1071,7 @@ for destroying all keying material and cryptographic security parameters when no
 	      notification must at least display when the email content is viewed<a id="period_134" href="#period_134">. </a>Many
 	      implementations also display the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> status of each email when all emails are
 	      viewed as a list<a id="period_135" href="#period_135">. </a></span></div></div></div>
+      
 	  </div>
 	  
 	  
@@ -1081,6 +1092,7 @@ for destroying all keying material and cryptographic security parameters when no
 	      encrypt or sign and verify all sent or received messages<a id="period_137" href="#period_137">. </a>This requirement only
 	      specifies that the mechanism for digital signature and encryption must be
 	      <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr><a id="period_138" href="#period_138">. </a></span></div></div></div>
+      
 	  </div>
 	
 	<h3 id="man_fia" class="indexable" data-level="3">5.2.3 Identification and Authentication (FIA)</h3>
@@ -1107,6 +1119,7 @@ for destroying all keying material and cryptographic security parameters when no
 	      certificate is deemed invalid<a id="period_143" href="#period_143">. </a></div></div>
 	    <div class="element"><div class="reqid" id="FIA_X509_EXT.3.5"><a href="#FIA_X509_EXT.3.5" class="abbr">FIA_X509_EXT.3.5</a></div><div class="reqdesc"> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the signing of email if the email protection
 	      certificate is deemed invalid<a id="period_144" href="#period_144">. </a></div></div>
+      
 	  </div>
 	
 	<h3 id="man_fmt" class="indexable" data-level="3">5.2.4 Security Management (FMT)</h3>
@@ -1192,6 +1205,7 @@ for destroying all keying material and cryptographic security parameters when no
 		  email client must provide the capability for the user to turn this functionality off
 		  so that no recovery key is generated and no keys are permitted to be exported<a id="period_158" href="#period_158">. </a>		
 	      </span></div></div></div>
+      
 	  </div>
 	
 	<h3 id="man_fpt" class="indexable" data-level="3">5.2.5 Protection of the TSF (FPT)</h3>
@@ -1210,6 +1224,7 @@ for destroying all keying material and cryptographic security parameters when no
 	        If the email client does not include support for installing only trusted
 	      add-ons, this requirement can be met by demonstrating the ability to disable all
 	      support for add-ons as specified in <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a><a id="period_161" href="#period_161">. </a></span></div></div></div>
+      
 	  </div>
 	
 	<h3 id="man_ftp" class="indexable" data-level="3">5.2.6 Trusted Path/Channels (FTP)</h3>
@@ -1234,6 +1249,7 @@ for destroying all keying material and cryptographic security parameters when no
 	      Selections must include at least one sending and one receiving protocol<a id="period_165" href="#period_165">. </a>If the
 	      assignment is used, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must also include a reference for the protocol
 	      (e.g., an RFC number)<a id="period_166" href="#period_166">. </a></span></div></div></div>
+      
 	  </div>
 	
 
@@ -1390,6 +1406,7 @@ for destroying all keying material and cryptographic security parameters when no
         
 	<div class="element"><div class="reqid" id="FCS_NOG_EXT.1.1"><a href="#FCS_NOG_EXT.1.1" class="abbr">FCS_NOG_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall only use unique nonces with a minimum size of [<i>64</i>]
 	  bits<a id="period_281" href="#period_281">. </a></div></div>
+  
       </div>
 
         
@@ -1404,6 +1421,7 @@ for destroying all keying material and cryptographic security parameters when no
           
           <div class="element"><div class="reqid" id="FCS_SAG_EXT.1.1"><a href="#FCS_SAG_EXT.1.1" class="abbr">FCS_SAG_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall only use salts that are generated by a [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_85">DRBG as specified in [<i>FCS_RBG_EXT.2 (as defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</i>]</span></li><li style=""><span class="selectable-content" id="_s_86">DRBG provided by the host platform</span></li></ul>]
             </div></div>
+          
         </div>
       
       <h3 id="opt_fdp" class="indexable" data-level="3">A.1.2 User Data Protection (FDP)</h3>
@@ -1423,6 +1441,7 @@ for destroying all keying material and cryptographic security parameters when no
 	  as a word, phrase, icon, or picture) that obfuscates the <abbr class="dyn-abbr"><a href="#abbr_URI">URI</a></abbr> of the link<a id="period_283" href="#period_283">. </a>The intent
 	  of this requirement is to de-obfuscate the link<a id="period_284" href="#period_284">. </a>The <abbr class="dyn-abbr"><a href="#abbr_URI">URI</a></abbr> may be displayed as a
 	  "mouse-over" event or may be rendered next to the tag<a id="period_285" href="#period_285">. </a></span></div></div></div>
+  
       </div>
         
         
@@ -1442,6 +1461,7 @@ for destroying all keying material and cryptographic security parameters when no
 	  temporary files, is considered to be persistent data<a id="period_287" href="#period_287">. </a>Satisfying this requirement
 	  would require the use of a protocol such as <abbr class="dyn-abbr"><a href="#abbr_IMAP">IMAP</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_MAPI">MAPI</a></abbr><a id="period_288" href="#period_288">. </a>It is not compatible with
 	  <abbr class="dyn-abbr"><a href="#abbr_POP">POP</a></abbr><a id="period_289" href="#period_289">. </a></span></div></div></div>
+  
       </div>
         
         
@@ -1463,6 +1483,7 @@ for destroying all keying material and cryptographic security parameters when no
 	  configuration of this mode<a id="period_292" href="#period_292">. </a>The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must identify all content types supported by
 	  the email client through selections and assignments<a id="period_293" href="#period_293">. </a>If the email client only
 	  supports plaintext-only mode, no embedded content types should be selected<a id="period_294" href="#period_294">. </a></span></div></div></div>
+  
       </div>
       
     <h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
@@ -1522,6 +1543,7 @@ for destroying all keying material and cryptographic security parameters when no
     </span><span class="note">
               <i>If the minimum password length is settable, then <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author chooses "a value settable by the administrator for this component," as well as the "configure password/passphrase complexity setting" item for FMT_SMF.1.1<a id="period_312" href="#period_312">. </a>If the minimum length is not settable, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author fills in the assignment with the minimum length the password must be (zero-length passwords are not allowed for compliant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr>)<a id="period_313" href="#period_313">. </a></i>
             </span></div></div></div>
+          
         </div>
         
         
@@ -1556,6 +1578,7 @@ for destroying all keying material and cryptographic security parameters when no
                     6.2.2.2<a id="period_318" href="#period_318">. </a></li></ul> The third selection should be made to reflect the key size<a id="period_319" href="#period_319">. </a>Support for 256-bit <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> key sizes will be required for
               products entering evaluation after Quarter 3, 2015<a id="period_320" href="#period_320">. </a>Based on the methods selected,
               the last selection should be used to select the appropriate references<a id="period_321" href="#period_321">. </a></span></div></div></div>
+          
         </div>
         
         
@@ -1577,6 +1600,7 @@ for destroying all keying material and cryptographic security parameters when no
               This selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is claimed when any of the selections that explicitly reference <a href="#FCS_SMC_EXT.1">FCS_SMC_EXT.1</a> are selected in <a href="#FCS_CKM_EXT.3.1">FCS_CKM_EXT.3.1</a> or <a href="#FCS_KYC_EXT.1.1">FCS_KYC_EXT.1.1</a><a id="period_324" href="#period_324">. </a>              <p></p>
               This requirement specifies the way that a product may combine
               the various submasks by using either an XOR or an approved SHA-hash<a id="period_325" href="#period_325">. </a></span></div></div></div>
+          
         </div>
       
     
@@ -1617,6 +1641,7 @@ for destroying all keying material and cryptographic security parameters when no
             RFC 4422, the AUTH and CAPA extensions for POP3, as described in RFC 5034, the
             AUTHENTICATION and CAPABILITY extensions for <abbr class="dyn-abbr"><a href="#abbr_IMAP">IMAP</a></abbr>, as described in RFC 4959, and the
             AUTH extension for <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr>, as described in RFC 4954<a id="period_334" href="#period_334">. </a></span></div></div></div>
+        
       </div>
       
       
@@ -1641,6 +1666,7 @@ for destroying all keying material and cryptographic security parameters when no
 	<div class="element"><div class="reqid" id="FPT_AON_EXT.2.3"><a href="#FPT_AON_EXT.2.3" class="abbr">FPT_AON_EXT.2.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the automatic installation of add-ons<a id="period_338" href="#period_338">. </a><div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">This selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is claimed when "trusted add-ons" is selected in <a href="#FPT_AON_EXT.1.1">FPT_AON_EXT.1.1</a><a id="period_339" href="#period_339">. </a></span></div></div></div>
+  
       </div>
       
    

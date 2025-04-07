@@ -1,5 +1,5 @@
 /home/runner/work/email-client/email-client/input/email-client.xml:18:38: error: character content of element "PPPubDate" invalid; must be an ISO date
-/home/runner/work/email-client/email-client/input/email-client.xml:31:20: error: element "using-cc2022" not allowed here; expected the element end-tag or element "audit-events-in-sfrs" or "display-audit-with-sfrs"
-/home/runner/work/email-client/email-client/input/email-client.xml:378:39: error: element "base-pp" missing required attributes "name", "product" and "version"
-/home/runner/work/email-client/email-client/input/email-client.xml:430:46: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
-/home/runner/work/email-client/email-client/input/email-client.xml:442:46: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
+/home/runner/work/email-client/email-client/input/email-client.xml:37:20: error: element "using-cc2022" not allowed here; expected the element end-tag or element "audit-events-in-sfrs" or "display-audit-with-sfrs"
+/home/runner/work/email-client/email-client/input/email-client.xml:384:39: error: element "base-pp" missing required attributes "name", "product" and "version"
+/home/runner/work/email-client/email-client/input/email-client.xml:439:46: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"
+/home/runner/work/email-client/email-client/input/email-client.xml:451:46: error: value of attribute "id" is invalid; must be a string matching the regular expression "[a-zA-Z][\-0-9a-zA-Z_]+"

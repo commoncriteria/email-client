@@ -15,8 +15,14 @@
       <subject>Initial release as CC:2022 PP-Module</subject>
     </entry>
   </RevisionHistory>
-  
-  <release-notes><h:h3>TDs Applied</h:h3></release-notes><pp-preferences>
+    <release-notes><h:h3>TDs Applied</h:h3></release-notes><include-pkg id="pkgX509">
+    <git>
+      <url>https://github.com/commoncriteria/X509</url>
+      <branch>release-1.0</branch>
+    </git>
+    <url>https://www.niap-ccevs.org/protectionprofiles/511</url>
+  </include-pkg>
+  <pp-preferences>
     <using-cc2022/>
   </pp-preferences>
   
@@ -386,6 +392,8 @@
                 </no-tests>
               </aactivity>
             </f-element>
+            <audit-event/>
+            
           </f-component>
           
           <f-component cc-id="fcs_rbg_ext.1" name="Random Bit Generation Services">
@@ -404,6 +412,7 @@
                   </no-tests>
                 </aactivity>
               </f-element>
+              <audit-event/>
             </f-component>
           
         </sec:mod_fcs> 
@@ -412,19 +421,19 @@
           <f-component cc-id="fia_x509_ext.1" name="X.509 Certificate Validation">
             <consistency-rationale>This SFR is unchanged from its definition in the Base-PP; the SFR is recategorized from selection-based to mandatory when the TOE conforms to this PP-Module.</consistency-rationale>
             <f-element id="fia=x509-ext-1-1">
-              <title>This SFR is selection-based in the App PP. When the TOE conforms to this PP-Module, it is mandatory because of the modifications that this PP-Module makes to FTP_DIT_EXT.1.
-              </title>
+              <title>This SFR is selection-based in the <xref to="pkg-x509"/>X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.</title>
               <aactivity>
                 <no-tests>
-                  There is no change to the Base-PP EAs for this SFR when this PP-Module is claimed.<h:p/> 
+                  There is no change to the functional Package EAs for this SFR when this PP-Module is claimed.
                 </no-tests>
               </aactivity>
             </f-element>
+            <audit-event/>
           </f-component>
           <f-component cc-id="fia_x509_ext.2" name="X.509 Certificate Authentication">
             <consistency-rationale>This SFR is unchanged from its definition in the Base-PP; the SFR is recategorized from selection-based to mandatory when the TOE conforms to this PP-Module.</consistency-rationale>
             <f-element id="fia=x509-ext-2-1">
-              <title>This SFR is selection-based in the App PP. When the TOE conforms to this PP-Module, it is mandatory because of the modifications that this PP-Module makes to FTP_DIT_EXT.1.
+              <title>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.
               </title>
               <aactivity>
                 <no-tests>
@@ -432,6 +441,7 @@
                 </no-tests>
               </aactivity>
             </f-element>
+            <audit-event/>
           </f-component>
           
         </sec:mod_fia> 
@@ -458,6 +468,7 @@
                 </no-tests>
               </aactivity>
             </f-element>
+            <audit-event/>
           </f-component>
           
         </sec:mod_ftp> 
@@ -573,6 +584,7 @@
 	      </aactivity>
 
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 	  <!-- as modified by TD0352 -->
 	  <f-component cc-id="fcs_ckm.6" name="Cryptographic Key Destruction">
@@ -663,6 +675,7 @@ for destroying all keying material and cryptographic security parameters when no
 		</Tests>
 	      </aactivity>
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 
 	  <ext-comp-def fam-id="FCS_KYC_EXT" title="Cryptographic Key Chaining">
@@ -747,6 +760,7 @@ for destroying all keying material and cryptographic security parameters when no
 	      </aactivity>
 
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 	  
 	  <!-- as modified by TD0560 -->
@@ -897,6 +911,7 @@ for destroying all keying material and cryptographic security parameters when no
 	        </Tests>
 	      </aactivity>
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 	</sec:man_fcs>
 	<sec:man_fdp title="User Data Protection (FDP)">
@@ -944,6 +959,7 @@ for destroying all keying material and cryptographic security parameters when no
 		</Tests>
 	      </aactivity>
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 	  
 	  <ext-comp-def fam-id="FDP_SMIME_EXT" title="Use of Secure/Multipurpose Internet Mail Extensions (S/MIME)">
@@ -984,6 +1000,7 @@ for destroying all keying material and cryptographic security parameters when no
 		</Tests>
 	      </aactivity>
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 	</sec:man_fdp>
 	<sec:man_fia title="Identification and Authentication (FIA)">
@@ -1046,6 +1063,7 @@ for destroying all keying material and cryptographic security parameters when no
 		</Tests>
 	      </aactivity>
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 	</sec:man_fia>
 	<sec:man_fmt title="Security Management (FMT)">
@@ -1189,6 +1207,7 @@ for destroying all keying material and cryptographic security parameters when no
 		</Tests>
 	      </aactivity>
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 	</sec:man_fmt>
 	<sec:man_fpt title="Protection of the TSF (FPT)">
@@ -1233,6 +1252,7 @@ for destroying all keying material and cryptographic security parameters when no
 		</Tests>
 	      </aactivity>
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 	</sec:man_fpt>
 	<sec:man_ftp title="Trusted Path/Channels (FTP)">
@@ -1300,6 +1320,7 @@ for destroying all keying material and cryptographic security parameters when no
 		</Tests>
 	      </aactivity>
 	    </f-element>
+      <audit-event/>
 	  </f-component>
 	</sec:man_ftp>
 
@@ -1358,7 +1379,7 @@ for destroying all keying material and cryptographic security parameters when no
               </Tests>
             </aactivity>
           </f-element>
-          
+          <audit-event/>
         </f-component>
         
         <ext-comp-def fam-id="FCS_NOG_EXT" title="Cryptographic Nonce Generation">
@@ -1393,6 +1414,7 @@ for destroying all keying material and cryptographic security parameters when no
 	    </Tests>
 	  </aactivity>
 	</f-element>
+  <audit-event/>
       </f-component>
 
         <ext-comp-def fam-id="FCS_SAG_EXT" title="Cryptographic Salt Generation">
@@ -1443,6 +1465,7 @@ for destroying all keying material and cryptographic security parameters when no
               </Tests>
             </aactivity>
           </f-element>
+          <audit-event/>
         </f-component>
       </sec:opt_fcs>
       <sec:opt_fdp title="User Data Protection (FDP)">
@@ -1479,6 +1502,7 @@ for destroying all keying material and cryptographic security parameters when no
 	    </Tests>
 	  </aactivity>
 	</f-element>
+  <audit-event/>
       </f-component>
         
         <ext-comp-def fam-id="FDP_PST_EXT" title="Storage of Persistent Information">
@@ -1532,6 +1556,7 @@ for destroying all keying material and cryptographic security parameters when no
 	    </Tests>
 	  </aactivity>
 	</f-element>
+  <audit-event/>
       </f-component>
         
         <ext-comp-def fam-id="FDP_REN_EXT" title="Rendering of Message Content">
@@ -1594,6 +1619,7 @@ for destroying all keying material and cryptographic security parameters when no
 	    </Tests>
 	  </aactivity>
 	</f-element>
+  <audit-event/>
       </f-component>
       </sec:opt_fdp>
     </opt-sfrs>
@@ -1717,6 +1743,7 @@ for destroying all keying material and cryptographic security parameters when no
             </aactivity>
             
           </f-element>
+          <audit-event/>
         </f-component>
         
         
@@ -1802,6 +1829,7 @@ Support for 256-bit AES key sizes will be required for
               </Tests>
             </aactivity>
           </f-element>
+          <audit-event/>
         </f-component>
         
         <ext-comp-def fam-id="FCS_SMC_EXT" title="Submask Combining">
@@ -1851,6 +1879,7 @@ Support for 256-bit AES key sizes will be required for
               </Tests>
             </aactivity>
           </f-element>
+          <audit-event/>
         </f-component>
       </sec:sel_fcs>
     
@@ -1925,6 +1954,7 @@ Support for 256-bit AES key sizes will be required for
             </Tests>
           </aactivity>
         </f-element>
+        <audit-event/>
       </f-component>
       </sec:sel_fia>
       
@@ -1982,6 +2012,7 @@ Support for 256-bit AES key sizes will be required for
 	    </Tests>
 	  </aactivity>
 	</f-element>
+  <audit-event/>
       </f-component>
       </sec:sel_fpt>
    
