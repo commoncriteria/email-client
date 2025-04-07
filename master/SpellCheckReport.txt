@@ -9,6 +9,7 @@ output/email-client-release-linkable.html: CEM
 output/email-client-release-linkable.html: CSPs
 output/email-client-release-linkable.html: ContentEncryptionAlgorithmIdentifier
 output/email-client-release-linkable.html: DRBGs
+output/email-client-release-linkable.html: FEK
 output/email-client-release-linkable.html: IMAP4
 output/email-client-release-linkable.html: OCSP
 output/email-client-release-linkable.html: OXCMAPIHTTP
@@ -58,6 +59,7 @@ output/email-client-sd.html: CEM
 output/email-client-sd.html: CSPs
 output/email-client-sd.html: ContentEncryptionAlgorithmIdentifier
 output/email-client-sd.html: DRBGs
+output/email-client-sd.html: FEK
 output/email-client-sd.html: IMAP4
 output/email-client-sd.html: OCSP
 output/email-client-sd.html: OXCMAPIHTTP
@@ -81,6 +83,7 @@ output/email-client.html: CEM
 output/email-client.html: CSPs
 output/email-client.html: ContentEncryptionAlgorithmIdentifier
 output/email-client.html: DRBGs
+output/email-client.html: FEK
 output/email-client.html: IMAP4
 output/email-client.html: OCSP
 output/email-client.html: OXCMAPIHTTP

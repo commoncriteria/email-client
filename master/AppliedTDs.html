@@ -977,20 +977,21 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
 	    
 	    
 	    <div class="element"><div class="reqid" id="FCS_CKM_EXT.4.1"><a href="#FCS_CKM_EXT.4.1" class="abbr">FCS_CKM_EXT.4.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_17">invoke platform-provided key destruction</span></li><li style=""><span class="selectable-content" id="_s_18">implement key destruction using [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_19">For volatile memory, the erasure shall be executed by a [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_20">single direct overwrite [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_21">consisting of a pseudorandom pattern using the email client's RBG</span></li><li style=""><span class="selectable-content" id="_s_22">consisting of a pseudorandom pattern using the host platform's RBG</span></li><li style=""><span class="selectable-content" id="_s_23">consisting of zeroes</span></li></ul>]</span></li><li style=""><span class="selectable-content" id="_s_24">destruction of reference to the key directly followed by a request for garbage collection</span></li></ul>]</span></li><li style=""><span class="selectable-content" id="_s_25">For non-volatile storage, the erasure shall be executed by [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_26">single</span></li><li style=""><span class="selectable-content" id="_s_27">three or more times</span></li></ul>] 
-      overwrite of key data storage location consisting of [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_28"> a pseudorandom pattern using the email client's RBG (as specified in FCS_RBG_EXT.2 of <a href="#bibAppPP">[App PP]</a></span></li><li style=""><span class="selectable-content" id="_s_29">a pseudorandom pattern using the host platform's RBG</span></li><li style=""><span class="selectable-content" id="_s_30">a static pattern</span></li></ul>]</span></li></ul>]</span></li></ul>] 
+      overwrite of key data storage location consisting of [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_28"> a pseudorandom pattern using the email client's RBG (as specified in FCS_RBG_EXT.2 of <a href="#bibAppPP">[App PP]</a>)</span></li><li style=""><span class="selectable-content" id="_s_29">a pseudorandom pattern using the host platform's RBG</span></li><li style=""><span class="selectable-content" id="_s_30">a static pattern</span></li></ul>]</span></li></ul>]</span></li></ul>] 
    that meets the following:[<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_31">NIST SP 800-88</span></li><li style=""><span class="selectable-content" id="_s_32">no standard</span></li></ul>] 
 for destroying all keying material and cryptographic security parameters when no longer needed.<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
-		
+		<p>
 		  For the purpose of this requirement, keying material refers to
 		  authentication data, passwords, symmetric keys, data used to derive keys, etc.
-		<p></p>
+		</p><p>
 		
 		  The destruction indicated above applies to each intermediate storage area for
 		  keys and cryptographic critical security parameters (i.e., any storage, such as memory
 		  buffers, that is included in the path of such data) upon the transfer of the
 		  keys and cryptographic critical security parameter to another memory location.
+      </p>
 	      </span></div></div></div>
 	  </div>
 
@@ -1578,7 +1579,7 @@ for destroying all keying material and cryptographic security parameters when no
       <h2 id="sel_fcs" class="indexable" data-level="2">B.1 Cryptographic Support (FCS)</h2>
         
         
-        <div class="comp" id="FCS_CKM_EXT.5"><h4>FCS_CKM_EXT.5 Cryptographic Key Derivation (password or passphrase Conditioning)</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
+        <div class="comp" id="FCS_CKM_EXT.5"><h4>FCS_CKM_EXT.5 Cryptographic Key Derivation (password/passphrase Conditioning)</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
            <a href="#FCS_KYC_EXT.1.1">FCS_KYC_EXT.1.1</a>.
            </i></b></div>
           
@@ -1591,12 +1592,12 @@ for destroying all keying material and cryptographic security parameters when no
           
           
           <div class="element"><div class="reqid" id="FCS_CKM_EXT.5.1"><a href="#FCS_CKM_EXT.5.1" class="abbr">FCS_CKM_EXT.5.1</a></div><div class="reqdesc">
-              The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support a password or passphrase of up to [<b>assignment</b>: 
+              The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support a password/passphrase of up to [<b>assignment</b>: 
      <span class="assignable-content">maximum password size, positive integer of 64 or more</span>] characters used to generate a password authorization factor.
             <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
-              The password or passphrase is represented on the host machine as a sequence of characters whose encoding depends on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the underlying OS. 
+              The password/passphrase is represented on the host machine as a sequence of characters whose encoding depends on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the underlying OS. 
               The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author assigns the maximum size of the password or passphrase it supports; it must support at least 64 characters.
             </span></div></div></div>
           <div class="element"><div class="reqid" id="FCS_CKM_EXT.5.2"><a href="#FCS_CKM_EXT.5.2" class="abbr">FCS_CKM_EXT.5.2</a></div><div class="reqdesc">
@@ -1604,14 +1605,16 @@ for destroying all keying material and cryptographic security parameters when no
               "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and 
               [<b>selection</b>: <span class="selectable-content" id="_s_93">[<b>assignment</b>: 
      <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="_s_94">no other characters</span>]
-            </div></div>
+            <div class="appnote"><span class="note-header">Application
+      Note:
+    </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author assigns any other supported characters; if there are no other supported characters, they should select "no other characters".</i></span></div></div></div>
           <div class="element"><div class="reqid" id="FCS_CKM_EXT.5.3"><a href="#FCS_CKM_EXT.5.3" class="abbr">FCS_CKM_EXT.5.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<i>HMAC-[<b>selection</b>: <span class="selectable-content" id="_s_95">SHA-256</span>, <span class="selectable-content" id="_s_96">SHA-384</span>, <span class="selectable-content" id="_s_97">SHA-512</span>]</i>], with [<b>assignment</b>: 
      <span class="assignable-content">positive integer of 4096 or more</span>] iterations, and output cryptographic key sizes [<b>selection</b>: <span class="selectable-content" id="_s_98">128</span>, <span class="selectable-content" id="_s_99">256</span>] bits that meet the following: [NIST SP 800-132].
             <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
               The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author selects the parameters based on the password-based key derivation function (<abbr class="dyn-abbr"><a href="#abbr_PBKDF">PBKDF</a></abbr>) used by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>. 
-              The password or passphrase must be conditioned into a string of bits that forms the submask to be used as input into a key. 
+              The password/passphrase must be conditioned into a string of bits that forms the submask to be used as input into a key. 
               Conditioning can be performed using one of the identified hash functions or the process described in NIST SP 800-132; 
               the method used is selected by the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author. SP 800-132 requires the use of a pseudorandom function (<abbr class="dyn-abbr"><a href="#abbr_PRF">PRF</a></abbr>) consisting of HMAC with an approved hash function. 
               The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must select the hash function and ensure that appropriate claims are made for FCS_COP.1/Hash and FCS_COP.1/KeyedHash in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
@@ -1627,11 +1630,7 @@ for destroying all keying material and cryptographic security parameters when no
             <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
-              This selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is claimed when "a password as specified in <a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a>" is selected in <a href="#FCS_KYC_EXT.1.1">FCS_KYC_EXT.1.1</a>.
-              <p></p>
-              If the minimum password length is settable, then the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author chooses "a value settable by the administrator for this component," 
-              as well as the "configure password or passphrase complexity setting" item for FMT_SMF.1.1. If the minimum length is not settable, 
-              the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author fills in the assignment with the minimum length the password must be (zero-length passwords are not allowed for compliant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr>).
+              <i>If the minimum password length is settable, then <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author chooses "a value settable by the administrator for this component," as well as the "configure password/passphrase complexity setting" item for FMT_SMF.1.1. If the minimum length is not settable, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author fills in the assignment with the minimum length the password must be (zero-length passwords are not allowed for compliant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr>).</i>
             </span></div></div></div>
         </div>
         
@@ -1779,7 +1778,7 @@ Support for 256-bit <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> ke
               requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to identify the method that it uses to prevent the plaintext storage of secret key data.</p><p><a href="#FCS_CKM_EXT.4">FCS_CKM_EXT.4</a>,
              Cryptographic Key Destruction,
               requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to identify the method that it uses to destroy key data.</p><p><a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a>,
-             Cryptographic Key Derivation (password or passphrase Conditioning),
+             Cryptographic Key Derivation (password/passphrase Conditioning),
               requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support password or passphrase credentials with certain strength of secret characteristics and to support the use of such credentials as an input to a password-based key derivation function.</p><h4>Management: FCS_CKM_EXT.3</h4><p>No specific management functions are identified.</p><h4>Audit: FCS_CKM_EXT.3</h4><p>There are no auditable events foreseen.</p><h4>FCS_CKM_EXT.3 Protection of Key and Key Material</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td>
 	      No dependencies.
 	    </td></tr></table><h4 id="ext-comp-FCS_CKM_EXT.3.1">FCS_CKM_EXT.3.1</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>assignment</b>: 
@@ -1793,10 +1792,10 @@ Support for 256-bit <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> ke
             <li>Change password or passphrase authentication credential.</li>
             <li>Change password or passphrase minimum length.</li>
           </ul>
-          </p><h4>Audit: FCS_CKM_EXT.5</h4><p>There are no auditable events foreseen.</p><h4>FCS_CKM_EXT.5 Cryptographic Key Derivation (password or passphrase Conditioning)</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td>
+          </p><h4>Audit: FCS_CKM_EXT.5</h4><p>There are no auditable events foreseen.</p><h4>FCS_CKM_EXT.5 Cryptographic Key Derivation (password/passphrase Conditioning)</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td>
             <span class="no-link">FCS_COP.1</span> Cryptographic Operation
           </td></tr></table><h4 id="ext-comp-FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</h4>
-              The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support a password or passphrase of up to [<b>assignment</b>: 
+              The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support a password/passphrase of up to [<b>assignment</b>: 
      <span class="assignable-content">maximum password size, positive integer of 64 or more</span>] characters used to generate a password authorization factor.
             <h4 id="ext-comp-FCS_CKM_EXT.5.2">FCS_CKM_EXT.5.2</h4>
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow passwords to be composed of any combination of upper case characters, lower case characters, numbers, and the following special characters: 
