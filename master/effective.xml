@@ -424,7 +424,7 @@
               <title>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s SMIME implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.</title>
               <aactivity>
                 <no-tests>
-                  There is no change to the Functional Package <xref to="pkgX509"/>.EAs for this SFR when this PP-Module is claimed.
+                  There is no change to the EAs of the SFR for <xref to="pkgX509"/>. 
                 </no-tests>
               </aactivity>
             </f-element>
@@ -437,7 +437,7 @@
               </title>
               <aactivity>
                 <no-tests>
-                  There is no change to the Functional Package EAs for this SFR when this PP-Module is claimed.
+                There is no change to the EAs of the SFR for <xref to="pkgX509"/>.                
                 </no-tests>
               </aactivity>
             </f-element>
