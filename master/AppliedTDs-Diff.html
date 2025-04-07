@@ -460,19 +460,19 @@
                 </div>
             </div>
         </div>
-        <div class="comp" id="FCS_CKM_EXT.6">
-            <h4>FCS_CKM_EXT.6 Cryptographic Key Destruction</h4>
+        <div class="comp" id="FCS_CKM.6">
+            <h4>FCS_CKM.6 Cryptographic Key Destruction</h4>
             <div class="element">
-                <div class="reqid" id="FCS_CKM_EXT.6.1">
-                    <a href="#FCS_CKM_EXT.6.1" class="abbr">FCS_CKM_EXT.6.1</a>
+                <div class="reqid" id="FCS_CKM.6.1">
+                    <a href="#FCS_CKM.6.1" class="abbr">FCS_CKM.6.1</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall destroy [<b>assignment</b>: <span class="assignable-content">list of cryptographic keys (including keying material)</span>] when [<b>selection</b>: <span class="selectable-content" id="_s_17">no longer needed</span>, <span class="selectable-content" id="_s_18"> other circumstances for key or keying material destructions.</span>]
                 </div>
             </div>
             <div class="element">
-                <div class="reqid" id="FCS_CKM_EXT.6.2">
-                    <a href="#FCS_CKM_EXT.6.2" class="abbr">FCS_CKM_EXT.6.2</a>
+                <div class="reqid" id="FCS_CKM.6.2">
+                    <a href="#FCS_CKM.6.2" class="abbr">FCS_CKM.6.2</a>
                 </div>
                 <div class="reqdesc">
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: 
@@ -1151,7 +1151,7 @@
                     <td rowspan="10"><a href="#T.PHYSICAL_ACCESS">T.PHYSICAL_​ACCESS</a> (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>) </td><td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a></td><td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a> mitigates the threat by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> protects stored key data from unauthorized disclosure.</td>
                 </tr>
                 <tr>
-                    <td>FCS_CKM.6</td><td>FCS_CKM.6 mitigates the threat by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> securely destroys stored key data.</td>
+                    <td><a href="#FCS_CKM.6">FCS_CKM.6</a></td><td><a href="#FCS_CKM.6">FCS_CKM.6</a> mitigates the threat by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> securely destroys stored key data.</td>
                 </tr>
                 <tr>
                     <td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a></td><td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a> mitigates the threat by defining any key chain that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> implements to protect a root encryption key.</td>
@@ -1246,7 +1246,7 @@
                 <td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines how keys and key material are saved by the email client. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
             </tr>
             <tr>
-                <td><a href="#FCS_CKM_EXT.6">FCS_CKM_EXT.6</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines how email messages are formatted when sent and received by the client. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
+                <td><a href="#FCS_CKM.6">FCS_CKM.6</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines how email messages are formatted when sent and received by the client. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
             </tr>
             <tr>
                 <td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a></td><td> This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines how email clients maintain key chains. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
@@ -1776,24 +1776,18 @@
                     <h4>Family Behavior</h4>
                     <div>Components in this family define requirements for cryptographic key management beyond those which are specified in the Part 2 family FCS_CKM. </div>
                     <h4>Component Leveling</h4>
-                    <svg style="max-height: 70px;">
+                    <svg style="max-height: 50px;">
                         <text x="4" fill="black" font-size="15" y="44">FCS_CKM_EXT</text>
                         <rect x="2" y="31" width="150" height="16" fill="none" stroke="black"></rect>
                         <text x="234" fill="black" font-size="15" y="24">3</text>
                         <rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect>
                         <line x1="152" y1="37" x2="231" y2="17" stroke="black"></line>
-                        <text x="234" fill="black" font-size="15" y="44">6</text>
+                        <text x="234" fill="black" font-size="15" y="44">5</text>
                         <rect x="232" y="31" width="12" height="16" fill="none" stroke="black"></rect>
                         <line x1="152" y1="37" x2="231" y2="37" stroke="black"></line>
-                        <text x="234" fill="black" font-size="15" y="64">5</text>
-                        <rect x="232" y="51" width="12" height="16" fill="none" stroke="black"></rect>
-                        <line x1="152" y1="37" x2="231" y2="57" stroke="black"></line>
                     </svg>
                     <p>
                         <a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a>, Protection of Key and Key Material, requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to identify the method that it uses to prevent the plaintext storage of secret key data.
-                    </p>
-                    <p>
-                        <a href="#FCS_CKM_EXT.6">FCS_CKM_EXT.6</a>, Cryptographic Key Destruction, requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to identify the method that it uses to destroy key data.
                     </p>
                     <p>
                         <a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a>, Cryptographic Key Derivation (password/passphrase Conditioning), requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support password or passphrase credentials with certain strength of secret characteristics and to support the use of such credentials as an input to a password-based key derivation function.
@@ -1814,34 +1808,6 @@
                         </table>
                         <h4 id="ext-comp-FCS_CKM_EXT.3.1">FCS_CKM_EXT.3.1</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>assignment</b>: <span class="assignable-content">method of ensuring plaintext key data is not stored in non-volatile memory</span>]. 
-                    </div>
-                    <h4>Management: FCS_CKM_EXT.6</h4>
-                    <p>No specific management functions are identified.</p>
-                    <h4>Audit: FCS_CKM_EXT.6</h4>
-                    <p>There are no auditable events foreseen.</p>
-                    <h4>FCS_CKM_EXT.6 Cryptographic Key Destruction</h4>
-                    <div style="margin-left: 1em;">
-                        <table class="ecd_heir_dep" style="width: 100%">
-                            <tr>
-                                <td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td>
-                            </tr>
-                            <tr style="background-color: inherit">
-                                <td>Dependencies to:</td><td> No dependencies. </td>
-                            </tr>
-                        </table>
-                        <h4 id="ext-comp-FCS_CKM_EXT.6.1">FCS_CKM_EXT.6.1</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall destroy [<b>assignment</b>: <span class="assignable-content">list of cryptographic keys (including keying material)</span>] when [<b>selection</b>: <span class="selectable-content" id="_s_17">no longer needed</span>, <span class="selectable-content" id="_s_18"> other circumstances for key or keying material destructions.</span>]
-                        <h4 id="ext-comp-FCS_CKM_EXT.6.2">FCS_CKM_EXT.6.2</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>assignment</b>: <span class="assignable-content">key destruction method</span>] that meets the following:[<b>selection</b>: 
-                        <ul>
-                            <li style="">
-                                <span class="selectable-content" id="_s_35">NIST SP 800-88</span>
-                            </li>
-                            <li style="">
-                                <span class="selectable-content" id="_s_36">no standard</span>
-                            </li>
-                        </ul>
-                        ] for destroying all keying material and cryptographic security parameters when no longer needed.
                     </div>
                     <h4>Management: FCS_CKM_EXT.5</h4>
                     <p>
