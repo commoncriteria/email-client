@@ -1988,23 +1988,19 @@ for destroying all keying material and cryptographic security parameters when no
                 <p></p>
               </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
               <p>The evaluator shall compose passwords that either meet the requirements, or fail to meet the requirements, and shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s behavior is consistent with the requirements. While the evaluator is not required (nor is it feasible) to test all possible compositions of passwords, the evaluator shall ensure that all characters, and minimum and maximum lengths listed in the requirement, are supported, and justify the subset of those characters chosen for testing.</p>
-              <p>Support for Password/Passphrase characteristics: In addition to the analysis above, the evaluator shall also perform the following tests on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> configured according to the Operational Guidance</p>
+              <p>Support for Password/Passphrase characteristics: In addition to the analysis above, the evaluator shall also perform the following tests on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> configured according to the Operational Guidance.</p>
                 
                 <span class="testlist-"><ul>
                   <li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FCS_CKM_EXT.5:1</a>:
-      The evaluator shall ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports passwords/passphrases of exactly 64 characters.</li>
+      Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports passwords/passphrases of 64 characters.</li>
                   <li class="test-"><a id="_t_28" class="defined" href="#_t_28">Test FCS_CKM_EXT.5:2</a>:
-      The evaluator shall ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not accept more than the maximum number of characters specified in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>.</li>
+      Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not accept more than the maximum number of characters specified in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>.</li>
                   <li class="test-"><a id="_t_29" class="defined" href="#_t_29">Test FCS_CKM_EXT.5:3</a>:
-      The evaluator shall ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not accept less than the minimum number of characters specified in <a href="#FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</a>. 
-                    If the minimum length is settable by the administrator, the evaluator determines the minimum length or lengths to test.</li>
+      Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not accept less than the minimum number of characters specified in <a href="#FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</a>. If the minimum length is settable by the administrator, the evaluator determines the minimum length or lengths to test.</li>
                   <li class="test-"><a id="_t_30" class="defined" href="#_t_30">Test FCS_CKM_EXT.5:4</a>:
-      The evaluator shall ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports passwords consisting of all characters listed in <a href="#FCS_CKM_EXT.5.2">FCS_CKM_EXT.5.2</a> and of varying lengths within the range specified in <a href="#FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</a>.</li>
+      Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports passwords consisting of all characters listed in <a href="#FCS_CKM_EXT.5.2">FCS_CKM_EXT.5.2</a> and of varying lengths within the range specified in <a href="#FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</a>.</li>
                 </ul></span>
-                No explicit testing of the formation of the submask from the input password is required.
-                <p></p>
-                For password conditioning, no explicit testing of the formation of the authorization factor from the input password or passphrase is required. 
-              </div></div></div></div></div>
+                </div></div></div></div></div>
         
         
         

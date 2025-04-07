@@ -744,23 +744,19 @@ The following sections list Common Criteria and technology terms used in this do
                 <p></p>
               </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
               <p>The evaluator shall compose passwords that either meet the requirements, or fail to meet the requirements, and shall verify that the TOE's behavior is consistent with the requirements. While the evaluator is not required (nor is it feasible) to test all possible compositions of passwords, the evaluator shall ensure that all characters, and minimum and maximum lengths listed in the requirement, are supported, and justify the subset of those characters chosen for testing.</p>
-              <p>Support for Password/Passphrase characteristics: In addition to the analysis above, the evaluator shall also perform the following tests on a TOE configured according to the Operational Guidance</p>
+              <p>Support for Password/Passphrase characteristics: In addition to the analysis above, the evaluator shall also perform the following tests on a TOE configured according to the Operational Guidance.</p>
                 
                 <span class="testlist-"><ul>
                   <li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FCS_CKM_EXT.5:1</a>:
-      The evaluator shall ensure that the TOE supports passwords/passphrases of exactly 64 characters.</li>
+      Ensure that the TOE supports passwords/passphrases of 64 characters.</li>
                   <li class="test-"><a id="_t_28" class="defined" href="#_t_28">Test FCS_CKM_EXT.5:2</a>:
-      The evaluator shall ensure that the TOE does not accept more than the maximum number of characters specified in FCS_CKM_EXT.5.1.</li>
+      Ensure that the TOE does not accept more than the maximum number of characters specified in FCS_CKM_EXT.5.1.</li>
                   <li class="test-"><a id="_t_29" class="defined" href="#_t_29">Test FCS_CKM_EXT.5:3</a>:
-      The evaluator shall ensure that the TOE does not accept less than the minimum number of characters specified in FCS_CKM_EXT.5.4. 
-                    If the minimum length is settable by the administrator, the evaluator determines the minimum length or lengths to test.</li>
+      Ensure that the TOE does not accept less than the minimum number of characters specified in FCS_CKM_EXT.5.4. If the minimum length is settable by the administrator, the evaluator determines the minimum length or lengths to test.</li>
                   <li class="test-"><a id="_t_30" class="defined" href="#_t_30">Test FCS_CKM_EXT.5:4</a>:
-      The evaluator shall ensure that the TOE supports passwords consisting of all characters listed in FCS_CKM_EXT.5.2 and of varying lengths within the range specified in FCS_CKM_EXT.5.4.</li>
+      Ensure that the TOE supports passwords consisting of all characters listed in FCS_CKM_EXT.5.2 and of varying lengths within the range specified in FCS_CKM_EXT.5.4.</li>
                 </ul></span>
-                No explicit testing of the formation of the submask from the input password is required.
-                <p></p>
-                For password conditioning, no explicit testing of the formation of the authorization factor from the input password or passphrase is required. 
-              </div></div></span></div><div class="comp" id=""><h4>FCS_COP_EXT.2 Key Wrapping</h4><span class="activity_pane_body"><div class="component-activity-header">FCS_COP_EXT.2</div>
+                </div></div></span></div><div class="comp" id=""><h4>FCS_COP_EXT.2 Key Wrapping</h4><span class="activity_pane_body"><div class="component-activity-header">FCS_COP_EXT.2</div>
               
               
               
