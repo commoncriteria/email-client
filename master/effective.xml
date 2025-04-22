@@ -4,7 +4,7 @@
     <ReferenceTable>
       <PPVersion>1.0</PPVersion>
       <PPAuthor>National Information Assurance Partnership</PPAuthor>
-      <PPPubDate>2025-4-4</PPPubDate>
+      <PPPubDate>2025-04-04</PPPubDate>
       <Keywords>email; email client</Keywords>
     </ReferenceTable>
   </PPReference>
@@ -23,7 +23,7 @@
     <url>https://www.niap-ccevs.org/protectionprofiles/511</url>
   </include-pkg>
   <pp-preferences>
-    <using-cc2022/>
+    
   </pp-preferences>
   
   <sec:Introduction>
@@ -365,7 +365,7 @@
 </sec:Security_Objectives>
   
   <sec:Security_Requirements>
-      <base-pp id="AppPP" short="App">
+      <base-pp id="AppPP" name="Application Software" product="Application" short="App" version="2.0">
         <git>
           <url>https://github.com/commoncriteria/application</url>
           <branch>release-1.4</branch>
@@ -420,7 +420,7 @@
         <sec:mod_fia title="Identification and Authentication (FIA)">
           <f-component cc-id="fia_x509_ext.1" name="X.509 Certificate Validation">
             <consistency-rationale>This SFR is unchanged from its definition in the Base-PP; the SFR is recategorized from selection-based to mandatory when the TOE conforms to this PP-Module.</consistency-rationale>
-            <f-element id="fia=x509-ext-1-1">
+            <f-element id="fia-509-ext-1-1">
               <title>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition.</title>
               <aactivity>
                 <no-tests>
@@ -432,14 +432,12 @@
           </f-component>
           <f-component cc-id="fia_x509_ext.2" name="X.509 Certificate Authentication">
             <consistency-rationale>This SFR is unchanged from its definition in the Base-PP; the SFR is recategorized from selection-based to mandatory when the TOE conforms to this PP-Module.</consistency-rationale>
-            <f-element id="fia=x509-ext-2-1">
-              <title>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition. 
+            <f-element id="fia-x509-ext-2-1">
+              <title>
+				This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition. 
               </title>
-              <aactivity>
-                <no-tests>
-                As defined in the <xref to="pkgX509"/>.                
-                </no-tests>
-              </aactivity>
+              <aactivity>As defined in the <xref to="pkgX509"/>.</aactivity>
+
             </f-element>
             <audit-event/>
           </f-component>
