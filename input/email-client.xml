@@ -413,7 +413,7 @@
             <consistency-rationale>This SFR is changed from its definition in the Base-PP to remove one of the available selection options because it will never apply in the case where the TOE conforms to this PP-Module.</consistency-rationale>
             <f-element id='fcs-ckm-ext-1-1'>
               <title>The application shall <selectables linebreak="yes">
-                
+                <selectable><h:s>generate no asymmetric cryptographic keys</h:s></selectable>
                 <selectable id="sel_invoke_genkey">invoke platform-provided functionality for asymmetric key generation</selectable>
                 <selectable id="sel_impl_genkey">implement asymmetric key generation</selectable>
               </selectables>.
@@ -435,6 +435,7 @@
             <f-element id='fcs-rbg-ext-1-1'>
               <title> The application shall
                 <selectables linebreak="yes">
+					<selectable><h:s>use no DRBG functionality</h:s></selectable>
                   <selectable>invoke platform-provided DRBG functionality</selectable>
                   <selectable id="drbg">implement DRBG functionality</selectable>
                 </selectables> for its cryptographic operations. </title>
@@ -629,7 +630,11 @@
 	    <dependencies>
 	      No dependencies.
 	    </dependencies>
-	    <f-element id="fcs-ckm-6-1"><title>The TSF shall destroy <assignable>list of cryptographic keys (including keying material)</assignable> when <selectables><selectable>no longer needed</selectable><selectable> other circumstances for key or keying material destructions.</selectable></selectables></title></f-element>
+	    <f-element id="fcs-ckm-6-1">
+			<title>The TSF shall destroy <assignable>list of cryptographic keys (including keying material)</assignable> when <selectables>
+				<selectable>no longer needed</selectable>
+				<selectable><assignable> other circumstances for key or keying material destructions.</assignable></selectable>
+			</selectables></title></f-element>
 	    <f-element id="fcs-ckm-6-2">
 <title>The TSF shall <selectables linebreak="yes">
    <selectable>invoke platform-provided key destruction</selectable>     
@@ -1433,7 +1438,7 @@ for destroying all keying material and cryptographic security parameters when no
         </dependencies>
         
 	<f-element id='fcs-nog-ext-1-1'>
-	  <title>The TSF shall only use unique nonces with a minimum size of [<h:i>64</h:i>]
+	  <title>The TSF shall only use unique nonces with a minimum size of 64
 	  bits.</title>
 	  <aactivity>
 	    <TSS>
@@ -1707,7 +1712,7 @@ for destroying all keying material and cryptographic security parameters when no
             <!-- editor's note: app note here is superfluous and was not included -->
           </f-element>
           <f-element  id='fcs-ckm-ext-5-3'>
-            <title>The TSF shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<h:i>HMAC-SHA-384</h:i>], with <assignable>positive integer of 4096 or more</assignable> iterations, and output cryptographic key sizes [<h:i>256</h:i>] bits that meet the following: [<h:i>NIST SP 800-56B</h:i>].
+            <title>The TSF shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<h:i><h:b>HMAC-SHA-384</h:b></h:i>], with <assignable>positive integer of 4096 or more</assignable> iterations, and output cryptographic key sizes [<h:i><h:b>256</h:b></h:i>] bits that meet the following: [<h:i><h:b>NIST SP 800-56B</h:b></h:i>].
             </title>
             <note role="application">
               The ST author selects the parameters based on the password-based key derivation function (PBKDF) used by the TSF. 
@@ -1744,7 +1749,7 @@ for destroying all keying material and cryptographic security parameters when no
                 <h:p/>
                 The evaluator shall check that the TSS describes the method by which the password/passphrase is first encoded and then fed to the SHA algorithm. The settings for the algorithm (padding, blocking, etc.) shall be described, and the evaluator shall verify that these are supported by the selections in this component as well as the selections concerning the hash function itself. The evaluator shall verify that the TSS contains a description of how the output of the hash function is used to form the submask that will be input into the function and is the same length as the KEK as specified in FCS_CKM.6.
                 <h:p/>
-                For the NIST SP 800-132-based conditioning of the password/passphrase, the required assurance activities will be performed when doing the assurance activities for the appropriate requirements (FCS_COP.1.1(4) from the [AppPP]). If any manipulation of the key is performed in forming the submask that will be used to form the FEK or KEK, that process shall be described in the TSS.
+                For the NIST SP 800-132-based conditioning of the password/passphrase, the required assurance activities will be performed when doing the assurance activities for the appropriate requirements (FCS_COP.1.1(4) from the [App PP]). If any manipulation of the key is performed in forming the submask that will be used to form the FEK or KEK, that process shall be described in the TSS.
                 <h:p/>
                 <h:p>No explicit testing of the formation of the submask from the input password is required.</h:p><h:p>Conditioning: No explicit testing of the formation of the authorization factor from the input password/passphrase is required. Iteration count: The evaluator shall verify that the iteration count for PBKDFs performed by the TOE comply with NIST SP 800-132 by ensuring that the TSS contains a description of the estimated time required to derive key material from passwords and how the TOE increases the computation time for password-based key derivation (including but not limited to increasing the iteration count).</h:p>
               </TSS>
