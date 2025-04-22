@@ -192,7 +192,8 @@
     </section>
     <section title="Use Cases" id="usecases">Email clients perform tasks associated primarily with
     the following use case.
-    <usecases><usecase title="Sending, receiving, accessing, managing, and viewing email" id="usecase1">
+    <usecases>
+		<usecase title="Sending, receiving, accessing, managing, and viewing email" id="usecase1">
       <description>Email clients are used for sending, receiving, viewing, accessing, and managing
       email in coordination with a mail server. Email clients can render HTML as well as
       plaintext, and can display common attachment formats. </description>
