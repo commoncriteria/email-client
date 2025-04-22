@@ -2,7 +2,6 @@ output/email-client-release-linkable.html: 38F
 output/email-client-release-linkable.html: 56A
 output/email-client-release-linkable.html: 56B
 output/email-client-release-linkable.html: ActiveSync
-output/email-client-release-linkable.html: AppPP
 output/email-client-release-linkable.html: CAPA
 output/email-client-release-linkable.html: CDH
 output/email-client-release-linkable.html: CEM
@@ -56,7 +55,6 @@ output/email-client-release.html: signatureAlgorithm
 output/email-client-release.html: v4
 output/email-client-sd.html: AGD
 output/email-client-sd.html: ActiveSync
-output/email-client-sd.html: AppPP
 output/email-client-sd.html: CEM
 output/email-client-sd.html: CSPs
 output/email-client-sd.html: ContentEncryptionAlgorithmIdentifier
@@ -78,7 +76,6 @@ output/email-client.html: 38F
 output/email-client.html: 56A
 output/email-client.html: 56B
 output/email-client.html: ActiveSync
-output/email-client.html: AppPP
 output/email-client.html: CAPA
 output/email-client.html: CDH
 output/email-client.html: CEM
