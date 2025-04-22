@@ -452,7 +452,7 @@
               <title>
 				This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its original definition. 
               </title>
-              <aactivity>As defined in the <xref to="pkgX509"/>.</aactivity>
+              <aactivity><no-tests>As defined in the <xref to="pkgX509"/>.</no-tests></aactivity>
 
             </f-element>
             <audit-event/>
