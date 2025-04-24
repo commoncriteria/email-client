@@ -1,0 +1,1 @@
+/home/runner/work/email-client/email-client/input/email-client.xml:1306:36: error: element "f-element" not allowed here; expected the element end-tag or element "aactivity", "ext-comp-def-title", "note" or "rule"

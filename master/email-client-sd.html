@@ -618,23 +618,22 @@ The following sections list Common Criteria and technology terms used in this do
 		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
 		  The evaluator shall verify that the operational guidance includes instructions on loading trusted add-on sources.<p></p>
 		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall create or obtain an untrusted add-on and attempt to load it. The evaluator shall then verify that the untrusted add-on is rejected and cannot be loaded.
-		</div></div></span></div><h2 class="indexable" data-level="2" id="man_ftp">2.2.6 Trusted Path/Channels (FTP)</h2><div class="comp" id=""><h4>FTP_ITC_EXT.1 Inter-TSF Trusted Channel</h4><span class="activity_pane_body"><div class="component-activity-header">FTP_ITC_EXT.1</div>
+		</div></div></span></div><h2 class="indexable" data-level="2" id="man_ftp">2.2.6 Trusted Path/Channels (FTP)</h2><div class="comp" id=""><h4>FTP_ITC.1 Inter-TSF Trusted Channel</h4><span class="activity_pane_body"><div class="component-activity-header">FTP_ITC.1</div>
 		
 		
 		
 	      <div class="eacategory">TSS</div><div class="ea"><div class="ea">
-		The evaluator shall verify that the TSS describes the details of the email client connecting to a Mail Transfer Agent in terms of the trusted connection (i.e., TLS) according to FTP_DIT_EXT.1 in the Base-PP, 
-		along with email client-specific options or procedures that might not be reflected in the specification.<p></p>
+		The evaluator shall verify that the TSS describes the details of the email client connecting to a Mail Transfer Agent in terms of the trusted connection (i.e., TLS) according to FTP_DIT_EXT.1 in the Base-PP, along with email client-specific options or procedures that might not be reflected in the specification.<p></p>
 		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
-		  The evaluator shall confirm that the operational guidance contains instructions for establishing the connection to the Mail Transfer Agent.<p></p>
+		  The evaluator shall confirm that the operational guidance contains instructions for establishing the connection to the Mail Transfer Agent.
 		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
 		The evaluator shall perform the following tests:
 		<span class="testlist-"><ul>
-		  <li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FTP_ITC_EXT.1:1</a>:
+		  <li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FTP_ITC.1:1</a>:
       The evaluator shall ensure that the email client is able to initiate or receive communications using any selected or assigned protocols specified in the requirement over TLS, setting up the connections as described in the operational guidance and ensuring that communication is successful.</li>
-		  <li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FTP_ITC_EXT.1:2</a>:
+		  <li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FTP_ITC.1:2</a>:
       The evaluator shall ensure that the email client is able to initiate or receive communications with a Mail Transfer Agent using any assigned protocols specified in the requirement over TLS, setting up the connections as described in the operational guidance and ensuring that communication is successful.</li>
-		  <li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FTP_ITC_EXT.1:3</a>:
+		  <li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FTP_ITC.1:3</a>:
       The evaluator shall ensure, for each communication channel with an authorized IT entity in tests 1 and 2, the channel data is not sent in plaintext. To perform this test, the evaluator shall use a sniffer and a packet analyzer. The packet analyzer must indicate that the protocol in use is TLS.</li>
 		</ul></span>
 		</div></div></span></div><h2 class="indexable" data-level="1" id="opt-sfrs">2.3 Evaluation Activities for Optional SFRs</h2><h2 class="indexable" data-level="2" id="opt_fcs">2.3.1 Cryptographic Support (FCS)</h2><div class="comp" id=""><h4>FCS_IVG_EXT.1 Initialization Vector Generation</h4><span class="activity_pane_body"><div class="component-activity-header">FCS_IVG_EXT.1</div>

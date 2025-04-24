@@ -1,4 +1,10 @@
 * Warning: This document still has at least one comment.
+* Error: Detected dangling id-reference to saslimap from attribute
+        on/Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fia[1]""/f-component[1]""/depends[1]""/on[1]""
+* Error: Detected dangling id-reference to saslsmtp from attribute
+        on/Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fia[1]""/f-component[1]""/depends[2]""/on[1]""
+* Error: Detected dangling id-reference to saslpop from attribute
+        on/Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fia[1]""/f-component[1]""/depends[3]""/on[1]""
 * Error: Detected dangling ref to 'QQQQ'
         for a ref.
 	/Module[1]""/sec:Security_Requirements[1]""/base-pp[1]""/con-mod[1]""/ref[1]""
@@ -67,9 +73,7 @@
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fpt[1]""/f-component[1]""/f-element[1]""/note[1]"If "trust"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fpt[1]""/f-component[1]""/f-element[1]""/aactivity[1]""/TSS[1]"The evalu"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fpt[1]""/f-component[1]""/f-element[1]""/aactivity[1]""/Guidance[1]"The evalu"/h:p[1]""
-* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_ftp[1]""/f-component[1]""/f-element[2]""/note[1]"If IMAP, "/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_ftp[1]""/f-component[1]""/f-element[2]""/aactivity[1]""/TSS[1]"The evalu"/h:p[1]""
-* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_ftp[1]""/f-component[1]""/f-element[2]""/aactivity[1]""/Guidance[1]"The evalu"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fcs[1]""/f-component[1]""/f-element[1]""/aactivity[1]""/TSS[1]"The evalu"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fcs[1]""/f-component[1]""/f-element[1]""/aactivity[1]""/Guidance[1]"There are"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fcs[1]""/f-component[1]""/f-element[1]""/aactivity[1]""/Tests[1]"There are"/h:p[1]""

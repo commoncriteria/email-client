@@ -301,7 +301,7 @@
         <addressed-by>FDP_SMIME_EXT.1</addressed-by><rationale>FDP_SMIME_EXT.1 mitigates the threat by requiring the TSF to use S/MIME to protect email message data in transit.</rationale>
 		<addressed-by>FIA_X509_EXT.3</addressed-by><rationale>FIA_X509_EXT.3 mitigates the threat by requiring the TSF to support the use of X.509 certificates for S/MIME.</rationale>
 		<addressed-by>FMT_MOF_EXT.1</addressed-by><rationale>FMT_MOF_EXT.1 mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</rationale>
-		<addressed-by>FTP_ITC_EXT.1</addressed-by><rationale>FTP_ITC_EXT.1 mitigates the threat by specifying the trusted communications the TSF must implement that are specific to email communications.</rationale>
+		<addressed-by>FTP_ITC.1</addressed-by><rationale>FTP_ITC.1 mitigates the threat by specifying the trusted communications the TSF must implement that are specific to email communications.</rationale>
 
 		<addressed-by>FDP_NOT_EXT.2 (optional)</addressed-by><rationale>FDP_NOT_EXT.2 mitigates the threat by optionally requiring the TSF to enumerate the uniform resource identifier (URI) of embedded links in emails so that a user can determine the source of the link.</rationale>
 		<addressed-by>FDP_REN_EXT.1 (optional)</addressed-by><rationale>FDP_REN_EXT.1 mitigates the threat by optionally defining a plaintext-only operational mode that does not allow a user to interact with embedded content in an email message.</rationale>
@@ -323,7 +323,7 @@
 		<addressed-by>FDP_SMIME_EXT.1</addressed-by><rationale>FDP_SMIME_EXT.1 mitigates the threat by requiring the TSF to use S/MIME to protect email message data in transit.</rationale>
       	<addressed-by>FIA_X509_EXT.3</addressed-by><rationale>FIA_X509_EXT.3 mitigates the threat by requiring the TSF to support the use of X.509 certificates for S/MIME.</rationale>
 		<addressed-by>FMT_MOF_EXT.1</addressed-by><rationale>FMT_MOF_EXT.1 mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</rationale>
-		<addressed-by>FTP_ITC_EXT.1</addressed-by><rationale>FTP_ITC_EXT.1 mitigates the threat by specifying the trusted communications the TSF must implement that are specific to email communications.</rationale>
+		<addressed-by>FTP_ITC.1</addressed-by><rationale>FTP_ITC.1 mitigates the threat by specifying the trusted communications the TSF must implement that are specific to email communications.</rationale>
 
 		<addressed-by>FDP_NOT_EXT.2 (optional)</addressed-by><rationale>FDP_NOT_EXT.2 mitigates the threat by optionally requiring the TSF to enumerate the uniform resource identifier (URI) of embedded links in emails so that a user can determine the source of the link.</rationale>
 		<addressed-by>FDP_REN_EXT.1 (optional)</addressed-by><rationale>FDP_REN_EXT.1 mitigates the threat by optionally defining a plaintext-only operational mode that does not allow a user to interact with embedded content in an email message.</rationale>
@@ -1270,58 +1270,38 @@
 	</sec:man_fpt>
 	<sec:man_ftp title="Trusted Path/Channels (FTP)">
 	  <!-- as modified by TD0414 -->
-	  <ext-comp-def fam-id="FTP_ITC_EXT" title="Inter-TSF Trusted Channel">
-	    <fam-behavior>Components in this family define technology-specific requirements for trusted communications that are not defined in the Part 2 family FTP_ITC.
-	    </fam-behavior>
-	  </ext-comp-def>
-	  <f-component cc-id="ftp_itc_ext.1" name="Inter-TSF Trusted Channel">
+	  
+	  <f-component cc-id="ftp_itc.1" name="Inter-TSF Trusted Channel">
 	    <consistency-rationale>
 	      This SFR defines which channels for an email client must be considered trusted.
 	      It does not impact the Base-PP functionality. 
 	    </consistency-rationale>
-	    
-	    <comp-lev> requires the TSF to identify the trusted channels it uses for communications with external entities.</comp-lev>
-	    <management>No specific management functions are identified.</management>
-	    <audit>There are no auditable events foreseen.</audit>
-	    <dependencies>
-	      No dependencies.
-	    </dependencies>
-	    
-	    <f-element id="ftp-itc-ext-1-1">
-	      <title>The TSF shall initiate or receive communication via the trusted channel.
+
+	    <f-element id="ftp-itc-1-1">
+	      <title>The TSF shall enforce the <assignable>access control SFP(s) and/or information flow
+			control SFP(s)</assignable> when importing user data, controlled under the SFP, from outside of the
+			TOE.
 	      </title>
 	    </f-element>
-	    <f-element id="ftp-itc-ext-1-2">
-	      <title>The TSF shall communicate via the trusted channel for
-	      <selectables linebreak="yes">
-		<!-- Check these -->
-		<selectable id="saslimap">IMAP</selectable>
-		<selectable id="saslsmtp">SMTP</selectable>
-		<selectable id="saslpop">POP</selectable>
-		<selectable>MAPI Extensions for HTTP</selectable>
-		<selectable>MAPI/RPC</selectable>
-		<selectable>ActiveSync</selectable>
-		<selectable>
-		  <assignable>other protocol (reference RFC or specification)</assignable>
-		</selectable>
-	      </selectables>.</title>
-	      <ext-comp-def-title>
-	        <title>
-	          The TSF shall communicate via the trusted channel for <assignable>trusted channel protocol</assignable>.
-	        </title>
-	      </ext-comp-def-title>
-	      <note role="application">If IMAP, SMTP, or POP is selected, the selection-based SFR FIA_SASL_EXT.1 must be claimed.
-	        <h:p/>
-	      Selections must include at least one sending and one receiving protocol. If the
-	      assignment is used, the ST author must also include a reference for the protocol
-	      (e.g., an RFC number). </note>
+	    <f-element id="ftp-itc-1-2">
+	      <title>The TSF shall ignore any security attributes associated with the user data when imported
+			from outside the TOE.			
+	     </title>
+	      <f-element id="ftp-itc-1-3">
+			<title>
+				The TSF shall enforce the following rules when importing user data controlled under the
+SFP from outside the TOE: <assignable>additional importation control rules</assignable>.
+
+			</title>
+
+		  </f-element>
+	        
 	      <aactivity>
 		<TSS>
-		The evaluator shall verify that the TSS describes the details of the email client connecting to a Mail Transfer Agent in terms of the trusted connection (i.e., TLS) according to FTP_DIT_EXT.1 in the Base-PP, 
-		along with email client-specific options or procedures that might not be reflected in the specification.<h:p/>
+		The evaluator shall verify that the TSS describes the details of the email client connecting to a Mail Transfer Agent in terms of the trusted connection (i.e., TLS) according to FTP_DIT_EXT.1 in the Base-PP, along with email client-specific options or procedures that might not be reflected in the specification.<h:p/>
 		</TSS>
 		<Guidance>
-		  The evaluator shall confirm that the operational guidance contains instructions for establishing the connection to the Mail Transfer Agent.<h:p/>
+		  The evaluator shall confirm that the operational guidance contains instructions for establishing the connection to the Mail Transfer Agent.
 		</Guidance>
 		<Tests>
 		The evaluator shall perform the following tests:
@@ -1925,7 +1905,7 @@ Support for 256-bit AES key sizes will be required for
         <f-element id="fia-sasl-ext-1-4">
           <title>The TSF shall support the SMTP AUTH extension for the SASL mechanism. </title>
           <note role="application">
-            This selection-based SFR is claimed when IMAP, SMTP, or POP is selected in FTP_ITC_EXT.1.2.
+            This selection-based SFR is claimed when IMAP, SMTP, or POP is selected in FTP_ITC.1.2.
             <h:p/>
             For an email client to support PKI X.509 certificates
             for POP3, IMAP, and SMTP as required in this document, the client must support the
