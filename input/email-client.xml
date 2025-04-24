@@ -1303,6 +1303,7 @@
 	      <title>The TSF shall ignore any security attributes associated with the user data when imported
 			from outside the TOE.			
 	     </title>
+		</f-element>
 	      <f-element id='ftp-itc-1-3'>
 			<title>
 				The TSF shall enforce the following rules when importing user data controlled under the
@@ -1310,7 +1311,7 @@ SFP from outside the TOE: <assignable>additional importation control rules</assi
 
 			</title>
 
-		  </f-element>
+		  
 	        
 	      <aactivity>
 		<TSS>
