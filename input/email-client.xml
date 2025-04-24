@@ -638,9 +638,9 @@
 			</selectables></title></f-element>
 	    <f-element id="fcs-ckm-6-2">
 	<title>
-		The TSF shall destroy cryptographic keys and keying material specified by FCS_CKM.6.1 in accordance with a specified cryptographic key destruction method <assignable>cryptographic key destruction method</assignable> that meets the following: <assignable>list of standards</assignable>.
-		
-	<!--old title
+		<h:p>The TSF shall destroy cryptographic keys and keying material specified by FCS_CKM.6.1 in accordance with a specified cryptographic key destruction method <assignable>cryptographic key destruction method</assignable> that meets the following: <assignable>list of standards</assignable>.
+	</h:p><h:p>
+
 	The TSF shall <selectables linebreak="yes">
    <selectable>invoke platform-provided key destruction</selectable>     
    <selectable>implement key destruction using <selectables linebreak="yes">
@@ -662,7 +662,7 @@
          <selectable>NIST SP 800-88</selectable>
 	       <selectable>no standard</selectable></selectables> 
 for destroying all keying material and cryptographic security parameters when no longer needed.
-old title-->
+</h:p>
 	</title>
 	      <ext-comp-def-title>
 	        <title>The TSF shall <assignable>key destruction method</assignable>
