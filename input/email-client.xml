@@ -45,7 +45,7 @@
       Email clients are user applications that provide functionality to send, receive, access, and manage email. 
       
       This PP-Module is intended for use with the following Base-PP: <h:ul>
-        <h:li>Protection Profile for Application Software, Version 2.0<comment> Please update the referenced link.</comment></h:li>
+        <h:li>Protection Profile for Application Software, Version 2.0<comment> Please update the referenced link in the bib.</comment></h:li>
       </h:ul>
       <h:p/> This Base-PP is valid because email clients are a specific type of software application.
       
