@@ -274,7 +274,7 @@
    </style></head><body><div style="text-align: center; margin-left: auto; margin-right: auto;"><h1 class="title" style="page-break-before:auto;">Supporting Document<br/>
         Mandatory Technical Document</h1><img src="images/niaplogo.png" alt="NIAP"></img><hr width="50%"></hr><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><br/>
     PP-Module for Email Client<br/>
-      Version: 1.0<br/>2025-04-04<br/><b>National Information Assurance Partnership</b></div><div class="foreword"><h1 style="text-align: center">Foreword</h1><p>This is a Supporting Document (SD), intended to complement the Common Criteria version 3
+      Version: 1.0<br/>2025-06-10<br/><b>National Information Assurance Partnership</b></div><div class="foreword"><h1 style="text-align: center">Foreword</h1><p>This is a Supporting Document (SD), intended to complement the Common Criteria version 3
       and the associated Common Evaluation Methodology for
       Information Technology Security Evaluation.</p><p>SDs may be “Guidance Documents”, that highlight specific approaches 
       and application of the standard to areas where no mutual recognition of
@@ -284,7 +284,7 @@
       The usage of the latter class is not only mandatory, but certificates
       issued as a result of their application are recognized under the CCRA.</p><p><b>Technical Editor:</b><br/>
       National Information Assurance Partnership (NIAP)
-      </p><p><b style="page-break-before:always;">Document history:</b><table><tr class="header"><th>Version</th><th>Date</th><th style="align:left;">Comment</th></tr><tr><td>1.0</td><td>2023-12-11</td><td>Initial release as CC:2022 PP-Module</td></tr></table></p><p><b>General Purpose:</b><br/>
+      </p><p><b style="page-break-before:always;">Document history:</b><table><tr class="header"><th>Version</th><th>Date</th><th style="align:left;">Comment</th></tr><tr><td>1.0</td><td>2025-06-10</td><td>Initial release as CC:2022 PP-Module</td></tr></table></p><p><b>General Purpose:</b><br/>
       The purpose of this SD is to define evaluation methods for the functional behavior of
       Email Client      
       products.
@@ -568,25 +568,27 @@ The following sections list Common Criteria and technology terms used in this do
 		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
 	        The evaluator shall ensure that the operational guidance includes instructions for configuring a certificate for S/MIME use and instructions for signing and encrypting email.<p></p>
 		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">Tests for this component are performed in conjunction with tests for FCS_SMIME_EXT.1 and FDP_NOT_EXT.1.
-		</div></div></span></div><h2 class="indexable" data-level="2" id="man_fia">2.2.3 Identification and Authentication (FIA)</h2><div class="comp" id=""><h4>FIA_X509_EXT.3 X.509 Authentication and Encryption</h4><span class="activity_pane_body"><div class="component-activity-header">FIA_X509_EXT.3</div>
-		
-		  
-		
+		</div></div></span></div><h2 class="indexable" data-level="2" id="man_fia">2.2.3 Identification and Authentication (FIA)</h2><div class="comp" id=""><h4>FIA_X509_EXT.2/SMIME X.509 Certificate Support for Functions (S/MIME)</h4><span class="activity_pane_body"><div class="component-activity-header">FIA_X509_EXT.2/SMIME</div>
+	        
+	        
+	        
 	      <div class="eacategory">TSS</div><div class="ea"><div class="ea">
-		The evaluator shall ensure that the TSS describes how the email client chooses which certificates to use so that the email client can use the certificates.<p></p>
-		The evaluator shall confirm that the TSS describes the behavior of the email client when a connection cannot be established during the validity check of a certificate used in establishing a trusted channel and protecting email.<p></p>
-		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
-		    The evaluator shall verify that the administrative guidance contains any necessary instructions for configuring the operating environment so that the email client can use the certificates.<p></p>
-		  </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests:
-		<span class="testlist-"><ul>
-		  <li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FIA_X509_EXT.3:1</a>:
+	          The evaluator shall ensure that the TSS describes how the email client chooses which certificates to use so that the email client can use the certificates.<p></p>
+	          The evaluator shall confirm that the TSS describes the behavior of the email client when a connection cannot be established during the validity check of a certificate used in establishing a trusted channel and protecting email.<p></p>
+	        </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+	          The evaluator shall verify that the administrative guidance contains any necessary instructions for configuring the operating environment so that the email client can use the certificates.<p></p>
+	        </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests:
+	          <span class="testlist-"><ul>
+	            <li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FIA_X509_EXT.2/SMIME:1</a>:
       The evaluator shall perform this test for each function listed in FIA_X509_EXT.2.1 (from the Base-PP) that requires the use of certificates. The evaluator shall demonstrate that using a certificate without a valid certification path results in the function failing. The evaluator shall then load into the platform's root store any certificates needed to validate the certificate to be used in the function, and demonstrate that the function succeeds.<p></p></li> 
-		  <li class="test-"><a id="_t_18" class="defined" href="#_t_18">Test FIA_X509_EXT.3:2</a>:
+	            <li class="test-"><a id="_t_18" class="defined" href="#_t_18">Test FIA_X509_EXT.2/SMIME:2</a>:
       The evaluator shall use the TOE to communicate with a non-TOE IT entity that presents a certificate that can be validated.
-		    The evaluator shall then manipulate the environment so that the TOE is unable to verify the validity of the presented certificate (e.g., by deliberately making the method of revocation checking unavailable), and observe that the action selected in FIA_X509_EXT.2.2 (from the Base-PP) is performed. 
-		    If the selected action is administrator-configurable, then the evaluator shall verify that all supported administrator-configurable options behave in their documented manner by following the operational guidance.</li>
-		</ul></span>
-		</div></div></span></div><h2 class="indexable" data-level="2" id="man_fmt">2.2.4 Security Management (FMT)</h2><div class="comp" id=""><h4>FMT_MOF_EXT.1 Management of Functions Behavior</h4><span class="activity_pane_body"><div class="component-activity-header">FMT_MOF_EXT.1</div>
+	              The evaluator shall then manipulate the environment so that the TOE is unable to verify the validity of the presented certificate (e.g., by deliberately making the method of revocation checking unavailable), and observe that the action selected in FIA_X509_EXT.2.2 (from <a href="https://www.niap-ccevs.org/protectionprofiles/511">Functional Package for X.509,
+        version 
+        1.0</a>) is performed. 
+	              If the selected action is administrator-configurable, then the evaluator shall verify that all supported administrator-configurable options behave in their documented manner by following the operational guidance.</li>
+	          </ul></span>
+	        </div></div></span></div><h2 class="indexable" data-level="2" id="man_fmt">2.2.4 Security Management (FMT)</h2><div class="comp" id=""><h4>FMT_SMF.1/EmailClient Specification of Management Functions</h4><span class="activity_pane_body"><div class="component-activity-header">FMT_SMF.1/EmailClient</div>
 		The evaluation activities for this component will be driven by the selections made by the ST author. If a capability is not selected in the ST, the noted evaluation activity does not need to be performed. 
 		
 		
@@ -597,16 +599,16 @@ The following sections list Common Criteria and technology terms used in this do
 		  Disable Key Recovery: If the email client supports key recovery, this must be stated in the TSS. The TSS shall also describe how to disable this functionality. This includes a description of how the recovery material is provided to the recovery holder.<p></p>
 		  Cryptographic Configuration: The evaluator shall determine from the TSS for other requirements (FCS_*) what portions of the cryptographic functionality are configurable.<p></p>
 		</div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
-		The evaluator shall verify that the operational guidance includes instructions for an email client platform administrator to configure the functions listed in FMT_MOF_EXT.1.1.<p></p>
+		The evaluator shall verify that the operational guidance includes instructions for an email client platform administrator to configure the functions listed in FMT_SMF.1/EmailClient.<p></p>
 		Disable Key Recovery: If the email client supports key recovery, the guidance for disabling this capability shall be described in the operational guidance.<p></p>
 		  Cryptographic Configuration: The evaluator shall verify that the operational guidance has instructions for manipulating all of the claimed mechanisms.<p></p>
 		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests:
 		<span class="testlist-"><ul>
-		  <li class="test-"><a id="_t_19" class="defined" href="#_t_19">Test FMT_MOF_EXT.1:1</a>:
+		  <li class="test-"><a id="_t_19" class="defined" href="#_t_19">Test FMT_SMF.1/EmailClient:1</a>:
       The evaluator shall verify that all functions perform as intended by enabling, disabling, and configuring the functions.</li>
-		  <li class="test-"><a id="_t_20" class="defined" href="#_t_20">Test FMT_MOF_EXT.1:2</a>:
+		  <li class="test-"><a id="_t_20" class="defined" href="#_t_20">Test FMT_SMF.1/EmailClient:2</a>:
       The evaluator shall set management functions which are controlled by the (enterprise) administrator and cannot be overridden by the user. The evaluator shall apply these functions to the client, attempt to override each setting as the user, and ensure that the email client does not permit it.</li>
-		  <li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FMT_MOF_EXT.1:3</a>:
+		  <li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FMT_SMF.1/EmailClient:3</a>:
       [Conditional: the TSF has a key recovery capability] The evaluator shall devise a test that ensures that the key recovery capability has been or can be disabled following the guidance provided by the vendor</li>
 		</ul></span>
 		</div></div></span></div><h2 class="indexable" data-level="2" id="man_fpt">2.2.5 Protection of the TSF (FPT)</h2><div class="comp" id=""><h4>FPT_AON_EXT.1 Support for Only Trusted Add-ons</h4><span class="activity_pane_body"><div class="component-activity-header">FPT_AON_EXT.1</div>

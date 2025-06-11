@@ -20,10 +20,6 @@
         <div id="commmentbox-">
             <a href="#Comment-1-">Comment: Comment-1-</a>
             <br>
-            <a href="#Comment-2-">Comment: Comment-2-</a>
-            <br>
-            <a href="#Comment-3-">Comment: Comment-3-</a>
-            <br>
         </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for Email Client</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
@@ -32,7 +28,7 @@
             <br>
              Version: 1.0
             <br>
-            2025-04-04
+            2025-06-10
             <br>
             <b>National Information Assurance Partnership</b>
             <br>
@@ -43,7 +39,7 @@
                 <th>Version</th><th>Date</th><th>Comment</th>
             </tr>
             <tr>
-                <td>1.0</td><td>2023-12-11</td><td>Initial release as <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr></td>
+                <td>1.0</td><td>2025-06-10</td><td>Initial release as <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr></td>
             </tr>
         </table>
         <h3>
@@ -51,7 +47,7 @@
         </h3>
         <h2>Contents</h2>
         <div class="toc" id="toc">
-            <a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#usecases" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#Threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#objectivesEnvironment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-AppPP" style="text-indent:10px">5.1<span> Protection Profile for Application Software Security Functional Requirements Direction </span></a><a href="#modsfr-AppPP" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#mod_fcs" style="text-indent:30px">5.1.1.1<span>Cryptographic Support (FCS)</span></a><a href="#mod_fia" style="text-indent:30px">5.1.1.2<span>Identification and Authentication (FIA)</span></a><a href="#mod_ftp" style="text-indent:30px">5.1.1.3<span>Trusted Path/Channels (FTP)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#man_fcs" style="text-indent:20px">5.2.1<span>Cryptographic Support (FCS)</span></a><a href="#man_fdp" style="text-indent:20px">5.2.2<span>User Data Protection (FDP)</span></a><a href="#man_fia" style="text-indent:20px">5.2.3<span>Identification and Authentication (FIA)</span></a><a href="#man_fmt" style="text-indent:20px">5.2.4<span>Security Management (FMT)</span></a><a href="#man_fpt" style="text-indent:20px">5.2.5<span>Protection of the TSF (FPT)</span></a><a href="#man_ftp" style="text-indent:20px">5.2.6<span>Trusted Path/Channels (FTP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-AppPP" style="text-indent:10px">6.1<span> Protection Profile for Application Software</span></a><a href="#contoe-AppPP" style="text-indent:20px">6.1.1<span> Consistency of TOE Type </span></a><a href="#consecprob-AppPP" style="text-indent:20px">6.1.2<span> Consistency of Security Problem Definition </span></a><a href="#conobj-AppPP" style="text-indent:20px">6.1.3<span> Consistency of OE Objectives </span></a><a href="#conreq-AppPP" style="text-indent:20px">6.1.4<span> Consistency of Requirements </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements </span></a><a href="#opt_fcs" style="text-indent:20px">A.1.1<span>Cryptographic Support (FCS)</span></a><a href="#opt_fdp" style="text-indent:20px">A.1.2<span>User Data Protection (FDP)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements </span></a><a href="#sel_fcs" style="text-indent:10px">B.1<span>Cryptographic Support (FCS)</span></a><a href="#sel_fia" style="text-indent:10px">B.2<span>Identification and Authentication (FIA)</span></a><a href="#sel_fpt" style="text-indent:10px">B.3<span>Protection of the TSF (FPT)</span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FCS" style="text-indent:20px">C.2.1<span>Cryptographic Support (FCS)</span></a><a href="#ext-comp-FCS_CKM_EXT" style="text-indent:30px">C.2.1.1<span>FCS_CKM_EXT Cryptographic Key Management</span></a><a href="#ext-comp-FCS_KYC_EXT" style="text-indent:30px">C.2.1.2<span>FCS_KYC_EXT Cryptographic Key Chaining</span></a><a href="#ext-comp-FCS_SMIME_EXT" style="text-indent:30px">C.2.1.3<span>FCS_SMIME_EXT Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></a><a href="#ext-comp-FCS_IVG_EXT" style="text-indent:30px">C.2.1.4<span>FCS_IVG_EXT Initialization Vector Generation</span></a><a href="#ext-comp-FCS_NOG_EXT" style="text-indent:30px">C.2.1.5<span>FCS_NOG_EXT Cryptographic Nonce Generation</span></a><a href="#ext-comp-FCS_SAG_EXT" style="text-indent:30px">C.2.1.6<span>FCS_SAG_EXT Cryptographic Salt Generation</span></a><a href="#ext-comp-FCS_COP_EXT" style="text-indent:30px">C.2.1.7<span>FCS_COP_EXT Cryptographic Operation</span></a><a href="#ext-comp-FCS_SMC_EXT" style="text-indent:30px">C.2.1.8<span>FCS_SMC_EXT Submask Combining</span></a><a href="#ext-comp-FIA" style="text-indent:20px">C.2.2<span>Identification and Authentication (FIA)</span></a><a href="#ext-comp-FIA_X509_EXT" style="text-indent:30px">C.2.2.1<span>FIA_X509_EXT X.509 Certificate Services</span></a><a href="#ext-comp-FIA_SASL_EXT" style="text-indent:30px">C.2.2.2<span>FIA_SASL_EXT Simple Authentication and Security Layer (SASL)</span></a><a href="#ext-comp-FPT" style="text-indent:20px">C.2.3<span>Protection of the TSF (FPT)</span></a><a href="#ext-comp-FPT_AON_EXT" style="text-indent:30px">C.2.3.1<span>FPT_AON_EXT Add-Ons</span></a><a href="#ext-comp-FMT" style="text-indent:20px">C.2.4<span>Security Management (FMT)</span></a><a href="#ext-comp-FMT_MOF_EXT" style="text-indent:30px">C.2.4.1<span>FMT_MOF_EXT Management of Functions Behavior</span></a><a href="#ext-comp-FDP" style="text-indent:20px">C.2.5<span>User Data Protection (FDP)</span></a><a href="#ext-comp-FDP_NOT_EXT" style="text-indent:30px">C.2.5.1<span>FDP_NOT_EXT Notifications</span></a><a href="#ext-comp-FDP_SMIME_EXT" style="text-indent:30px">C.2.5.2<span>FDP_SMIME_EXT Use of Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></a><a href="#ext-comp-FDP_PST_EXT" style="text-indent:30px">C.2.5.3<span>FDP_PST_EXT Storage of Persistent Information</span></a><a href="#ext-comp-FDP_REN_EXT" style="text-indent:30px">C.2.5.4<span>FDP_REN_EXT Rendering of Message Content</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Implicitly Satisfied Requirements</span></a><a href="#EAR" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a>
+            <a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#usecases" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#Threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#objectivesEnvironment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-AppPP" style="text-indent:10px">5.1<span> Protection Profile for Application Software Security Functional Requirements Direction </span></a><a href="#modsfr-AppPP" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#mod_fcs" style="text-indent:30px">5.1.1.1<span>Cryptographic Support (FCS)</span></a><a href="#mod_fia" style="text-indent:30px">5.1.1.2<span>Identification and Authentication (FIA)</span></a><a href="#mod_ftp" style="text-indent:30px">5.1.1.3<span>Trusted Path/Channels (FTP)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#man_fcs" style="text-indent:20px">5.2.1<span>Cryptographic Support (FCS)</span></a><a href="#man_fdp" style="text-indent:20px">5.2.2<span>User Data Protection (FDP)</span></a><a href="#man_fia" style="text-indent:20px">5.2.3<span>Identification and Authentication (FIA)</span></a><a href="#man_fmt" style="text-indent:20px">5.2.4<span>Security Management (FMT)</span></a><a href="#man_fpt" style="text-indent:20px">5.2.5<span>Protection of the TSF (FPT)</span></a><a href="#man_ftp" style="text-indent:20px">5.2.6<span>Trusted Path/Channels (FTP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-AppPP" style="text-indent:10px">6.1<span> Protection Profile for Application Software</span></a><a href="#contoe-AppPP" style="text-indent:20px">6.1.1<span> Consistency of TOE Type </span></a><a href="#consecprob-AppPP" style="text-indent:20px">6.1.2<span> Consistency of Security Problem Definition </span></a><a href="#conobj-AppPP" style="text-indent:20px">6.1.3<span> Consistency of OE Objectives </span></a><a href="#conreq-AppPP" style="text-indent:20px">6.1.4<span> Consistency of Requirements </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements </span></a><a href="#opt_fcs" style="text-indent:20px">A.1.1<span>Cryptographic Support (FCS)</span></a><a href="#opt_fdp" style="text-indent:20px">A.1.2<span>User Data Protection (FDP)</span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements </span></a><a href="#sel_fcs" style="text-indent:10px">B.1<span>Cryptographic Support (FCS)</span></a><a href="#sel_fia" style="text-indent:10px">B.2<span>Identification and Authentication (FIA)</span></a><a href="#sel_fpt" style="text-indent:10px">B.3<span>Protection of the TSF (FPT)</span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FCS" style="text-indent:20px">C.2.1<span>Cryptographic Support (FCS)</span></a><a href="#ext-comp-FCS_CKM_EXT" style="text-indent:30px">C.2.1.1<span>FCS_CKM_EXT Cryptographic Key Management</span></a><a href="#ext-comp-FCS_KYC_EXT" style="text-indent:30px">C.2.1.2<span>FCS_KYC_EXT Cryptographic Key Chaining</span></a><a href="#ext-comp-FCS_SMIME_EXT" style="text-indent:30px">C.2.1.3<span>FCS_SMIME_EXT Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></a><a href="#ext-comp-FCS_IVG_EXT" style="text-indent:30px">C.2.1.4<span>FCS_IVG_EXT Initialization Vector Generation</span></a><a href="#ext-comp-FCS_NOG_EXT" style="text-indent:30px">C.2.1.5<span>FCS_NOG_EXT Cryptographic Nonce Generation</span></a><a href="#ext-comp-FCS_SAG_EXT" style="text-indent:30px">C.2.1.6<span>FCS_SAG_EXT Cryptographic Salt Generation</span></a><a href="#ext-comp-FCS_COP_EXT" style="text-indent:30px">C.2.1.7<span>FCS_COP_EXT Cryptographic Operation</span></a><a href="#ext-comp-FCS_SMC_EXT" style="text-indent:30px">C.2.1.8<span>FCS_SMC_EXT Submask Combining</span></a><a href="#ext-comp-FIA" style="text-indent:20px">C.2.2<span>Identification and Authentication (FIA)</span></a><a href="#ext-comp-FIA_SASL_EXT" style="text-indent:30px">C.2.2.1<span>FIA_SASL_EXT Simple Authentication and Security Layer (SASL)</span></a><a href="#ext-comp-FPT" style="text-indent:20px">C.2.3<span>Protection of the TSF (FPT)</span></a><a href="#ext-comp-FPT_AON_EXT" style="text-indent:30px">C.2.3.1<span>FPT_AON_EXT Add-Ons</span></a><a href="#ext-comp-FDP" style="text-indent:20px">C.2.4<span>User Data Protection (FDP)</span></a><a href="#ext-comp-FDP_NOT_EXT" style="text-indent:30px">C.2.4.1<span>FDP_NOT_EXT Notifications</span></a><a href="#ext-comp-FDP_SMIME_EXT" style="text-indent:30px">C.2.4.2<span>FDP_SMIME_EXT Use of Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></a><a href="#ext-comp-FDP_PST_EXT" style="text-indent:30px">C.2.4.3<span>FDP_PST_EXT Storage of Persistent Information</span></a><a href="#ext-comp-FDP_REN_EXT" style="text-indent:30px">C.2.4.4<span>FDP_REN_EXT Rendering of Message Content</span></a><a href="#satisfiedreqs" style="text-indent:0px">Appendix D - <span>Implicitly Satisfied Requirements</span></a><a href="#EAR" style="text-indent:0px">Appendix E - <span>Entropy Documentation and Assessment</span></a><a href="#acronyms" style="text-indent:0px">Appendix F - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix G - <span>Bibliography</span></a>
         </div>
         <h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
         <h2 class="indexable" data-level="2" id="Overview">1.1 Overview</h2>
@@ -559,16 +555,7 @@
                             <span class="selectable-content" id="kyc1_combined">implement key combining as specified in <a href="#FCS_SMC_EXT.1">FCS_SMC_EXT.1</a></span>
                         </li>
                     </ul>
-                    ] while maintaining an effective strength of [<b>selection</b>: 
-                    <ul>
-                        <li style="">
-                            <span class="selectable-content" id="_s_47">128 bits</span>
-                        </li>
-                        <li style="">
-                            <span class="selectable-content" id="_s_48">256 bits</span>
-                        </li>
-                    </ul>
-                    ] 
+                    ] while maintaining an effective strength of 256 bits. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> references the selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> <a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a>, <a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a>, and <a href="#FCS_SMC_EXT.1">FCS_SMC_EXT.1</a>. If any selection that references one of these <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> is chosen, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> must also claim that selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. 
                             <p></p>
@@ -595,7 +582,7 @@
                     <a href="#FCS_SMIME_EXT.1.2" class="abbr">FCS_SMIME_EXT.1.2</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall transmit the ContentEncryptionAlgorithmIdentifier for <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, and [<b>selection</b>: <span class="selectable-content" id="_s_49"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_50"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_51">no other</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall transmit the ContentEncryptionAlgorithmIdentifier for <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr> and [<b>selection</b>: <span class="selectable-content" id="_s_47"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_48">no other</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note">Advanced Encryption Standard (<abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>) was added to Cryptographic Message Syntax (<abbr class="dyn-abbr"><a href="#abbr_CMS">CMS</a></abbr>) as defined in RFC 3565.</span>
                     </div>
@@ -606,7 +593,7 @@
                     <a href="#FCS_SMIME_EXT.1.3" class="abbr">FCS_SMIME_EXT.1.3</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall present the digestAlgorithm field with the following Message Digest Algorithm identifiers [<b>selection</b>: <span class="selectable-content" id="_s_52">id-sha256</span>, <span class="selectable-content" id="_s_53">id-sha384</span>, <span class="selectable-content" id="_s_54">id-sha512</span>] and no others as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall present the digestAlgorithm field with the following Message Digest Algorithm identifiers [<b>selection</b>: <span class="selectable-content" id="_s_49">id-sha384</span>, <span class="selectable-content" id="_s_50">id-sha512</span>] and no others as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                 </div>
             </div>
             <div class="element">
@@ -614,25 +601,22 @@
                     <a href="#FCS_SMIME_EXT.1.4" class="abbr">FCS_SMIME_EXT.1.4</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall present the signatureAlgorithm field with the following: sha256withRSAEncryption and [<b>selection</b>: 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall present the signatureAlgorithm field with the following: [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_55">sha384WithRSAEncryption</span>
+                            <span class="selectable-content" id="_s_51">sha384WithRSAEncryption</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_56">sha512WithRSAEncryption</span>
+                            <span class="selectable-content" id="_s_52">sha512WithRSAEncryption</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_57">ecdsawithsha256</span>
+                            <span class="selectable-content" id="_s_53">ecdsawithsha384</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_58">ecdsawithsha384</span>
+                            <span class="selectable-content" id="_s_54">ecdsawithsha512</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_59">ecdsawithsha512</span>
-                        </li>
-                        <li style="">
-                            <span class="selectable-content" id="_s_60">no other algorithms</span>
+                            <span class="selectable-content" id="_s_55">no other algorithms</span>
                         </li>
                     </ul>
                     ] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
@@ -667,9 +651,9 @@
                     <a href="#FCS_SMIME_EXT.1.7" class="abbr">FCS_SMIME_EXT.1.7</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and certificate revocation information in accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> [<b>selection</b>: <span class="selectable-content" id="_s_61">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_62"> [<b>assignment</b>: <span class="assignable-content">frequency</span>]</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and certificate revocation information in accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> [<b>selection</b>: <span class="selectable-content" id="_s_56">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_57"> [<b>assignment</b>: <span class="assignable-content">frequency</span>]</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                     <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note">In accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> in <a href="#bibAppPP">[App PP]</a>, certificate revocation may use a Certificate Revocation List (<abbr class="dyn-abbr"><a href="#abbr_CRL">CRL</a></abbr>) or Online Certificate Status Protocol (OCSP). The email client can define how this mechanism behaves, including whether it uses the underlying OS, but it is required that a mechanism exists such that revocation status is supported and so that certificates can be retrieved for sending and receiving messages. Frequency is configurable in <a href="#FMT_MOF_EXT.1.1">FMT_MOF_EXT.1.1</a>. In this requirement, frequency can be interpreted as a one-time function with local storage, as a regularly scheduled retrieval, or as a mechanism that requires manual intervention. If the retrieval mechanism is periodic in nature, then the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author will need to include an iteration of FCS for storage of revocation information; storage of certificates is covered in <a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a>. The import of certificates and certificate chains is not included in this requirement, but is covered in <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>. </span>
+                        <span class="note-header">Application Note: </span><span class="note">In accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> in <a href="#bibAppPP">[App PP]</a>, certificate revocation may use a Certificate Revocation List (<abbr class="dyn-abbr"><a href="#abbr_CRL">CRL</a></abbr>) or Online Certificate Status Protocol (OCSP). The email client can define how this mechanism behaves, including whether it uses the underlying OS, but it is required that a mechanism exists such that revocation status is supported and so that certificates can be retrieved for sending and receiving messages. Frequency is configurable in FMT_MOF.1/EmailClient. In this requirement, frequency can be interpreted as a one-time function with local storage, as a regularly scheduled retrieval, or as a mechanism that requires manual intervention. If the retrieval mechanism is periodic in nature, then the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author will need to include an iteration of FCS for storage of revocation information; storage of certificates is covered in <a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a>. The import of certificates and certificate chains is not included in this requirement, but is covered in <a href="#FMT_SMF.1/EmailClient">FMT_SMF.1/EmailClient</a>. </span>
                     </div>
                 </div>
             </div>
@@ -704,73 +688,51 @@
             </div>
         </div>
         <h3 id="man_fia" class="indexable" data-level="3">5.2.3 Identification and Authentication (FIA)</h3>
-        <div class="comp" id="FIA_X509_EXT.3">
-            <h4>FIA_X509_EXT.3 X.509 Authentication and Encryption</h4>
+        <div class="comp" id="FIA_X509_EXT.2/SMIME">
+            <h4>FIA_X509_EXT.2/SMIME X.509 Certificate Support for Functions (S/MIME)</h4>
             <div class="element">
-                <div class="reqid" id="FIA_X509_EXT.3.1">
-                    <a href="#FIA_X509_EXT.3.1" class="abbr">FIA_X509_EXT.3.1</a>
+                <div class="reqid" id="FIA_X509_EXT.2.1/SMIME">
+                    <a href="#FIA_X509_EXT.2.1/SMIME" class="abbr">FIA_X509_EXT.2.1/SMIME</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall use X.509v3 certificates as defined by RFC 5280 to support encryption and authentication for <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>. <span style="" class="comment " id="Comment-2-">Should this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> be iterated?</span>
-                </div>
-            </div>
-            <div class="element">
-                <div class="reqid" id="FIA_X509_EXT.3.2">
-                    <a href="#FIA_X509_EXT.3.2" class="abbr">FIA_X509_EXT.3.2</a>
-                </div>
-                <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the establishment of a trusted communication channel when the peer certificate is deemed invalid. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_58">invoke platform-provided functionality to validate</span>, <span class="selectable-content" id="_s_59">validate</span>] X.509v3 certificates in accordance with <a href="#fia-x509-ext-1-smime" class="dynref" data-format=""></a> <b>in the <a href="https://www.niap-ccevs.org/protectionprofiles/511">Functional Package for X.509, version 1.0</a></b> to support [<i>authentication and encryption for <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>, installation of code</i>] using [<i>[code signing for system software updates, [encryption of email messages, digitally signing of email messages]]</i>]. 
                     <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note">Validity is determined by the certificate path, the expiration date, and the revocation status in accordance with RFC 5280. </span>
+                        <span class="note-header">Application Note: </span><span class="note"> The intent of this requirement is to require the use of X.509 certificates to determine authentication and integrity for email messages using <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>, and to prevent the installation of code in the event of an invalid code signing certificate. </span>
                     </div>
                 </div>
             </div>
             <div class="element">
-                <div class="reqid" id="FIA_X509_EXT.3.3">
-                    <a href="#FIA_X509_EXT.3.3" class="abbr">FIA_X509_EXT.3.3</a>
+                <div class="reqid" id="FIA_X509_EXT.2.2/SMIME">
+                    <a href="#FIA_X509_EXT.2.2/SMIME" class="abbr">FIA_X509_EXT.2.2/SMIME</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the installation of code if the code signing certificate is deemed invalid. 
-                </div>
-            </div>
-            <div class="element">
-                <div class="reqid" id="FIA_X509_EXT.3.4">
-                    <a href="#FIA_X509_EXT.3.4" class="abbr">FIA_X509_EXT.3.4</a>
-                </div>
-                <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the encryption of email if the email protection certificate is deemed invalid. 
-                </div>
-            </div>
-            <div class="element">
-                <div class="reqid" id="FIA_X509_EXT.3.5">
-                    <a href="#FIA_X509_EXT.3.5" class="abbr">FIA_X509_EXT.3.5</a>
-                </div>
-                <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the signing of email if the email protection certificate is deemed invalid. 
+                    For each function indicated in <a href="#FIA_X509_EXT.2.1">FIA_X509_EXT.2.1</a><b>/SMIME</b>, the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_60">invoke the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> platform to determine</span>, <span class="selectable-content" id="_s_61">determine</span>] whether the [<i>certificate is not accpted</i>] when valid certificate revocation status information cannot be obtained from a source indicated in <a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a>.3. 
+                    <div class="appnote">
+                        <span class="note-header">Application Note: </span><span class="note"> The intent of this requirement is to enforce that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> presents the installation of code or the signing and encryption of email if the associated code signing or email protection certificate is deemed invalid. </span>
+                    </div>
                 </div>
             </div>
         </div>
         <h3 id="man_fmt" class="indexable" data-level="3">5.2.4 Security Management (FMT)</h3>
-        <div class="comp" id="FMT_MOF_EXT.1">
-            <h4>FMT_MOF_EXT.1 Management of Functions Behavior</h4>
+        <div class="comp" id="FMT_SMF.1/EmailClient">
+            <h4>FMT_SMF.1/EmailClient Specification of Management Functions</h4>
             <div class="element">
-                <div class="reqid" id="FMT_MOF_EXT.1.1">
-                    <a href="#FMT_MOF_EXT.1.1" class="abbr">FMT_MOF_EXT.1.1</a>
+                <div class="reqid" id="FMT_SMF.1.1/EmailClient">
+                    <a href="#FMT_SMF.1.1/EmailClient" class="abbr">FMT_SMF.1.1/EmailClient</a>
                 </div>
                 <div class="reqdesc">
-                    <span style="" class="comment " id="Comment-3-">could be converted to Part 2 requirements per previous email convo between Justin and Matt</span>
-                    <br>
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions, controlled by the user or administrator as shown: 
-                    <ul>
-                        <li> X: Mandatory</li>
-                        <li> O: Optional</li>
-                    </ul>
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions [<i>controlled by the user or administrator as shown: 
+                        <ul>
+                            <li> X: Mandatory</li>
+                            <li> O: Optional</li>
+                        </ul>
+                    </i> 
                     <table class="mfs" style="width: 100%;">
                         <tr class="header">
                             <td>#</td><td>Management Function</td><td>Administrator</td><td>User</td>
                         </tr>
                         <tr id="_mf_1">
-                            <td>1</td><td style="text-align:left">Enable or disable downloading embedded objects globally and by [<b>selection</b>: <span class="selectable-content" id="_s_63">domain</span>, <span class="selectable-content" id="_s_64">sender</span>, <span class="selectable-content" id="_s_65">no other method</span>] </td><td>
+                            <td>1</td><td style="text-align:left">Enable or disable downloading embedded objects globally and by [<b>selection</b>: <span class="selectable-content" id="_s_62">domain</span>, <span class="selectable-content" id="_s_63">sender</span>, <span class="selectable-content" id="_s_64">no other method</span>] </td><td>
                                 <div class="tooltipped">
                                     O<span class="tooltiptext">Optional/Conditional</span>
                                 </div>
@@ -781,7 +743,7 @@
                             </td>
                         </tr>
                         <tr id="_mf_2">
-                            <td>2</td><td style="text-align:left">Enable or disable plaintext-only mode globally and by [<b>selection</b>: <span class="selectable-content" id="_s_66">domain</span>, <span class="selectable-content" id="_s_67">sender</span>, <span class="selectable-content" id="_s_68">no other method</span>]</td><td>
+                            <td>2</td><td style="text-align:left">Enable or disable plaintext-only mode globally and by [<b>selection</b>: <span class="selectable-content" id="_s_65">domain</span>, <span class="selectable-content" id="_s_66">sender</span>, <span class="selectable-content" id="_s_67">no other method</span>]</td><td>
                                 <div class="tooltipped">
                                     O<span class="tooltiptext">Optional/Conditional</span>
                                 </div>
@@ -792,7 +754,7 @@
                             </td>
                         </tr>
                         <tr id="_mf_3">
-                            <td>3</td><td style="text-align:left"> Enable or disable rendering and execution of attachments globally and by [<b>selection</b>: <span class="selectable-content" id="_s_69">domain</span>, <span class="selectable-content" id="_s_70">sender</span>, <span class="selectable-content" id="_s_71">no other method</span>] </td><td>
+                            <td>3</td><td style="text-align:left"> Enable or disable rendering and execution of attachments globally and by [<b>selection</b>: <span class="selectable-content" id="_s_68">domain</span>, <span class="selectable-content" id="_s_69">sender</span>, <span class="selectable-content" id="_s_70">no other method</span>] </td><td>
                                 <div class="tooltipped">
                                     O<span class="tooltiptext">Optional/Conditional</span>
                                 </div>
@@ -916,9 +878,11 @@
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"> For these management functions, the term "Administrator" refers to the administrator of a non-mobile device or the device owner of a mobile device. The Administrator is responsible for management activities, including setting the policy that is applied by the enterprise on the email client. The Administrator could be acting remotely and could be the mail transfer agent (<abbr class="dyn-abbr"><a href="#abbr_MTA">MTA</a></abbr>) administrator acting through a centralized management console or dashboard. Applications used to configure enterprise policy should have their own identification and authorization and additional security requirements to ensure that the remote administration is trusted. 
                             <p></p>
+                             For each management function specified in this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>, it is optional for a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to implement this function because not all conformant email clients may need to implement each function. Additionally, within each function, if the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> does implement the function, it is optional as to whether a user is authorized to perform that function or if it is restricted to an administrator. 
+                            <p></p>
                              The intent of this requirement is to allow the Administrator to configure the email client with a policy that may not be overridden by the user. If the Administrator has not set a policy for a particular function, the user may still perform that function. Enforcement of the policy is done by the email client itself, or the email client and the email client platform in coordination with each other. 
                             <p></p>
-                             The function to configure whether to establish a trusted channel corresponds to the functionality described in <a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a>.2 (from the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>). The Administrator has the option of accepting or rejecting all certificates that cannot be validated, accepting a given certificate that cannot be validated, or not accepting a given certificate that cannot be validated. Depending on the choice that the Administrator has made in <a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a>.2 (from the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>), the trusted connection will either be allowed for all certificates that cannot be validated, disallowed for all certificates that cannot be validated, allowed for a given certificate that cannot be validated, or disallowed for a given certificate that cannot be validated. 
+                             The function to configure whether to establish a trusted channel corresponds to the functionality described in <a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a>.2 (from <a href="https://www.niap-ccevs.org/protectionprofiles/511">Functional Package for X.509, version 1.0</a>). The Administrator has the option of accepting or rejecting all certificates that cannot be validated, accepting a given certificate that cannot be validated, or not accepting a given certificate that cannot be validated. Depending on the choice that the Administrator has made in <a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a>.2 (from <a href="https://www.niap-ccevs.org/protectionprofiles/511">Functional Package for X.509, version 1.0</a>), the trusted connection will either be allowed for all certificates that cannot be validated, disallowed for all certificates that cannot be validated, allowed for a given certificate that cannot be validated, or disallowed for a given certificate that cannot be validated. 
                             <p></p>
                              If password or passphrase authorization factors are implemented by the email client, then the appropriate "change" selection must be included. 
                             <p></p>
@@ -937,11 +901,11 @@
                     <a href="#FPT_AON_EXT.1.1" class="abbr">FPT_AON_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall include the capability to load [<b>selection</b>: <span class="selectable-content" id="addons_supported">trusted add-ons</span>, <span class="selectable-content" id="_s_73">no add-ons</span>].
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall include the capability to load [<b>selection</b>: <span class="selectable-content" id="addons_supported">trusted add-ons</span>, <span class="selectable-content" id="_s_72">no add-ons</span>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note">If "trusted add-ons" is selected in <a href="#FPT_AON_EXT.1.1">FPT_AON_EXT.1.1</a>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must also claim the selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> <a href="#FPT_AON_EXT.2">FPT_AON_EXT.2</a>. 
                             <p></p>
-                             If the email client does not include support for installing only trusted add-ons, this requirement can be met by demonstrating the ability to disable all support for add-ons as specified in <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</span>
+                             If the email client does not include support for installing only trusted add-ons, this requirement can be met by demonstrating the ability to disable all support for add-ons as specified in <a href="#FMT_SMF.1/EmailClient">FMT_SMF.1/EmailClient</a>.</span>
                     </div>
                 </div>
             </div>
@@ -989,7 +953,7 @@
                     <td rowspan="6"><a href="#T.FLAWED_ADDON">T.FLAWED_​ADDON</a></td><td><a href="#FDP_NOT_EXT.1">FDP_NOT_EXT.1</a></td><td><a href="#FDP_NOT_EXT.1">FDP_NOT_EXT.1</a> mitigates the threat by defining a mechanism for users to determine whether a given email has been signed or encrypted.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a> mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</td>
+                    <td><a href="#FMT_SMF.1/EmailClient">FMT_SMF.1/EmailClient</a></td><td>FMT_SMF_EXT.1/EmailClient mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</td>
                 </tr>
                 <tr>
                     <td><a href="#FPT_AON_EXT.1">FPT_AON_EXT.1</a></td><td><a href="#FPT_AON_EXT.1">FPT_AON_EXT.1</a> mitigates the threat by specifying whether or not the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> has the ability to load add-ons.</td>
@@ -1004,16 +968,13 @@
                     <td><a href="#FPT_AON_EXT.2">FPT_AON_EXT.2</a> (selection-based)</td><td><a href="#FPT_AON_EXT.2">FPT_AON_EXT.2</a> mitigates the threat by defining a cryptographic method for the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to validate the integrity of add-ons if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports their use.</td>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="14"><a href="#T.NETWORK_ATTACK">T.NETWORK_​ATTACK</a> (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>) </td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a cryptographic function for asymmetric key generation.</td>
+                    <td rowspan="13"><a href="#T.NETWORK_ATTACK">T.NETWORK_​ATTACK</a> (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>) </td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a cryptographic function for asymmetric key generation.</td>
                 </tr>
                 <tr>
                     <td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a DRBG for secure key generation.</td>
                 </tr>
                 <tr>
                     <td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to implement or invoke an X.509 certificate validation service.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> mitigates the threat by defining the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s use of X.509 certificates and what behavior the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> takes when the revocation status of a certificate cannot be determined.</td>
                 </tr>
                 <tr>
                     <td><a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a> mitigates the threat by specifying the trusted communications channels used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to protect data in transit.</td>
@@ -1028,10 +989,10 @@
                     <td><a href="#FDP_SMIME_EXT.1">FDP_SMIME_EXT.1</a></td><td><a href="#FDP_SMIME_EXT.1">FDP_SMIME_EXT.1</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to use <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> to protect email message data in transit.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support the use of X.509 certificates for <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>.</td>
+                    <td><a href="#FIA_X509_EXT.2/SMIME">FIA_X509_EXT.2/SMIME</a></td><td><a href="#FIA_X509_EXT.2/SMIME">FIA_X509_EXT.2/SMIME</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support the use of X.509 certificates for <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a> mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</td>
+                    <td><a href="#FMT_SMF.1/EmailClient">FMT_SMF.1/EmailClient</a></td><td><a href="#FMT_SMF.1/EmailClient">FMT_SMF.1/EmailClient</a> mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</td>
                 </tr>
                 <tr>
                     <td><a href="#FTP_ITC.1">FTP_ITC.1</a></td><td><a href="#FTP_ITC.1">FTP_ITC.1</a> mitigates the threat by specifying the trusted communications the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> must implement that are specific to email communications.</td>
@@ -1046,16 +1007,13 @@
                     <td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> (selection-based)</td><td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> mitigates the threat by specifying how <abbr class="dyn-abbr"><a href="#abbr_SASL">SASL</a></abbr> is implemented in the case where the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims to support it.</td>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="14"><a href="#T.NETWORK_EAVESDROP">T.NETWORK_​EAVESDROP</a> (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>) </td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a cryptographic function for asymmetric key generation.</td>
+                    <td rowspan="13"><a href="#T.NETWORK_EAVESDROP">T.NETWORK_​EAVESDROP</a> (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>) </td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a cryptographic function for asymmetric key generation.</td>
                 </tr>
                 <tr>
                     <td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a DRBG for secure key generation.</td>
                 </tr>
                 <tr>
                     <td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to implement or invoke an X.509 certificate validation service.</td>
-                </tr>
-                <tr>
-                    <td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.2">FIA_X509_EXT.2</a> mitigates the threat by defining the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s use of X.509 certificates and what behavior the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> takes when the revocation status of a certificate cannot be determined.</td>
                 </tr>
                 <tr>
                     <td><a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FTP_DIT_EXT.1">FTP_DIT_EXT.1</a> mitigates the threat by specifying the trusted communications channels used by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to protect data in transit.</td>
@@ -1070,10 +1028,10 @@
                     <td><a href="#FDP_SMIME_EXT.1">FDP_SMIME_EXT.1</a></td><td><a href="#FDP_SMIME_EXT.1">FDP_SMIME_EXT.1</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to use <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> to protect email message data in transit.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support the use of X.509 certificates for <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>.</td>
+                    <td><a href="#FIA_X509_EXT.2/SMIME">FIA_X509_EXT.2/SMIME</a></td><td><a href="#FIA_X509_EXT.2/SMIME">FIA_X509_EXT.2/SMIME</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to support the use of X.509 certificates for <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>.</td>
                 </tr>
                 <tr>
-                    <td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a> mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</td>
+                    <td><a href="#FMT_SMF.1/EmailClient">FMT_SMF.1/EmailClient</a></td><td>FMT_SMF.1/EmailCLient mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</td>
                 </tr>
                 <tr>
                     <td><a href="#FTP_ITC.1">FTP_ITC.1</a></td><td><a href="#FTP_ITC.1">FTP_ITC.1</a> mitigates the threat by specifying the trusted communications the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> must implement that are specific to email communications.</td>
@@ -1201,10 +1159,10 @@
                 <td><a href="#FDP_SMIME_EXT.1">FDP_SMIME_EXT.1</a></td><td> This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the format an email client shall use as output for cryptographic operations. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
             </tr>
             <tr>
-                <td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a></td><td> This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the format an email client shall use for certificates to perform encryption and authentication. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
+                <td><a href="#FIA_X509_EXT.2/SMIME">FIA_X509_EXT.2/SMIME</a></td><td> This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the format an email client shall use for certificates to perform encryption and authentication. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
             </tr>
             <tr>
-                <td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td> This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines a specific set of management functions for an email client. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
+                <td><a href="#FMT_SMF.1/EmailClient">FMT_SMF.1/EmailClient</a></td><td></td>
             </tr>
             <tr>
                 <td><a href="#FPT_AON_EXT.1">FPT_AON_EXT.1</a></td><td> This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines what types of add-ons an email client may use. It does not impact the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> functionality. </td>
@@ -1277,16 +1235,16 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall create IVs in the following manner: [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_74"><abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>: IVs shall be non-repeating</span>
+                            <span class="selectable-content" id="_s_73"><abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>: IVs shall be non-repeating and unpredictable</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_75">CCM: IV shall be non-repeating</span>
+                            <span class="selectable-content" id="_s_74">CCM: IV shall be non-repeating</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_76">XTS: No IV. Tweak values shall be non-negative integers, assigned consecutively, and starting at an arbitrary non-negative integer</span>
+                            <span class="selectable-content" id="_s_75">XTS: No IV. Tweak values shall be non-negative integers, assigned consecutively, and starting at an arbitrary non-negative integer</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_77"><abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr>: IV shall be non-repeating. The number of invocations of <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr> shall not exceed 2^32 for a given secret key.</span>
+                            <span class="selectable-content" id="_s_76"><abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr>: IV shall be non-repeating. The number of invocations of <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr> shall not exceed 2^32 for a given secret key.</span>
                         </li>
                     </ul>
                     ]
@@ -1317,10 +1275,10 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall only use salts that are generated by a [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_78">DRBG as specified in [<i>FCS_RBG_EXT.2 (as defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</i>]</span>
+                            <span class="selectable-content" id="_s_77">DRBG as specified in [<i>FCS_RBG_EXT.2 (as defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</i>]</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_79">DRBG provided by the host platform</span>
+                            <span class="selectable-content" id="_s_78">DRBG provided by the host platform</span>
                         </li>
                     </ul>
                     ] 
@@ -1349,7 +1307,7 @@
                     <a href="#FDP_PST_EXT.1.1" class="abbr">FDP_PST_EXT.1.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of operating without storing persistent information to the client platform with the following exceptions: [<b>selection</b>: <span class="selectable-content" id="_s_80">credential information</span>, <span class="selectable-content" id="_s_81">administrator-provided configuration information</span>, <span class="selectable-content" id="_s_82">certificate revocation information</span>, <span class="selectable-content" id="_s_83">no exceptions</span>].
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of operating without storing persistent information to the client platform with the following exceptions: [<b>selection</b>: <span class="selectable-content" id="_s_79">credential information</span>, <span class="selectable-content" id="_s_80">administrator-provided configuration information</span>, <span class="selectable-content" id="_s_81">certificate revocation information</span>, <span class="selectable-content" id="_s_82">no exceptions</span>].
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note">Any data that persists after the email client closes, including temporary files, is considered to be persistent data. Satisfying this requirement would require the use of a protocol such as <abbr class="dyn-abbr"><a href="#abbr_IMAP">IMAP</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_MAPI">MAPI</a></abbr>. It is not compatible with <abbr class="dyn-abbr"><a href="#abbr_POP">POP</a></abbr>.</span>
                     </div>
@@ -1366,21 +1324,21 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall have a plaintext-only mode which disables the rendering and execution of [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_84">HTML</span>
+                            <span class="selectable-content" id="_s_83">HTML</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_85">JavaScript</span>
+                            <span class="selectable-content" id="_s_84">JavaScript</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_86">[<b>assignment</b>: <span class="assignable-content">other embedded content types</span>]</span>
+                            <span class="selectable-content" id="_s_85">[<b>assignment</b>: <span class="assignable-content">other embedded content types</span>]</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_87">no embedded content types</span>
+                            <span class="selectable-content" id="_s_86">no embedded content types</span>
                         </li>
                     </ul>
                     ]. 
                     <div class="appnote">
-                        <span class="note-header">Application Note: </span><span class="note">Plaintext-only mode prevents the automatic downloading, rendering, and execution of images, external resources, and embedded objects such as HTML or JavaScript objects. <a href="#FMT_MOF_EXT.1.1">FMT_MOF_EXT.1.1</a> addresses configuration of this mode. The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must identify all content types supported by the email client through selections and assignments. If the email client only supports plaintext-only mode, no embedded content types should be selected.</span>
+                        <span class="note-header">Application Note: </span><span class="note">Plaintext-only mode prevents the automatic downloading, rendering, and execution of images, external resources, and embedded objects such as HTML or JavaScript objects. <a href="#FMT_SMF.1/EmailClient">FMT_SMF.1/EmailClient</a> addresses configuration of this mode. The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must identify all content types supported by the email client through selections and assignments. If the email client only supports plaintext-only mode, no embedded content types should be selected.</span>
                     </div>
                 </div>
             </div>
@@ -1416,7 +1374,7 @@
                     <a href="#FCS_CKM_EXT.5.2" class="abbr">FCS_CKM_EXT.5.2</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow passwords to be composed of any combination of upper case characters, lower case characters, numbers, and the following special characters: "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and [<b>selection</b>: <span class="selectable-content" id="_s_88">[<b>assignment</b>: <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="_s_89">no other characters</span>] 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow passwords to be composed of any combination of upper case characters, lower case characters, numbers, and the following special characters: "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and [<b>selection</b>: <span class="selectable-content" id="_s_87">[<b>assignment</b>: <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="_s_88">no other characters</span>] 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author assigns any other supported characters; if there are no other supported characters, they should select "no other characters".</i></span>
                     </div>
@@ -1440,7 +1398,7 @@
                     <a href="#FCS_CKM_EXT.5.4" class="abbr">FCS_CKM_EXT.5.4</a>
                 </div>
                 <div class="reqdesc">
-                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not accept passwords less than [<b>selection</b>: <span class="selectable-content" id="_s_90">a value settable by the administrator</span>, <span class="selectable-content" id="_s_91">[<b>assignment</b>: <span class="assignable-content">minimum password length accepted by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, must be &ge; 1</span>]</span>] and greater than the maximum password length defined in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>. 
+                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not accept passwords less than [<b>selection</b>: <span class="selectable-content" id="_s_89">a value settable by the administrator</span>, <span class="selectable-content" id="_s_90">[<b>assignment</b>: <span class="assignable-content">minimum password length accepted by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, must be &ge; 1</span>]</span>] and greater than the maximum password length defined in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>. 
                     <div class="appnote">
                         <span class="note-header">Application Note: </span><span class="note"> <i>If the minimum password length is settable, then <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author chooses "a value settable by the administrator for this component," as well as the "configure password/passphrase complexity setting" item for FMT_SMF.1.1. If the minimum length is not settable, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author fills in the assignment with the minimum length the password must be (zero-length passwords are not allowed for compliant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOEs</a></abbr>).</i> </span>
                     </div>
@@ -1460,52 +1418,52 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_92">use platform-provided functionality to perform Key Wrapping</span>
+                            <span class="selectable-content" id="_s_91">use platform-provided functionality to perform Key Wrapping</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_93">implement functionality to perform Key Wrapping</span>
+                            <span class="selectable-content" id="_s_92">implement functionality to perform Key Wrapping</span>
                         </li>
                     </ul>
                     ] in accordance with a specified cryptographic algorithm [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_94"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> Key Wrap</span>
+                            <span class="selectable-content" id="_s_93"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> Key Wrap</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_95"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> Key Wrap with Padding</span>
+                            <span class="selectable-content" id="_s_94"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> Key Wrap with Padding</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_96">RSA using the KTS-OAEP-basic scheme</span>
+                            <span class="selectable-content" id="_s_95">RSA using the KTS-OAEP-basic scheme</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_97">RSA using the KTS-OAEP-receiver-confirmation scheme</span>
+                            <span class="selectable-content" id="_s_96">RSA using the KTS-OAEP-receiver-confirmation scheme</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_98">ECC CDH</span>
+                            <span class="selectable-content" id="_s_97">ECC CDH</span>
                         </li>
                     </ul>
                     ] and the cryptographic key size [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_99">256 bits (<abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>)</span>
+                            <span class="selectable-content" id="_s_98">256 bits (<abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_100">3072 (RSA)</span>
+                            <span class="selectable-content" id="_s_99">3072 (RSA)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_101">4096 (RSA)</span>
+                            <span class="selectable-content" id="_s_100">4096 (RSA)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_102">384-bit prime modulus (ECC CDH)</span>
+                            <span class="selectable-content" id="_s_101">384-bit prime modulus (ECC CDH)</span>
                         </li>
                     </ul>
                     ] that meet the following: [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_103">"NIST SP 800-38F" for Key Wrap (section 6.2) and Key Wrap with Padding (section 6.3)</span>
+                            <span class="selectable-content" id="_s_102">"NIST SP 800-38F" for Key Wrap (section 6.2) and Key Wrap with Padding (section 6.3)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_104">"NIST SP 800-56B" for RSA using the KTS-OAEP-basic (section 9.2.3) and KTS-OAEP-receiver-confirmation (section 9.2.4) scheme, "NIST SP 800-56A rev 2" for ECC CDH (sections 5.6.1.2 and 6.2.2.2) </span>
+                            <span class="selectable-content" id="_s_103">"NIST SP 800-56B" for RSA using the KTS-OAEP-basic (section 9.2.3) and KTS-OAEP-receiver-confirmation (section 9.2.4) scheme, "NIST SP 800-56A rev 2" for ECC CDH (sections 5.6.1.2 and 6.2.2.2) </span>
                         </li>
                     </ul>
                     ]. 
@@ -1538,13 +1496,13 @@
                     The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall combine submasks using the following method [<b>selection</b>: 
                     <ul>
                         <li style="">
-                            <span class="selectable-content" id="_s_107">exclusive OR (XOR)</span>
+                            <span class="selectable-content" id="_s_106">exclusive OR (XOR)</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_108">SHA-256</span>
+                            <span class="selectable-content" id="_s_107">SHA-384</span>
                         </li>
                         <li style="">
-                            <span class="selectable-content" id="_s_109">SHA-512</span>
+                            <span class="selectable-content" id="_s_108">SHA-512</span>
                         </li>
                     </ul>
                     ] to generate another key. 
@@ -1612,7 +1570,7 @@
                     <a href="#FPT_AON_EXT.2.1" class="abbr">FPT_AON_EXT.2.1</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_110">provide the ability</span>, <span class="selectable-content" id="_s_111">leverage the platform</span>] to provide a means to cryptographically verify add-ons using a digital signature mechanism and [<b>selection</b>: <span class="selectable-content" id="_s_112">published hash</span>, <span class="selectable-content" id="_s_113">no other functions</span>] prior to installation and update. 
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_109">provide the ability</span>, <span class="selectable-content" id="_s_110">leverage the platform</span>] to provide a means to cryptographically verify add-ons using a digital signature mechanism and [<b>selection</b>: <span class="selectable-content" id="_s_111">published hash</span>, <span class="selectable-content" id="_s_112">no other functions</span>] prior to installation and update. 
                 </div>
             </div>
             <div class="element">
@@ -1620,7 +1578,7 @@
                     <a href="#FPT_AON_EXT.2.2" class="abbr">FPT_AON_EXT.2.2</a>
                 </div>
                 <div class="reqdesc">
-                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_114">provide the ability</span>, <span class="selectable-content" id="_s_115">leverage the platform</span>] to query the current version of the add-on.
+                    The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_113">provide the ability</span>, <span class="selectable-content" id="_s_114">leverage the platform</span>] to query the current version of the add-on.
                 </div>
             </div>
             <div class="element">
@@ -1668,17 +1626,10 @@
             <tr data-sortkey="Identification and Authentication (FIA)">
                 <td>Identification and Authentication (FIA)</td><td>FIA_SASL_EXT Simple Authentication and Security Layer (<abbr class="dyn-abbr"><a href="#abbr_SASL">SASL</a></abbr>)
                     <br>
-                    FIA_X509_EXT X.509 Certificate Services
-                    <br>
                 </td>
             </tr>
             <tr data-sortkey="Protection of the TSF (FPT)">
                 <td>Protection of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> (FPT)</td><td>FPT_AON_EXT Add-Ons
-                    <br>
-                </td>
-            </tr>
-            <tr data-sortkey="Security Management (FMT)">
-                <td>Security Management (FMT)</td><td>FMT_MOF_EXT Management of Functions Behavior
                     <br>
                 </td>
             </tr>
@@ -1759,11 +1710,11 @@
                         <h4 id="ext-comp-FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</h4>
                          The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall support a password/passphrase of up to [<b>assignment</b>: <span class="assignable-content">maximum password size, positive integer of 64 or more</span>] characters used to generate a password authorization factor. 
                         <h4 id="ext-comp-FCS_CKM_EXT.5.2">FCS_CKM_EXT.5.2</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow passwords to be composed of any combination of upper case characters, lower case characters, numbers, and the following special characters: "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and [<b>selection</b>: <span class="selectable-content" id="_s_88">[<b>assignment</b>: <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="_s_89">no other characters</span>] 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow passwords to be composed of any combination of upper case characters, lower case characters, numbers, and the following special characters: "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and [<b>selection</b>: <span class="selectable-content" id="_s_87">[<b>assignment</b>: <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="_s_88">no other characters</span>] 
                         <h4 id="ext-comp-FCS_CKM_EXT.5.3">FCS_CKM_EXT.5.3</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform Password-based Key Derivation Functions in accordance with a specified cryptographic algorithm [<i><b>HMAC-SHA-384</b></i>], with [<b>assignment</b>: <span class="assignable-content">positive integer of 4096 or more</span>] iterations, and output cryptographic key sizes [<i><b>256</b></i>] bits that meet the following: [<i><b>NIST SP 800-56B</b></i>]. 
                         <h4 id="ext-comp-FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not accept passwords less than [<b>selection</b>: <span class="selectable-content" id="_s_90">a value settable by the administrator</span>, <span class="selectable-content" id="_s_91">[<b>assignment</b>: <span class="assignable-content">minimum password length accepted by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, must be &ge; 1</span>]</span>] and greater than the maximum password length defined in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>. 
+                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not accept passwords less than [<b>selection</b>: <span class="selectable-content" id="_s_89">a value settable by the administrator</span>, <span class="selectable-content" id="_s_90">[<b>assignment</b>: <span class="assignable-content">minimum password length accepted by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, must be &ge; 1</span>]</span>] and greater than the maximum password length defined in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a>. 
                     </div>
                 </div>
                 <h3 id="ext-comp-FCS_KYC_EXT" class="indexable" data-level="4">C.2.1.2 FCS_KYC_EXT Cryptographic Key Chaining</h3>
@@ -1840,7 +1791,7 @@
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.1">FCS_SMIME_EXT.1.1</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement both a sending and receiving <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> v4.0 Agent as defined in RFC 8551, using <abbr class="dyn-abbr"><a href="#abbr_CMS">CMS</a></abbr> as defined in RFCs 5652, 5754, and 3565. 
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.2">FCS_SMIME_EXT.1.2</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall transmit the ContentEncryptionAlgorithmIdentifier for <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr>, and [<b>selection</b>: <span class="selectable-content" id="_s_49"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-128 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_50"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_51">no other</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall transmit the ContentEncryptionAlgorithmIdentifier for <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_CBC">CBC</a></abbr> and [<b>selection</b>: <span class="selectable-content" id="_s_47"><abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr>-256 <abbr class="dyn-abbr"><a href="#abbr_GCM">GCM</a></abbr></span>, <span class="selectable-content" id="_s_48">no other</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.3">FCS_SMIME_EXT.1.3</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall present the digestAlgorithm field with the following Message Digest Algorithm identifiers [<b>assignment</b>: <span class="assignable-content">message digest algorithm identifiers</span>] and no others as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.4">FCS_SMIME_EXT.1.4</h4>
@@ -1850,7 +1801,7 @@
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.6">FCS_SMIME_EXT.1.6</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall only accept a signature from a certificate with the digitalSignature bit set as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                         <h4 id="ext-comp-FCS_SMIME_EXT.1.7">FCS_SMIME_EXT.1.7</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and certificate revocation information in accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> [<b>selection</b>: <span class="selectable-content" id="_s_61">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_62"> [<b>assignment</b>: <span class="assignable-content">frequency</span>]</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and certificate revocation information in accordance with <a href="#FIA_X509_EXT.1.1">FIA_X509_EXT.1.1</a> [<b>selection</b>: <span class="selectable-content" id="_s_56">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_57"> [<b>assignment</b>: <span class="assignable-content">frequency</span>]</span>] as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. 
                     </div>
                 </div>
                 <h3 id="ext-comp-FCS_IVG_EXT" class="indexable" data-level="4">C.2.1.4 FCS_IVG_EXT Initialization Vector Generation</h3>
@@ -1985,10 +1936,10 @@
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: 
                         <ul>
                             <li style="">
-                                <span class="selectable-content" id="_s_105">use platform-provided functionality to perform Key Wrapping</span>
+                                <span class="selectable-content" id="_s_104">use platform-provided functionality to perform Key Wrapping</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_106">implement functionality to perform Key Wrapping</span>
+                                <span class="selectable-content" id="_s_105">implement functionality to perform Key Wrapping</span>
                             </li>
                         </ul>
                         ] in accordance with a specified cryptographic algorithm [<b>assignment</b>: <span class="assignable-content">cryptographic algorithm</span>] and the cryptographic key size [<b>assignment</b>: <span class="assignable-content"> cryptographic key size</span>] that meet the following: [<b>assignment</b>: <span class="assignable-content">list of standards</span>] 
@@ -2027,13 +1978,13 @@
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall combine submasks using the following method [<b>selection</b>: 
                         <ul>
                             <li style="">
-                                <span class="selectable-content" id="_s_107">exclusive OR (XOR)</span>
+                                <span class="selectable-content" id="_s_106">exclusive OR (XOR)</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_108">SHA-256</span>
+                                <span class="selectable-content" id="_s_107">SHA-384</span>
                             </li>
                             <li style="">
-                                <span class="selectable-content" id="_s_109">SHA-512</span>
+                                <span class="selectable-content" id="_s_108">SHA-512</span>
                             </li>
                         </ul>
                         ] to generate another key. 
@@ -2042,50 +1993,7 @@
             </span><span data-sortkey="Identification and Authentication (FIA)">
                 <h3 id="ext-comp-FIA" class="indexable" data-level="3">C.2.2 Identification and Authentication (FIA)</h3>
                 This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following extended components as part of the FIA class originally defined by <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2: 
-                <h3 id="ext-comp-FIA_X509_EXT" class="indexable" data-level="4">C.2.2.1 FIA_X509_EXT X.509 Certificate Services</h3>
-                <div style="margin-left: 1em;">
-                    <h4>Family Behavior</h4>
-                    <div>Components in this family define requirements for the use of X.509 certifications in trusted communications. </div>
-                    <h4>Component Leveling</h4>
-                    <svg style="max-height: 30px;">
-                        <text x="4" fill="black" font-size="15" y="24">FIA_X509_EXT</text>
-                        <rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect>
-                        <text x="234" fill="black" font-size="15" y="24">3</text>
-                        <rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect>
-                        <line x1="152" y1="17" x2="231" y2="17" stroke="black"></line>
-                    </svg>
-                    <p>
-                        <a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a>, X.509 Authentication and Encryption, requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to use X.509 certificates for various functions.
-                    </p>
-                    <h4>Management: FIA_X509_EXT.3</h4>
-                    <p>No specific management functions are identified.</p>
-                    <h4>Audit: FIA_X509_EXT.3</h4>
-                    <p>There are no auditable events foreseen.</p>
-                    <h4>FIA_X509_EXT.3 X.509 Authentication and Encryption</h4>
-                    <div style="margin-left: 1em;">
-                        <table class="ecd_heir_dep" style="width: 100%">
-                            <tr>
-                                <td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td>
-                            </tr>
-                            <tr style="background-color: inherit">
-                                <td>Dependencies to:</td><td> <span class="no-link">FIA_X509_EXT.1</span> X.509 Certificate Validation
-                                    <br>
-                                     <span class="no-link">FPT_STM.1</span> Reliable Time Stamps </td>
-                            </tr>
-                        </table>
-                        <h4 id="ext-comp-FIA_X509_EXT.3.1">FIA_X509_EXT.3.1</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall use X.509v3 certificates as defined by RFC 5280 to support encryption and authentication for <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr>. <span style="" class="comment " id="Comment-2-">Should this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> be iterated?</span>
-                        <h4 id="ext-comp-FIA_X509_EXT.3.2">FIA_X509_EXT.3.2</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the establishment of a trusted communication channel when the peer certificate is deemed invalid. 
-                        <h4 id="ext-comp-FIA_X509_EXT.3.3">FIA_X509_EXT.3.3</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the installation of code if the code signing certificate is deemed invalid. 
-                        <h4 id="ext-comp-FIA_X509_EXT.3.4">FIA_X509_EXT.3.4</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the encryption of email if the email protection certificate is deemed invalid. 
-                        <h4 id="ext-comp-FIA_X509_EXT.3.5">FIA_X509_EXT.3.5</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the signing of email if the email protection certificate is deemed invalid. 
-                    </div>
-                </div>
-                <h3 id="ext-comp-FIA_SASL_EXT" class="indexable" data-level="4">C.2.2.2 FIA_SASL_EXT Simple Authentication and Security Layer (SASL)</h3>
+                <h3 id="ext-comp-FIA_SASL_EXT" class="indexable" data-level="4">C.2.2.1 FIA_SASL_EXT Simple Authentication and Security Layer (SASL)</h3>
                 <div style="margin-left: 1em;">
                     <h4>Family Behavior</h4>
                     <div>
@@ -2172,7 +2080,7 @@
                             </tr>
                         </table>
                         <h4 id="ext-comp-FPT_AON_EXT.1.1">FPT_AON_EXT.1.1</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall include the capability to load [<b>selection</b>: <span class="selectable-content" id="addons_supported">trusted add-ons</span>, <span class="selectable-content" id="_s_73">no add-ons</span>].
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall include the capability to load [<b>selection</b>: <span class="selectable-content" id="addons_supported">trusted add-ons</span>, <span class="selectable-content" id="_s_72">no add-ons</span>].
                     </div>
                     <h4>Management: FPT_AON_EXT.2</h4>
                     <p>No specific management functions are identified.</p>
@@ -2191,53 +2099,17 @@
                             </tr>
                         </table>
                         <h4 id="ext-comp-FPT_AON_EXT.2.1">FPT_AON_EXT.2.1</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_110">provide the ability</span>, <span class="selectable-content" id="_s_111">leverage the platform</span>] to provide a means to cryptographically verify add-ons using a digital signature mechanism and [<b>selection</b>: <span class="selectable-content" id="_s_112">published hash</span>, <span class="selectable-content" id="_s_113">no other functions</span>] prior to installation and update. 
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_109">provide the ability</span>, <span class="selectable-content" id="_s_110">leverage the platform</span>] to provide a means to cryptographically verify add-ons using a digital signature mechanism and [<b>selection</b>: <span class="selectable-content" id="_s_111">published hash</span>, <span class="selectable-content" id="_s_112">no other functions</span>] prior to installation and update. 
                         <h4 id="ext-comp-FPT_AON_EXT.2.2">FPT_AON_EXT.2.2</h4>
-                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_114">provide the ability</span>, <span class="selectable-content" id="_s_115">leverage the platform</span>] to query the current version of the add-on.
+                        The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall [<b>selection</b>: <span class="selectable-content" id="_s_113">provide the ability</span>, <span class="selectable-content" id="_s_114">leverage the platform</span>] to query the current version of the add-on.
                         <h4 id="ext-comp-FPT_AON_EXT.2.3">FPT_AON_EXT.2.3</h4>
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall prevent the automatic installation of add-ons.
                     </div>
                 </div>
-            </span><span data-sortkey="Security Management (FMT)">
-                <h3 id="ext-comp-FMT" class="indexable" data-level="3">C.2.4 Security Management (FMT)</h3>
-                This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following extended components as part of the FMT class originally defined by <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2: 
-                <h3 id="ext-comp-FMT_MOF_EXT" class="indexable" data-level="4">C.2.4.1 FMT_MOF_EXT Management of Functions Behavior</h3>
-                <div style="margin-left: 1em;">
-                    <h4>Family Behavior</h4>
-                    <div>Components in this family define requirements for technology-specific management functions that are not enumerated in the Part 2 family FMT_MOF. </div>
-                    <h4>Component Leveling</h4>
-                    <svg style="max-height: 30px;">
-                        <text x="4" fill="black" font-size="15" y="24">FMT_MOF_EXT</text>
-                        <rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect>
-                        <text x="234" fill="black" font-size="15" y="24">1</text>
-                        <rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect>
-                        <line x1="152" y1="17" x2="231" y2="17" stroke="black"></line>
-                    </svg>
-                    <p>
-                        <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>, Management of Functions Behavior, requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to implement management functions specified in the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>.
-                    </p>
-                    <h4>Management: FMT_MOF_EXT.1</h4>
-                    <p>No specific management functions are identified.</p>
-                    <h4>Audit: FMT_MOF_EXT.1</h4>
-                    <p>There are no auditable events foreseen.</p>
-                    <h4>FMT_MOF_EXT.1 Management of Functions Behavior</h4>
-                    <div style="margin-left: 1em;">
-                        <table class="ecd_heir_dep" style="width: 100%">
-                            <tr>
-                                <td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components.</td>
-                            </tr>
-                            <tr style="background-color: inherit">
-                                <td>Dependencies to:</td><td>No dependencies. </td>
-                            </tr>
-                        </table>
-                        <h4 id="ext-comp-FMT_MOF_EXT.1.1">FMT_MOF_EXT.1.1</h4>
-                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions, controlled by the user or administrator as shown: [<b>assignment</b>: <span class="assignable-content">list of management functions to be performed by role</span>]. 
-                    </div>
-                </div>
             </span><span data-sortkey="User Data Protection (FDP)">
-                <h3 id="ext-comp-FDP" class="indexable" data-level="3">C.2.5 User Data Protection (FDP)</h3>
+                <h3 id="ext-comp-FDP" class="indexable" data-level="3">C.2.4 User Data Protection (FDP)</h3>
                 This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following extended components as part of the FDP class originally defined by <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2: 
-                <h3 id="ext-comp-FDP_NOT_EXT" class="indexable" data-level="4">C.2.5.1 FDP_NOT_EXT Notifications</h3>
+                <h3 id="ext-comp-FDP_NOT_EXT" class="indexable" data-level="4">C.2.4.1 FDP_NOT_EXT Notifications</h3>
                 <div style="margin-left: 1em;">
                     <h4>Family Behavior</h4>
                     <div>
@@ -2295,7 +2167,7 @@
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall display the full Uniform Resource Identifier (<abbr class="dyn-abbr"><a href="#abbr_URI">URI</a></abbr>) of any embedded links.
                     </div>
                 </div>
-                <h3 id="ext-comp-FDP_SMIME_EXT" class="indexable" data-level="4">C.2.5.2 FDP_SMIME_EXT Use of Secure/Multipurpose Internet Mail Extensions (S/MIME)</h3>
+                <h3 id="ext-comp-FDP_SMIME_EXT" class="indexable" data-level="4">C.2.4.2 FDP_SMIME_EXT Use of Secure/Multipurpose Internet Mail Extensions (S/MIME)</h3>
                 <div style="margin-left: 1em;">
                     <h4>Family Behavior</h4>
                     <div>
@@ -2330,7 +2202,7 @@
                         The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall use <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> to sign, verify, encrypt, and decrypt mail.
                     </div>
                 </div>
-                <h3 id="ext-comp-FDP_PST_EXT" class="indexable" data-level="4">C.2.5.3 FDP_PST_EXT Storage of Persistent Information</h3>
+                <h3 id="ext-comp-FDP_PST_EXT" class="indexable" data-level="4">C.2.4.3 FDP_PST_EXT Storage of Persistent Information</h3>
                 <div style="margin-left: 1em;">
                     <h4>Family Behavior</h4>
                     <div>
@@ -2365,7 +2237,7 @@
                          The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of operating without storing persistent information to the client platform with the following exceptions: [<b>assignment</b>: <span class="assignable-content">data that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> must store persistently</span>]. 
                     </div>
                 </div>
-                <h3 id="ext-comp-FDP_REN_EXT" class="indexable" data-level="4">C.2.5.4 FDP_REN_EXT Rendering of Message Content</h3>
+                <h3 id="ext-comp-FDP_REN_EXT" class="indexable" data-level="4">C.2.4.4 FDP_REN_EXT Rendering of Message Content</h3>
                 <div style="margin-left: 1em;">
                     <h4>Family Behavior</h4>
                     <div>Components in this family define requirements for the rendering of data presented to a user such that the risk of malicious data transmission is minimized. </div>
@@ -2419,7 +2291,7 @@
                 <td>FCS_COP.1 - Cryptographic Operation</td><td>Several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (e.g., <a href="#FPT_AON_EXT.2">FPT_AON_EXT.2</a>) have a dependency on FCS_COP.1 because they require the existence of other cryptographic functionality to be satisfied. The <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> permits either the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> or its platform to implement cryptographic functions. If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> platform implements these functions, FCS_COP.1 is not claimed but all <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that depend on it are implicitly satisfied through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> platform's ability to provide the required functionality.</td>
             </tr>
             <tr>
-                <td>FPT_STM.1 - Reliable Time Stamps</td><td><a href="#FIA_X509_EXT.3">FIA_X509_EXT.3</a> has a dependency on FPT_STM.1 because reliable time is needed to validate whether or not an X.509 certificate is expired. This requirement is implicitly satisfied through the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> assumption that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> platform can be assumed to be a reliable time source.</td>
+                <td>FPT_STM.1 - Reliable Time Stamps</td><td><a href="#FIA_X509_EXT.2/SMIME">FIA_X509_EXT.2/SMIME</a> has a dependency on FPT_STM.1 because reliable time is needed to validate whether or not an X.509 certificate is expired. This requirement is implicitly satisfied through the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> assumption that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> platform can be assumed to be a reliable time source.</td>
             </tr>
         </table>
         <h1 id="EAR" class="indexable" data-level="A">Appendix E - Entropy Documentation and Assessment</h1>

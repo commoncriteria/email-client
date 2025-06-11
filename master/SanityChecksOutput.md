@@ -54,15 +54,16 @@
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fdp[1]""/f-component[1]""/f-element[1]""/aactivity[1]""/Tests[1]"The evalu"/testlist[1]""/test[4]"The evalu"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fdp[1]""/f-component[2]""/f-element[1]""/aactivity[1]""/TSS[1]"The evalu"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fdp[1]""/f-component[2]""/f-element[1]""/aactivity[1]""/Guidance[1]"The evalu"/h:p[1]""
-* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fia[1]""/f-component[1]""/f-element[5]""/aactivity[1]""/TSS[1]"The evalu"/h:p[1]""
-* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fia[1]""/f-component[1]""/f-element[5]""/aactivity[1]""/TSS[1]"The evalu"/h:p[2]""
-* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fia[1]""/f-component[1]""/f-element[5]""/aactivity[1]""/Guidance[1]"The evalu"/h:p[1]""
-* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fia[1]""/f-component[1]""/f-element[5]""/aactivity[1]""/Tests[1]"The evalu"/testlist[1]""/test[1]"The evalu"/h:p[1]""
+* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fia[1]""/f-component[1]""/f-element[2]""/aactivity[1]""/TSS[1]"The evalu"/h:p[1]""
+* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fia[1]""/f-component[1]""/f-element[2]""/aactivity[1]""/TSS[1]"The evalu"/h:p[2]""
+* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fia[1]""/f-component[1]""/f-element[2]""/aactivity[1]""/Guidance[1]"The evalu"/h:p[1]""
+* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fia[1]""/f-component[1]""/f-element[2]""/aactivity[1]""/Tests[1]"The evalu"/testlist[1]""/test[1]"The evalu"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fmt[1]""/f-component[1]""/f-element[1]""/note[1]"For these"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fmt[1]""/f-component[1]""/f-element[1]""/note[1]"For these"/h:p[2]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fmt[1]""/f-component[1]""/f-element[1]""/note[1]"For these"/h:p[3]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fmt[1]""/f-component[1]""/f-element[1]""/note[1]"For these"/h:p[4]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fmt[1]""/f-component[1]""/f-element[1]""/note[1]"For these"/h:p[5]""
+* Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fmt[1]""/f-component[1]""/f-element[1]""/note[1]"For these"/h:p[6]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fmt[1]""/f-component[1]""/f-element[1]""/aactivity[1]"The evalu"/TSS[1]"The evalu"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fmt[1]""/f-component[1]""/f-element[1]""/aactivity[1]"The evalu"/TSS[1]"The evalu"/h:p[2]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/man-sfrs[1]""/sec:man_fmt[1]""/f-component[1]""/f-element[1]""/aactivity[1]"The evalu"/TSS[1]"The evalu"/h:p[3]""
@@ -119,5 +120,6 @@
 * Warning: fdp_not_ext.2 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fdp[1]""/f-component[1]""
 * Warning: fdp_pst_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fdp[1]""/f-component[2]""
 * Warning: fdp_ren_ext.1 in opt-sfrs section is missing a _depends_/_optional_ sub tree (We're transitioning to using depends and not sections). /Module[1]""/sec:Security_Requirements[1]""/opt-sfrs[1]""/sec:opt_fdp[1]""/f-component[3]""
+ Failed to find a reference to fia-x509-ext-1-smime.
 * Warning: Since FPT_AON_EXT.1.1 has an 'id' attribute in a descendant node in the title, you probably need to define an alternative 'ext-comp-def-title'.
                        
