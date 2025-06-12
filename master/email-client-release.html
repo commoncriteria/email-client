@@ -630,7 +630,7 @@ function showTarget(id){
 
           }
     </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for Email Client</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
-      Version: 1.0<br/>2025-06-10<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.0</td><td>2025-06-10</td><td>Initial release as <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr></td></tr>
+      Version: 1.0<br/>2025-06-16<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.0</td><td>2025-06-10</td><td>Initial release as <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022 <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr></td></tr>
 </table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#Overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#usecases" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#Threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#objectivesEnvironment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-AppPP" style="text-indent:10px">5.1<span>
     Protection Profile for Application Software
        Security Functional Requirements Direction
@@ -676,6 +676,12 @@ The following sections list Common Criteria and technology terms used in this do
       accredited by the National Voluntary Laboratory Accreditation Program (NVLAP) and approved by the NIAP Validation Body to conduct Common Criteria-based evaluations.
     </td></tr>
 <tr><td><div id="Common_Evaluation_Methodology">Common Evaluation Methodology (CEM)</div></td><td>Common Evaluation Methodology for Information Technology Security Evaluation.</td></tr>
+<tr><td><div id="Direct_Rationale">Direct Rationale</div></td><td>
+		A type of Protection Profile, PP-Module, or Security Target in which the security
+		problem definition (SPD) elements are mapped directly to the SFRs and possibly to the 
+		security objectives for the operational environment. There are no security objectives
+		for the TOE.
+	</td></tr>
 <tr><td><div id="Extended_Package">Extended Package (EP)</div></td><td>A deprecated document form for collecting SFRs that implement a particular protocol, technology,
 	    or functionality. See Functional Packages.</td></tr>
 <tr><td><div id="Functional_Package">Functional Package (FP)</div></td><td>A document that collects SFRs for a particular protocol, technology,
@@ -805,15 +811,15 @@ The following sections list Common Criteria and technology terms used in this do
 	unauthorized access to the device's file system, or privilege escalation that
 	enables unauthorized access to other applications or the operating system.
 	</span></dd><dt class="threat defined" id="T.NETWORK_ATTACK">T.NETWORK_ATTACK
-	    (from App PP)
+		(from App PP)
 	</dt><dd>
 						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 					</dd><dt class="threat defined" id="T.NETWORK_EAVESDROP">T.NETWORK_EAVESDROP
-	    (from App PP)
+		(from App PP)
 	</dt><dd>
 						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 					</dd><dt class="threat defined" id="T.PHYSICAL_ACCESS">T.PHYSICAL_ACCESS
-	    (from App PP)
+		(from App PP)
 	</dt><dd>
 						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 					</dd></dl>
@@ -1319,7 +1325,7 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
 <tr><td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> (optional)</td><td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> mitigates the threat by optionally defining a plaintext-only operational mode that does not allow a user to interact with embedded content in an email message.</td></tr>
 <tr><td><a href="#FPT_AON_EXT.2">FPT_AON_EXT.2</a> (selection-based)</td><td><a href="#FPT_AON_EXT.2">FPT_AON_EXT.2</a> mitigates the threat by defining a cryptographic method for the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to validate the integrity of add-ons if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports their use.</td></tr>
 <tr class="major-row"><td rowspan="13"><a href="#T.NETWORK_ATTACK">T.NETWORK_​ATTACK</a>
-	    (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
+		(from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
 	</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a cryptographic function for asymmetric key generation.</td></tr>
 <tr><td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a DRBG for secure key generation.</td></tr>
 <tr><td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to implement or invoke an X.509 certificate validation service.</td></tr>
@@ -1334,7 +1340,7 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
 <tr><td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> (optional)</td><td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> mitigates the threat by optionally defining a plaintext-only operational mode that does not allow a user to interact with embedded content in an email message.</td></tr>
 <tr><td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> (selection-based)</td><td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> mitigates the threat by specifying how <abbr class="dyn-abbr"><a href="#abbr_SASL">SASL</a></abbr> is implemented in the case where the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims to support it.</td></tr>
 <tr class="major-row"><td rowspan="13"><a href="#T.NETWORK_EAVESDROP">T.NETWORK_​EAVESDROP</a>
-	    (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
+		(from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
 	</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_CKM_EXT.1">FCS_CKM_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a cryptographic function for asymmetric key generation.</td></tr>
 <tr><td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FCS_RBG_EXT.1">FCS_RBG_EXT.1</a> mitigates the threat by requiring that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> provide or invoke a DRBG for secure key generation.</td></tr>
 <tr><td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> (from <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>)</td><td><a href="#FIA_X509_EXT.1">FIA_X509_EXT.1</a> mitigates the threat by requiring the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to implement or invoke an X.509 certificate validation service.</td></tr>
@@ -1349,7 +1355,7 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
 <tr><td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> (optional)</td><td><a href="#FDP_REN_EXT.1">FDP_REN_EXT.1</a> mitigates the threat by optionally defining a plaintext-only operational mode that does not allow a user to interact with embedded content in an email message.</td></tr>
 <tr><td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> (selection-based)</td><td><a href="#FIA_SASL_EXT.1">FIA_SASL_EXT.1</a> mitigates the threat by specifying how <abbr class="dyn-abbr"><a href="#abbr_SASL">SASL</a></abbr> is implemented in the case where the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims to support it.</td></tr>
 <tr class="major-row"><td rowspan="10"><a href="#T.PHYSICAL_ACCESS">T.PHYSICAL_​ACCESS</a>
-	    (from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
+		(from App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
 	</td><td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a></td><td><a href="#FCS_CKM_EXT.3">FCS_CKM_EXT.3</a> mitigates the threat by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> protects stored key data from unauthorized disclosure.</td></tr>
 <tr><td><a href="#FCS_CKM.6">FCS_CKM.6</a></td><td><a href="#FCS_CKM.6">FCS_CKM.6</a> mitigates the threat by defining the mechanism by which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> securely destroys stored key data.</td></tr>
 <tr><td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a></td><td><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a> mitigates the threat by defining any key chain that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> implements to protect a root encryption key.</td></tr>

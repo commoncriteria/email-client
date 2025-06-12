@@ -4,7 +4,7 @@
     <ReferenceTable>
       <PPVersion>1.0</PPVersion>
       <PPAuthor>National Information Assurance Partnership</PPAuthor>
-      <PPPubDate>2025-06-10</PPPubDate>
+      <PPPubDate>2025-06-16</PPPubDate>
       <Keywords>email; email client</Keywords>
     </ReferenceTable>
   </PPReference>
@@ -385,7 +385,7 @@
       <base-pp id="AppPP" name="Application Software" product="Application" short="App" version="2.0">
         <git>
           <url>https://github.com/commoncriteria/application</url>
-          <branch>release-1.4</branch>
+          <branch>release-2.0</branch>
         </git>
         <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=462&amp;id=462</url>
       
