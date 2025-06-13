@@ -1,4 +1,4 @@
-== Protecion Profile Module for Email Clients
+== PP-Module for Email Clients
 
 == This is the correct version to use. The "emailclient" repo is deprecated.
 
