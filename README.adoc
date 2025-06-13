@@ -35,7 +35,7 @@ A list of products that have passed evaluation against this Protection Profile c
 ## Draft Version
 
 * [Protection Profile Module for Email Clients (master branch)](https://commoncriteria.github.io/email-client/master/email-client-release.html) (html)
-* [Protection Profile Module for Email Clients (master branch)](https://commoncriteria.github.io/email-client/master/email-client-release.pdf) (pdf)
+* [Protection Profile Module for Email Clients (master branch)](https://commoncriteria.github.io/email-client/master/email-client-release.html.pdf) (pdf)
 
 ## Release Version
 * [Protection Profile Module for Email Clients](https://www.niap-ccevs.org/Profile/Info.cfm?id=377)
