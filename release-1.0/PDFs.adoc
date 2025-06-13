@@ -1,0 +1,4 @@
+* https://commoncriteria.github.io/email-client/release-1.0/email-client.html.pdf[email-client.html.pdf]
+* https://commoncriteria.github.io/email-client/release-1.0/email-client-sd.html.pdf[email-client-sd.html.pdf]
+* https://commoncriteria.github.io/email-client/release-1.0/email-client-release-linkable.html.pdf[email-client-release-linkable.html.pdf]
+* https://commoncriteria.github.io/email-client/release-1.0/email-client-release.html.pdf[email-client-release.html.pdf]
