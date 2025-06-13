@@ -1,4 +1,3 @@
-* Warning: This document still has at least one comment.
 * Error: Detected dangling id-reference to saslimap from attribute
         on/Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fia[1]""/f-component[1]""/depends[1]""/on[1]""
 * Error: Detected dangling id-reference to saslsmtp from attribute
