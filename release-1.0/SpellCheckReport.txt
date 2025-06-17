@@ -21,7 +21,6 @@ output/email-client-release-linkable.html: PaSSw0rd
 output/email-client-release-linkable.html: SFP
 output/email-client-release-linkable.html: SPD
 output/email-client-release-linkable.html: STM
-output/email-client-release-linkable.html: TBD
 output/email-client-release-linkable.html: URIs
 output/email-client-release-linkable.html: accpted
 output/email-client-release-linkable.html: configurability
@@ -31,6 +30,7 @@ output/email-client-release-linkable.html: ecdsawithsha512
 output/email-client-release-linkable.html: ons
 output/email-client-release-linkable.html: recategorized
 output/email-client-release-linkable.html: signatureAlgorithm
+output/email-client-release-linkable.html: v2
 output/email-client-release-linkable.html: v4
 output/email-client-release.html: 38F
 output/email-client-release.html: 56A
@@ -50,7 +50,6 @@ output/email-client-release.html: Ons
 output/email-client-release.html: SFP
 output/email-client-release.html: SPD
 output/email-client-release.html: STM
-output/email-client-release.html: TBD
 output/email-client-release.html: URIs
 output/email-client-release.html: accpted
 output/email-client-release.html: configurability
@@ -60,6 +59,7 @@ output/email-client-release.html: ecdsawithsha512
 output/email-client-release.html: ons
 output/email-client-release.html: recategorized
 output/email-client-release.html: signatureAlgorithm
+output/email-client-release.html: v2
 output/email-client-release.html: v4
 output/email-client-sd.html: AGD
 output/email-client-sd.html: ActiveSync
@@ -75,12 +75,12 @@ output/email-client-sd.html: OXCRPC
 output/email-client-sd.html: PBKDFs
 output/email-client-sd.html: PaSSw0rd
 output/email-client-sd.html: SPD
-output/email-client-sd.html: TBD
 output/email-client-sd.html: evaluator’s
 output/email-client-sd.html: fail’
 output/email-client-sd.html: ons
 output/email-client-sd.html: pass’
 output/email-client-sd.html: signatureAlgorithm
+output/email-client-sd.html: v2
 output/email-client.html: 38F
 output/email-client.html: 56A
 output/email-client.html: 56B
@@ -104,7 +104,6 @@ output/email-client.html: PaSSw0rd
 output/email-client.html: SFP
 output/email-client.html: SPD
 output/email-client.html: STM
-output/email-client.html: TBD
 output/email-client.html: URIs
 output/email-client.html: accpted
 output/email-client.html: configurability
@@ -114,4 +113,5 @@ output/email-client.html: ecdsawithsha512
 output/email-client.html: ons
 output/email-client.html: recategorized
 output/email-client.html: signatureAlgorithm
+output/email-client.html: v2
 output/email-client.html: v4
