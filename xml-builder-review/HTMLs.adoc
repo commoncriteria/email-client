@@ -1,0 +1,4 @@
+* https://commoncriteria.github.io/email-client/xml-builder-review/email-client-release-linkable.html[email-client-release-linkable.html]
+* https://commoncriteria.github.io/email-client/xml-builder-review/email-client-release.html[email-client-release.html]
+* https://commoncriteria.github.io/email-client/xml-builder-review/email-client-sd.html[email-client-sd.html]
+* https://commoncriteria.github.io/email-client/xml-builder-review/email-client.html[email-client.html]
