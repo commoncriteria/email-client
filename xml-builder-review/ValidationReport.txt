@@ -1,0 +1,1 @@
+/home/runner/work/email-client/email-client/input/email-client.xml:482:14: error: element "SOEs" incomplete; missing required element "SOE"
