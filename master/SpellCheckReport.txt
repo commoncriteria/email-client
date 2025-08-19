@@ -8,7 +8,6 @@ output/email-client-release-linkable.html: CEM
 output/email-client-release-linkable.html: CSPs
 output/email-client-release-linkable.html: ContentEncryptionAlgorithmIdentifier
 output/email-client-release-linkable.html: DRBGs
-output/email-client-release-linkable.html: EmailCLient
 output/email-client-release-linkable.html: FEK
 output/email-client-release-linkable.html: IMAP4
 output/email-client-release-linkable.html: MOF
@@ -22,7 +21,6 @@ output/email-client-release-linkable.html: SFP
 output/email-client-release-linkable.html: SPD
 output/email-client-release-linkable.html: STM
 output/email-client-release-linkable.html: URIs
-output/email-client-release-linkable.html: accpted
 output/email-client-release-linkable.html: configurability
 output/email-client-release-linkable.html: destructions
 output/email-client-release-linkable.html: ecdsawithsha384
@@ -39,7 +37,6 @@ output/email-client-release.html: CAPA
 output/email-client-release.html: CDH
 output/email-client-release.html: CEM
 output/email-client-release.html: ContentEncryptionAlgorithmIdentifier
-output/email-client-release.html: EmailCLient
 output/email-client-release.html: IMAP4
 output/email-client-release.html: MOF
 output/email-client-release.html: OCSP
@@ -50,7 +47,6 @@ output/email-client-release.html: SFP
 output/email-client-release.html: SPD
 output/email-client-release.html: STM
 output/email-client-release.html: URIs
-output/email-client-release.html: accpted
 output/email-client-release.html: configurability
 output/email-client-release.html: destructions
 output/email-client-release.html: ecdsawithsha384
@@ -88,7 +84,6 @@ output/email-client.html: CEM
 output/email-client.html: CSPs
 output/email-client.html: ContentEncryptionAlgorithmIdentifier
 output/email-client.html: DRBGs
-output/email-client.html: EmailCLient
 output/email-client.html: FEK
 output/email-client.html: IMAP4
 output/email-client.html: MOF
@@ -102,7 +97,6 @@ output/email-client.html: SFP
 output/email-client.html: SPD
 output/email-client.html: STM
 output/email-client.html: URIs
-output/email-client.html: accpted
 output/email-client.html: configurability
 output/email-client.html: destructions
 output/email-client.html: ecdsawithsha384
