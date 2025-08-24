@@ -1214,7 +1214,8 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
           <div class="element"><div class="reqid" id="FMT_SMF.1.1/EmailClient"><a href="#FMT_SMF.1.1/EmailClient" class="abbr">FMT_SMF.1.1/EmailClient</a></div><div class="reqdesc">
 	      The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management
 	      functions [<i>controlled by the user or administrator as shown: <ul><li> X: Mandatory</li> <li> O: Optional</li></ul></i>
-	        ]<a id="period_212" href="#period_212">. </a>			<br><br>
+	        
+			<br><br>
 			<b><span class="ctr" data-myid="undefined" data-counter-type="ct-Table" id="undefined">Table <span class="counter">2</span>: Management Functions</span></b>
 			<br><br>
 			Status Markers:<br> O - Indicates that this function is optional for this role<br><br>
@@ -1233,7 +1234,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
 <tr id="mf-12"><td>12</td><td style="text-align:left">Configure cryptographic functionality</td><td><div class="tooltipped">O<span class="tooltiptext">Optional/Conditional</span></div></td><td><div class="tooltipped">O<span class="tooltiptext">Optional/Conditional</span></div></td></tr>
 <tr id="mf-13"><td>13</td><td style="text-align:left"> [<b>assignment</b>: 
      <span class="assignable-content">Other management functions</span>] </td><td><div class="tooltipped">O<span class="tooltiptext">Optional/Conditional</span></div></td><td><div class="tooltipped">O<span class="tooltiptext">Optional/Conditional</span></div></td></tr>
-</table>]<div class="appnote"><span class="note-header">Application
+</table>]<a id="period_212" href="#period_212">. </a><div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
 		
@@ -1851,9 +1852,9 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
     </span><span class="note"><i>The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author assigns any other supported characters; if there are no 
 			other supported characters, they should select "no other characters"<a id="period_450" href="#period_450">. </a></i></span></div></div></div>
           <div class="element"><div class="reqid" id="FCS_CKM_EXT.5.3"><a href="#FCS_CKM_EXT.5.3" class="abbr">FCS_CKM_EXT.5.3</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform Password-based Key Derivation Functions in accordance with a 
-			specified cryptographic algorithm [<i><b>HMAC-SHA-384</b></i>, with  [<b>assignment</b>: 
+			specified cryptographic algorithm [<i><b>HMAC-SHA-384</b></i>], with  [<b>assignment</b>: 
      <span class="assignable-content">positive integer of 4096 or more</span>]  iterations, and output cryptographic 
-			key sizes [<i><b>256</b></i> bits that meet the following: [<i><b>NIST SP 800-56B</b></i><a id="period_451" href="#period_451">. </a>            <div class="appnote"><span class="note-header">Application
+			key sizes [<i><b>256</b></i>] bits that meet the following: [<i><b>NIST SP 800-56B</b></i>]<a id="period_451" href="#period_451">. </a>            <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
               The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author selects the parameters based on the password-based key derivation function (<abbr class="dyn-abbr"><a href="#abbr_PBKDF">PBKDF</a></abbr>)
@@ -2109,9 +2110,9 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
               "!", "@", "#", "$", "%", "^", "&amp;", "*", "(", and ")", and 
                [<b>selection</b>: <span class="selectable-content" id="fcs_ckm_ext.5.2_2">[<b>assignment</b>: 
      <span class="assignable-content">other supported special characters</span>]</span>, <span class="selectable-content" id="fcs_ckm_ext.5.2_3">no other characters</span>] <h4 id="ext-comp-FCS_CKM_EXT.5.3">FCS_CKM_EXT.5.3</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall perform Password-based Key Derivation Functions in accordance with a 
-			specified cryptographic algorithm [<i><b>HMAC-SHA-384</b></i>, with  [<b>assignment</b>: 
+			specified cryptographic algorithm [<i><b>HMAC-SHA-384</b></i>], with  [<b>assignment</b>: 
      <span class="assignable-content">positive integer of 4096 or more</span>]  iterations, and output cryptographic 
-			key sizes [<i><b>256</b></i> bits that meet the following: [<i><b>NIST SP 800-56B</b></i><a id="period_546" href="#period_546">. </a>            <h4 id="ext-comp-FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</h4>
+			key sizes [<i><b>256</b></i>] bits that meet the following: [<i><b>NIST SP 800-56B</b></i>]<a id="period_546" href="#period_546">. </a>            <h4 id="ext-comp-FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</h4>
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not accept passwords less than 
                [<b>selection</b>: <span class="selectable-content" id="fcs_ckm_ext.5.4_1">a value settable by the administrator</span>, <span class="selectable-content" id="fcs_ckm_ext.5.4_3">[<b>assignment</b>: 
      <span class="assignable-content">minimum password length accepted by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, must be &#8805; 1</span>]</span>]  and greater than the maximum password length defined in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a><a id="period_547" href="#period_547">. </a>            </div></div><h3 id="ext-comp-FCS_KYC_EXT" class="indexable" data-level="4">C.2.1.2 FCS_KYC_EXT Cryptographic Key Chaining</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>Components in this family define requirements for protection of cryptographic key data through its storage in a hierarchical key chain<a id="period_548" href="#period_548">. </a></div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FCS_KYC_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1</text><rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FCS_KYC_EXT.1">FCS_KYC_EXT.1</a>,
