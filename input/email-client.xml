@@ -834,7 +834,7 @@
 				</aactivity>
 			
 				</management-function>
-			</management-function-set></title>
+			</management-function-set>]</title>
             <note role="application">
 		
 		  For these management functions, the term "Administrator" refers
@@ -1311,8 +1311,8 @@ SFP from outside the TOE:  <assignable>additional importation control rules</ass
           </f-element>
           <f-element id="fcs-ckm-ext-5-3">
             <title>The TSF shall perform Password-based Key Derivation Functions in accordance with a 
-			specified cryptographic algorithm [<h:i><h:b>HMAC-SHA-384</h:b></h:i>], with  <assignable>positive integer of 4096 or more</assignable>  iterations, and output cryptographic 
-			key sizes [<h:i><h:b>256</h:b></h:i>] bits that meet the following: [<h:i><h:b>NIST SP 800-56B</h:b></h:i>].
+			specified cryptographic algorithm [<h:i><h:b>HMAC-SHA-384</h:b></h:i>, with  <assignable>positive integer of 4096 or more</assignable>  iterations, and output cryptographic 
+			key sizes [<h:i><h:b>256</h:b></h:i> bits that meet the following: [<h:i><h:b>NIST SP 800-56B</h:b></h:i>.
             </title>
             <note role="application">
               The ST author selects the parameters based on the password-based key derivation function (PBKDF)
