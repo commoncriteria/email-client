@@ -74,8 +74,6 @@
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/section[1]""/f-component[3]""/f-element[1]""/aactivity[1]""/TSS[1]"If keys a"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/section[2]""/f-component[1]""/f-element[4]""/note[1]"This sele"/h:p[1]""
 * Warning: Detected an empty _p_ element./Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/section[3]""/f-component[1]""/dependencies[1]"Cryptogra"/h:p[1]""
-* Warning: Detected 1 Conformance Claims sections in this PP. There should be exactly 1 "Conformance Claims" section.
-      
  Failed to find a reference to fia-x509-ext-1-smime.
 * Warning: Since FCS_CKM_EXT.5.2 has an 'id' attribute in a descendant node in the title, you probably need to define an alternative 'ext-comp-def-title'.
                        
