@@ -116,7 +116,7 @@
       </usecases>
     </sec:Use_Cases>
   </sec:Introduction>
-  <section title="Conformance_Claims" id="sec-cclaims">
+  <section title="Conformance Claims" id="sec-cclaims">
     <CClaimsInfo cc-version="cc-2022r1" cc-approach="direct-rationale">
       <cc-st-conf>exact</cc-st-conf>
       <cc-pt2-conf>extended</cc-pt2-conf>
