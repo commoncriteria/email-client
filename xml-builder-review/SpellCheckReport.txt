@@ -19,7 +19,6 @@ output/email-client-release-linkable.html: Ons
 output/email-client-release-linkable.html: PBKDFs
 output/email-client-release-linkable.html: PaSSw0rd
 output/email-client-release-linkable.html: SFP
-output/email-client-release-linkable.html: SOEs
 output/email-client-release-linkable.html: SPD
 output/email-client-release-linkable.html: STM
 output/email-client-release-linkable.html: URIs
@@ -54,7 +53,6 @@ output/email-client-release.html: OXCMAPIHTTP
 output/email-client-release.html: OXCRPC
 output/email-client-release.html: Ons
 output/email-client-release.html: SFP
-output/email-client-release.html: SOEs
 output/email-client-release.html: SPD
 output/email-client-release.html: STM
 output/email-client-release.html: URIs
@@ -113,7 +111,6 @@ output/email-client.html: Ons
 output/email-client.html: PBKDFs
 output/email-client.html: PaSSw0rd
 output/email-client.html: SFP
-output/email-client.html: SOEs
 output/email-client.html: SPD
 output/email-client.html: STM
 output/email-client.html: URIs
