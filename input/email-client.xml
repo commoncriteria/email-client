@@ -116,8 +116,8 @@
       </usecases>
     </sec:Use_Cases>
   </sec:Introduction>
-  <sec:Conformance_Claims  boilerplate="no">
-    <CClaimsInfo cc-version="cc-2022r1" cc-approach="direct-rationale">
+  <section title="Conformance Claims" id="sec-cclaims" >
+    <CClaimsInfo cc-version="cc-2022r1" cc-approach="direct-rationale" display="yes">
       <cc-st-conf>exact</cc-st-conf>
       <cc-pt2-conf>extended</cc-pt2-conf>
       <cc-pt3-conf>extended</cc-pt3-conf>
@@ -127,7 +127,7 @@
       </cc-pp-config-with>
       <cc-pkg-claim/>
     </CClaimsInfo>
-  </sec:Conformance_Claims>
+  </section>
   <!-- 3.0 Security Problem Definition-->
   <sec:Security_Problem_Definition >
     
