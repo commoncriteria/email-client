@@ -26,7 +26,7 @@
       <subject>Initial release as CC:2022 PP-Module</subject>
     </entry>
   </RevisionHistory>
-    <include-pkg id="pkg-x509">
+    <include-pkg id="X509">
     <git>
       <url>https://github.com/commoncriteria/X509</url>
       <branch>release-1.0</branch>
@@ -362,12 +362,11 @@
         <from base="AppPP"/>
 		<addressed-by>FCS_CKM_EXT.1 (modified from Base-PP)</addressed-by><rationale>FCS_CKM_EXT.1 mitigates the threat by requiring that the TSF provide or invoke a cryptographic function for asymmetric key generation.</rationale>
 		<addressed-by>FCS_RBG_EXT.1 (modified from Base-PP)</addressed-by><rationale>FCS_RBG_EXT.1 mitigates the threat by requiring that the TSF provide or invoke a DRBG for secure key generation.</rationale>
-		<addressed-by>FIA_X509_EXT.1 (from Base-PP)</addressed-by><rationale>FIA_X509_EXT.1 mitigates the threat by requiring the TSF to implement or invoke an X.509 certificate validation service.</rationale>
+		<addressed-by>FIA_X509_EXT.1 (from <xref to="X509"/>)</addressed-by><rationale>FIA_X509_EXT.1 mitigates the threat by requiring the TSF to implement or invoke an X.509 certificate validation service.</rationale>
 		<addressed-by>FTP_DIT_EXT.1 (modified from Base-PP)</addressed-by><rationale>FTP_DIT_EXT.1 mitigates the threat by specifying the trusted communications channels used by the TOE to protect data in transit.</rationale>
 		<addressed-by>FCS_SMIME_EXT.1</addressed-by><rationale>FCS_SMIME_EXT.1 mitigates the threat by defining the TOE's cryptographic implementation of S/MIME to both assert and validate the confidentiality and integrity of secure email messages.</rationale>
 		<addressed-by>FDP_NOT_EXT.1</addressed-by><rationale>FDP_NOT_EXT.1 mitigates the threat by defining a mechanism for users to determine whether a given email has been signed or encrypted.</rationale>
         <addressed-by>FDP_SMIME_EXT.1</addressed-by><rationale>FDP_SMIME_EXT.1 mitigates the threat by requiring the TSF to use S/MIME to protect email message data in transit.</rationale>
-		<addressed-by>FIA_X509_EXT.2/SMIME</addressed-by><rationale>FIA_X509_EXT.2/SMIME mitigates the threat by requiring the TSF to support the use of X.509 certificates for S/MIME.</rationale>
 		<addressed-by>FMT_SMF.1/EmailClient</addressed-by><rationale>FMT_SMF.1/EmailClient mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</rationale>
 		<addressed-by>FTP_ITC.1</addressed-by><rationale>FTP_ITC.1 mitigates the threat by specifying the trusted communications the TSF must implement that are specific to email communications.</rationale>
 		<addressed-by>FDP_NOT_EXT.2 (optional)</addressed-by><rationale>FDP_NOT_EXT.2 mitigates the threat by optionally requiring the TSF to enumerate the uniform resource identifier (URI) of embedded links in emails so that a user can determine the source of the link.</rationale>
@@ -379,12 +378,11 @@
         <from base="AppPP"/>
 		<addressed-by>FCS_CKM_EXT.1 (modified from Base-PP)</addressed-by><rationale>FCS_CKM_EXT.1 mitigates the threat by requiring that the TSF provide or invoke a cryptographic function for asymmetric key generation.</rationale>
 		<addressed-by>FCS_RBG_EXT.1 (modified from Base-PP)</addressed-by><rationale>FCS_RBG_EXT.1 mitigates the threat by requiring that the TSF provide or invoke a DRBG for secure key generation.</rationale>	
-		<addressed-by>FIA_X509_EXT.1 (from Base-PP)</addressed-by><rationale>FIA_X509_EXT.1 mitigates the threat by requiring the TSF to implement or invoke an X.509 certificate validation service.</rationale>
+		<addressed-by>FIA_X509_EXT.1 (from <xref to="X509"/>)</addressed-by><rationale>FIA_X509_EXT.1 mitigates the threat by requiring the TSF to implement or invoke an X.509 certificate validation service.</rationale>
       	<addressed-by>FTP_DIT_EXT.1 (modified from Base-PP)</addressed-by><rationale>FTP_DIT_EXT.1 mitigates the threat by specifying the trusted communications channels used by the TOE to protect data in transit.</rationale>
 		<addressed-by>FCS_SMIME_EXT.1</addressed-by><rationale>FCS_SMIME_EXT.1 mitigates the threat by defining the TOE's cryptographic implementation of S/MIME to both assert and validate the confidentiality and integrity of secure email messages.</rationale>
     	<addressed-by>FDP_NOT_EXT.1</addressed-by><rationale>FDP_NOT_EXT.1 mitigates the threat by defining a mechanism for users to determine whether a given email has been signed or encrypted.</rationale>
 		<addressed-by>FDP_SMIME_EXT.1</addressed-by><rationale>FDP_SMIME_EXT.1 mitigates the threat by requiring the TSF to use S/MIME to protect email message data in transit.</rationale>
-      	<addressed-by>FIA_X509_EXT.2/SMIME</addressed-by><rationale>FIA_X509_EXT.2/SMIME mitigates the threat by requiring the TSF to support the use of X.509 certificates for S/MIME.</rationale>
 		<addressed-by>FMT_SMF.1/EmailClient</addressed-by><rationale>FMT_SMF.1/EmailClient mitigates the threat by defining the technology-specific management functions that may exist for email client applications.</rationale>
 		<addressed-by>FTP_ITC.1</addressed-by><rationale>FTP_ITC.1 mitigates the threat by specifying the trusted communications the TSF must implement that are specific to email communications.</rationale>
 		<addressed-by>FDP_NOT_EXT.2 (optional)</addressed-by><rationale>FDP_NOT_EXT.2 mitigates the threat by optionally requiring the TSF to enumerate the uniform resource identifier (URI) of embedded links in emails so that a user can determine the source of the link.</rationale>
@@ -493,39 +491,6 @@
             </f-component>
           
         </sec:mod_fcs> 
-        
-        <sec:mod_fia title="Identification and Authentication (FIA)">
-          <f-component cc-id="fia_x509_ext.1" name="X.509 Certificate Validation">
-            <consistency-rationale>This SFR is unchanged from its definition in the Base-PP; the SFR is
-				recategorized from selection-based to mandatory when the TOE conforms to this PP-Module.</consistency-rationale>
-            <f-element id="fia-509-ext-1-1">
-              <title>This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module
-				because the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged
-				from its original definition.</title>
-              <aactivity>
-                <no-tests>
-					As defined in the <xref to="pkg-x509"/>.                
-                </no-tests>
-              </aactivity>
-            </f-element>
-            <audit-event/>
-          </f-component>
-          <f-component cc-id="fia_x509_ext.2" name="X.509 Certificate Authentication">
-            <consistency-rationale>This SFR is unchanged from its definition in the Base-PP; the SFR is recategorized
-				from selection-based to mandatory when the TOE conforms to this PP-Module.</consistency-rationale>
-            <f-element id="fia-x509-ext-2-1">
-              <title>
-				This SFR is selection-based in the X.509 Functional Package but mandatory in this PP-Module because
-				the TOE’s TLS implementation requires appropriate X.509 functionality. The SFR is unchanged from its
-				original definition. 
-              </title>
-              <aactivity><no-tests>As defined in the <xref to="pkg-x509"/>.</no-tests></aactivity>
-
-            </f-element>
-            <audit-event/>
-          </f-component>
-          
-        </sec:mod_fia> 
         
         <sec:mod_ftp title="Trusted Path/Channels (FTP)">
           <f-component cc-id="ftp_dit_ext.1" name="Protection of Data in Transit">
@@ -938,7 +903,7 @@
 	        </selectables>
 	        as part of the S/MIME protocol.
 	      </title>
-	      <note role="application">In accordance with FIA_X509_EXT.1.1 in <xref to="bibAppPP"/>,
+	      <note role="application">In accordance with FIA_X509_EXT.1.1 in <xref to="X509"/>,
 	        certificate revocation may use a Certificate Revocation List (CRL) or Online Certificate
 	        Status Protocol (OCSP). The email client can define how this mechanism behaves,
 	        including whether it uses the underlying OS, but it is required that a mechanism
@@ -982,7 +947,7 @@
 	        </Guidance>
 	        <Tests>
 	          The evaluator shall perform the tests listed below. These tests can be performed in conjunction with the 
-			  tests specified in FIA_X509_EXT.1 (defined in the Base-PP) for certificate and certificate chain verification
+			  tests specified in FIA_X509_EXT.1 (defined in the <xref to="X509"/>) for certificate and certificate chain verification
 			  and in FDP_NOT_EXT.1.<h:p/>
 	          <testlist>
 	            <test>The evaluator shall both send and receive a message with no protection (no signature or encryption)
@@ -1142,76 +1107,6 @@
       <audit-event/>
 	  </f-component>
 	</sec:man_fdp>
-	<sec:man_fia title="Identification and Authentication (FIA)">
-	  
-	  <f-component name="X.509 Certificate Support for Functions (S/MIME)" cc-id="fia_x509_ext.2" iteration="SMIME">
-	    <consistency-rationale>
-	      This SFR defines the format an email client shall use for certificates to perform encryption and authentication.
-	      It does not impact the Base-PP functionality.
-	    </consistency-rationale>
-	    <f-element>
-	      <title>
-	        The TSF shall
-	        <selectables>
-	          <selectable>invoke platform-provided functionality to validate</selectable>
-	          <selectable>validate</selectable></selectables>
-	        X.509v3 certificates in accordance with <xref to="fia-x509-ext-1-smime"/> <h:b>in the <xref to="pkg-x509"/></h:b> to support [<h:i>authentication and encryption for S/MIME, installation of code</h:i>] using
-	        [<h:i>[code signing for system software updates, [encryption of email messages, digitally signing of email messages]]</h:i>].
-	      </title>
-	      <note role="Application">
-	        The intent of this requirement is to require the use of X.509 certificates to determine authentication and integrity for email messages using S/MIME, and to prevent the installation of code in the event of an invalid code signing certificate.
-	      </note>
-	    </f-element>
-	    <f-element id="fia-x509-ext-2e2-smime">
-	      <title>For each function indicated in FIA_X509_EXT.2.1<h:b>/SMIME</h:b>, the TSF shall
-	        <selectables>
-	          <selectable>invoke the TOE platform to determine</selectable>
-	          <selectable>determine</selectable></selectables> whether the [<h:i>certificate is not
-	            accepted</h:i>]
-	        when valid certificate revocation status information cannot be obtained from a source indicated in FIA_X509_EXT.1.3.
-	      </title>
-	      <note role="Application">
-	        The intent of this requirement is to enforce that the TSF presents the installation of code or the 
-			signing and encryption of email if the associated code signing or email protection certificate is deemed 
-			invalid.
-	      </note>
-	      
-	      <aactivity>
-	        <TSS>
-	          The evaluator shall ensure that the TSS describes how the email client chooses which certificates to 
-			  use so that the email client can use the certificates.<h:p/>
-	          The evaluator shall confirm that the TSS describes the behavior of the email client when a connection 
-			  cannot be established during the validity check of a certificate used in establishing a trusted channel
-			  and protecting email.
-	        </TSS>
-	        <Guidance>
-	          The evaluator shall verify that the administrative guidance contains any necessary instructions for
-			  configuring the operating environment so that the email client can use the certificates.
-	        </Guidance>
-	        <Tests>The evaluator shall perform the following tests:
-	          <testlist>
-	            <test>The evaluator shall perform this test for each function listed in FIA_X509_EXT.2.1
-					(from the Base-PP) that requires the use of certificates. The evaluator shall demonstrate that
-					using a certificate without a valid certification path results in the function failing. The
-					evaluator shall then load into the platform's root store any certificates needed to validate the 
-					certificate to be used in the function, and demonstrate that the function succeeds.</test> 
-	            <test>The evaluator shall use the TOE to communicate with a non-TOE IT entity that presents a certificate
-					that can be validated.
-					The evaluator shall then manipulate the environment so that the TOE is unable to verify the
-					validity of the presented certificate (e.g., by deliberately making the method of revocation
-					checking unavailable), and observe that the action selected in FIA_X509_EXT.2.2 
-					(from <xref to="pkg-x509"/>) is performed. 
-					If the selected action is administrator-configurable, then the evaluator shall verify that all 
-					supported administrator-configurable options behave in their documented manner by following the 
-					operational guidance.</test>
-	          </testlist>
-	        </Tests>
-	      </aactivity>
-	    </f-element>
-	  </f-component>
-	  
-	    
-	</sec:man_fia>
 	<sec:man_fmt title="Security Management (FMT)">
 	  
 
@@ -1294,11 +1189,11 @@
 	        <h:p/>
 		  The function to
 		  configure whether to establish a trusted channel corresponds to the functionality
-		  described in FIA_X509_EXT.2.2 (from <xref to="pkg-x509"/>). The Administrator has the
+		  described in FIA_X509_EXT.2.2 (from <xref to="X509"/>). The Administrator has the
 		  option of accepting or rejecting all certificates that cannot be validated, accepting
 		  a given certificate that cannot be validated, or not accepting a given certificate
 		  that cannot be validated. Depending on the choice that the Administrator has made in
-		  FIA_X509_EXT.2.2 (from <xref to="pkg-x509"/>), the trusted connection will either be
+		  FIA_X509_EXT.2.2 (from <xref to="X509"/>), the trusted connection will either be
 		  allowed for all certificates that cannot be validated, disallowed for all certificates
 		  that cannot be validated, allowed for a given certificate that cannot be validated, or
 		  disallowed for a given certificate that cannot be validated. 
@@ -2230,7 +2125,7 @@ Support for 256-bit AES key sizes will be required for
       </h:tr>
       <h:tr>
         <h:td>FPT_STM.1 - Reliable Time Stamps</h:td>
-        <h:td>FIA_X509_EXT.2/SMIME has a dependency on FPT_STM.1 because reliable time is needed to validate whether or not an X.509 certificate is expired. This requirement is implicitly satisfied through the Base-PP assumption that the TOE platform
+        <h:td>FIA_X509_EXT.2 has a dependency on FPT_STM.1 because reliable time is needed to validate whether or not an X.509 certificate is expired. This requirement is implicitly satisfied through the Base-PP assumption that the TOE platform
           can be assumed to be a reliable time source.</h:td>
       </h:tr>
     </h:table>
