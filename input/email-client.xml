@@ -232,7 +232,8 @@
 				</usage>
 				<usage id="usage-x509-eku-values" title="Required Key Usage Values for FIA_X509_EXT.1.5">
 					<description>
-						The ST author shall select the options to validate the certificate using extended key usage constraints, to require that S/MIME certificates have the emailProtection key purpose bit set, and tha TLS server certificates 
+						The ST author shall select the options to validate the certificate using extended key usage
+						constraints, to require that S/MIME certificates have the emailProtection key purpose bit set, and that TLS server certificates 
 						have the Server Authentication purpose. Other selections may be made as appropriate without restriction.
 					</description>
 					<config>
