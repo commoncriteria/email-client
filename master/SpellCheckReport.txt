@@ -29,7 +29,6 @@ output/email-client-release-linkable.html: ecdsawithsha512
 output/email-client-release-linkable.html: emailProtection
 output/email-client-release-linkable.html: ons
 output/email-client-release-linkable.html: signatureAlgorithm
-output/email-client-release-linkable.html: tha
 output/email-client-release-linkable.html: v4
 output/email-client-release.html: 38F
 output/email-client-release.html: 56A
@@ -57,7 +56,6 @@ output/email-client-release.html: ecdsawithsha512
 output/email-client-release.html: emailProtection
 output/email-client-release.html: ons
 output/email-client-release.html: signatureAlgorithm
-output/email-client-release.html: tha
 output/email-client-release.html: v4
 output/email-client-sd.html: AGD
 output/email-client-sd.html: ActiveSync
@@ -109,5 +107,4 @@ output/email-client.html: ecdsawithsha512
 output/email-client.html: emailProtection
 output/email-client.html: ons
 output/email-client.html: signatureAlgorithm
-output/email-client.html: tha
 output/email-client.html: v4
