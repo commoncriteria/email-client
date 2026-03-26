@@ -444,7 +444,7 @@
       
       <modified-sfrs>
         
-        <sec:mod_fcs title="Cryptographic Support (FCS)">
+        <sec:mod_fcs title="Class FCS: Cryptographic Support">
           <f-component cc-id="fcs_ckm_ext.1" name="Cryptographic Key Generation Services">
             <consistency-rationale>This SFR is changed from its definition in the Base-PP to remove one of the available selection options because it will never apply in the case where the TOE conforms to this PP-Module.</consistency-rationale>
             <f-element id='fcs-ckm-ext-1-1'>
@@ -493,7 +493,7 @@
           
         </sec:mod_fcs> 
         
-        <sec:mod_ftp title="Trusted Path/Channels (FTP)">
+        <sec:mod_ftp title="Class FTP: Trusted Path/Channels">
           <f-component cc-id="ftp_dit_ext.1" name="Protection of Data in Transit">
             <consistency-rationale>This SFR is changed from its definition in the Base-PP to modify the selection
 				options such that some options are mandated if another selection is chosen and some are removed entirely,
@@ -566,7 +566,7 @@
     </base-pp> 
       <man-sfrs>
         
-	<sec:man_fcs title="Cryptographic Support (FCS)">
+        <sec:man_fcs title="Class FCS: Cryptographic Support">
 	
 	  <ext-comp-def fam-id="FCS_CKM_EXT" title="Cryptographic Key Management">
 	    <fam-behavior>Components in this family define requirements for cryptographic key management beyond those which are specified in the Part 2 family FCS_CKM.
@@ -1005,7 +1005,7 @@
 	  
 	</sec:man_fcs>
 	
-	<sec:man_fdp title="User Data Protection (FDP)">
+        <sec:man_fdp title="Class FDP: User Data Protection">
 	  <ext-comp-def fam-id="FDP_NOT_EXT" title="Notifications">
 	    <fam-behavior>Components in this family define requirements for the TSF's ability to notify users about
 			potential insecure interactions with data.
@@ -1108,7 +1108,7 @@
       <audit-event/>
 	  </f-component>
 	</sec:man_fdp>
-	<sec:man_fmt title="Security Management (FMT)">
+        <sec:man_fmt title="Class FMT: Security Management">
 	  
 
 	  <f-component cc-id="fmt_smf.1" name="Specification of Management Functions" iteration="EmailClient">
@@ -1252,7 +1252,7 @@
 	  </f-component>
 	</sec:man_fmt>
 	
-	<sec:man_fpt title="Protection of the TSF (FPT)">
+        <sec:man_fpt title="Class FPT: Protection of the TSF">
 	  <ext-comp-def fam-id="FPT_AON_EXT" title="Add-Ons">
 	    <fam-behavior>Components in this family define requirements for the secure handling of add-ons that can be installed on top of the TOE.
 	    </fam-behavior>
@@ -1300,7 +1300,7 @@
 	  </f-component>
 	</sec:man_fpt>
 	
-	<sec:man_ftp title="Trusted Path/Channels (FTP)">
+        <sec:man_ftp title="Class FTP: Trusted Path/Channels">
 	  <!-- as modified by TD0414 -->
 	  
 	  <f-component cc-id="ftp_itc.1" name="Inter-TSF Trusted Channel">
@@ -1362,7 +1362,7 @@ SFP from outside the TOE: <assignable>additional importation control rules</assi
     
     
     <opt-sfrs>
-      <sec:opt_fcs title="Cryptographic Support (FCS)">
+      <sec:opt_fcs title="Class FCS: Cryptographic Support">
 
         <ext-comp-def fam-id="FCS_IVG_EXT" title="Initialization Vector Generation">
           <fam-behavior>Components in this family define requirements for the secure generation of initialization vectors used in support of other cryptographic functions.
@@ -1498,7 +1498,7 @@ SFP from outside the TOE: <assignable>additional importation control rules</assi
           <audit-event/>
         </f-component>
       </sec:opt_fcs>
-      <sec:opt_fdp title="User Data Protection (FDP)">
+      <sec:opt_fdp title="Class FDP: User Data Protection">
       <f-component cc-id="fdp_not_ext.2" name="Notification of URI">
 	<consistency-rationale>
 	  This SFR defines how clients display URIs in embedded links.
@@ -1669,7 +1669,7 @@ SFP from outside the TOE: <assignable>additional importation control rules</assi
     <sel-sfrs>
       
       
-      <sec:sel_fcs title="Cryptographic Support (FCS)">
+      <sec:sel_fcs title="Class FCS: Cryptographic Support">
         <!-- as modified by TD0266 with minor rearrangement of EAs -->
         <!-- editor's note: moved to sel-based because of FCS_KYC_EXT.1.1 selections -->
         <f-component cc-id="fcs_ckm_ext.5" name="Cryptographic Key Derivation (password/passphrase Conditioning)">
@@ -1961,7 +1961,7 @@ Support for 256-bit AES key sizes will be required for
       </sec:sel_fcs>
     
       
-      <sec:sel_fia title="Identification and Authentication (FIA)">
+      <sec:sel_fia title="Class FIA: Identification and Authentication">
         <!-- as modified by TD0405 -->
         <ext-comp-def fam-id="FIA_SASL_EXT" title="Simple Authentication and Security Layer (SASL)">
           <fam-behavior>Components in this family define requirements for the implementation of SASL.
@@ -2041,7 +2041,7 @@ Support for 256-bit AES key sizes will be required for
       </sec:sel_fia>
       
       
-      <sec:sel_fpt title="Protection of the TSF (FPT)">
+      <sec:sel_fpt title="Class FPT: Protection of the TSF">
       <f-component cc-id="fpt_aon_ext.2" name="Trusted Installation and Update for Add-ons">
         <depends on="addons_supported"></depends>
         <!-- 
