@@ -959,8 +959,7 @@ Application
 		      <a href="#FCS_SMC_EXT.1">FCS_SMC_EXT.1</a>, and the other half of the key split is
 		      either
 		      [<b>selection</b>: <span class="selectable-content" id="ckm3_wrapped2">wrapped as specified in <a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a></span>, <span class="selectable-content" id="_s_15">derived and not stored in non-volatile memory</span>]</span></li><li style=""><span class="selectable-content" id="_s_16">The plaintext key is stored on an external storage device for use as
-		      an authorization factor</span></li><li style=""><span class="selectable-content" id="ckm3_wrapped3">The plaintext key is used to wrap a key as specified in <a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a> that is already wrapped as specified in <a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a></span></li><li style=""><span class="selectable-content" id="_s_18">The plaintext key is the public portion of the key pair</span></li></ul>]
-		</span></li></ul>].
+		      an authorization factor</span></li><li style=""><span class="selectable-content" id="ckm3_wrapped3">The plaintext key is used to wrap a key as specified in <a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a> that is already wrapped as specified in <a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a></span></li><li style=""><span class="selectable-content" id="_s_18">The plaintext key is the public portion of the key pair</span></li></ul>]</span></li></ul>].
 	      <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> references the selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> <a href="#FCS_COP_EXT.2">FCS_COP_EXT.2</a> and <a href="#FCS_SMC_EXT.1">FCS_SMC_EXT.1</a>. If
@@ -1013,8 +1012,7 @@ Application
 	      [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_37">one</span></li><li style=""><span class="selectable-content" id="_s_38">a key stored in platform key storage</span></li><li style=""><span class="selectable-content" id="_s_39">
 		  intermediate keys originating from: 
 		  [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="kyc1_password">
-		      a password as specified in <a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a></span></li><li style=""><span class="selectable-content" id="_s_41">one or more other authorization factors</span></li><li style=""><span class="selectable-content" id="_s_42">credentials stored in platform key storage</span></li></ul>]
-		</span></li></ul>]
+		      a password as specified in <a href="#FCS_CKM_EXT.5">FCS_CKM_EXT.5</a></span></li><li style=""><span class="selectable-content" id="_s_41">one or more other authorization factors</span></li><li style=""><span class="selectable-content" id="_s_42">credentials stored in platform key storage</span></li></ul>]</span></li></ul>]
 	      to the data encryption and decryption keys using the following
 	      methods: 
 	      [<b>selection</b>: <ul><li style=""><span class="selectable-content" id="_s_43">use of the platform key storage</span></li><li style=""><span class="selectable-content" id="_s_44">use of platform key storage that performs key wrap with a
@@ -1079,7 +1077,7 @@ Application
 	        set in cases where there is no keyUsage extension. </span></div></div></div>
 	    <div class="element"><div class="reqid" id="FCS_SMIME_EXT.1.7"><a href="#FCS_SMIME_EXT.1.7" class="abbr">FCS_SMIME_EXT.1.7</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and
 	        certificate revocation information in accordance with FIA_X509_EXT.1.1
-	        [<b>selection</b>: <span class="selectable-content" id="_s_56">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_57"> [<b>assignment</b>: 
+	        [<b>selection</b>: <span class="selectable-content" id="_s_56">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_57">[<b>assignment</b>: 
      <span class="assignable-content">frequency</span>]</span>]
 	        as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol.
 	      <div class="appnote"><span class="note-header">Application
@@ -1573,9 +1571,7 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
       <h2 id="sel_fcs" class="indexable" data-level="2">B.1 Class FCS: Cryptographic Support</h2>
         
         
-        <div class="comp" id="FCS_CKM_EXT.5"><h4>FCS_CKM_EXT.5 Cryptographic Key Derivation (password/passphrase Conditioning)</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
-           <a href="#FCS_KYC_EXT.1.1">FCS_KYC_EXT.1.1</a>.
-           </i></b></div>
+        <div class="comp" id="FCS_CKM_EXT.5"><h4>FCS_CKM_EXT.5 Cryptographic Key Derivation (password/passphrase Conditioning)</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in:</i></b><ul><li><b><i><a href="#FCS_KYC_EXT.1.1">FCS_KYC_EXT.1.1</a></i></b></li></ul></div>
           
           
           
@@ -1649,9 +1645,7 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
         
         
         
-        <div class="comp" id="FCS_COP_EXT.2"><h4>FCS_COP_EXT.2 Key Wrapping</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
-           <a href="#FCS_CKM_EXT.3.1">FCS_CKM_EXT.3.1</a>, <a href="#FCS_KYC_EXT.1.1">FCS_KYC_EXT.1.1</a>.
-           </i></b></div>
+        <div class="comp" id="FCS_COP_EXT.2"><h4>FCS_COP_EXT.2 Key Wrapping</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in:</i></b><ul><li><b><i><a href="#FCS_CKM_EXT.3.1">FCS_CKM_EXT.3.1</a>, </i></b></li><li><b><i><a href="#FCS_KYC_EXT.1.1">FCS_KYC_EXT.1.1</a></i></b></li></ul></div>
           
           
           
@@ -1687,9 +1681,7 @@ Support for 256-bit <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> ke
         </div>
         
         
-        <div class="comp" id="FCS_SMC_EXT.1"><h4>FCS_SMC_EXT.1 Key Combining</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
-           <a href="#FCS_CKM_EXT.3.1">FCS_CKM_EXT.3.1</a>, <a href="#FCS_KYC_EXT.1.1">FCS_KYC_EXT.1.1</a>.
-           </i></b></div>
+        <div class="comp" id="FCS_SMC_EXT.1"><h4>FCS_SMC_EXT.1 Key Combining</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in:</i></b><ul><li><b><i><a href="#FCS_CKM_EXT.3.1">FCS_CKM_EXT.3.1</a>, </i></b></li><li><b><i><a href="#FCS_KYC_EXT.1.1">FCS_KYC_EXT.1.1</a></i></b></li></ul></div>
           
           
           
@@ -1755,9 +1747,7 @@ Support for 256-bit <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> ke
       
       
       <h2 id="sel_fpt" class="indexable" data-level="2">B.3 Class FPT: Protection of the TSF</h2>
-      <div class="comp" id="FPT_AON_EXT.2"><h4>FPT_AON_EXT.2 Trusted Installation and Update for Add-ons</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in
-           <a href="#FPT_AON_EXT.1.1">FPT_AON_EXT.1.1</a>.
-           </i></b></div>
+      <div class="comp" id="FPT_AON_EXT.2"><h4>FPT_AON_EXT.2 Trusted Installation and Update for Add-ons</h4><div class="statustag"><b><i>The inclusion of this selection-based component depends upon selection in:</i></b><ul><li><b><i><a href="#FPT_AON_EXT.1.1">FPT_AON_EXT.1.1</a></i></b></li></ul></div>
         
         
 	
@@ -1861,7 +1851,7 @@ Support for 256-bit <abbr class="dyn-abbr"><a href="#abbr_AES">AES</a></abbr> ke
 	      <h4 id="ext-comp-FCS_SMIME_EXT.1.6">FCS_SMIME_EXT.1.6</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall only accept a signature from a certificate with the
 	        digitalSignature bit set as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol. <h4 id="ext-comp-FCS_SMIME_EXT.1.7">FCS_SMIME_EXT.1.7</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall implement mechanisms to retrieve certificates and
 	        certificate revocation information in accordance with FIA_X509_EXT.1.1
-	        [<b>selection</b>: <span class="selectable-content" id="_s_56">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_57"> [<b>assignment</b>: 
+	        [<b>selection</b>: <span class="selectable-content" id="_s_56">for each signed and encrypted message sent and received</span>, <span class="selectable-content" id="_s_57">[<b>assignment</b>: 
      <span class="assignable-content">frequency</span>]</span>]
 	        as part of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> protocol.
 	      </div></div><h3 id="ext-comp-FCS_IVG_EXT" class="indexable" data-level="4">C.2.1.4 FCS_IVG_EXT Initialization Vector Generation</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>Components in this family define requirements for the secure generation of initialization vectors used in support of other cryptographic functions.
