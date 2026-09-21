@@ -13,6 +13,7 @@
 
   <PPReference>
     <ReferenceTable>
+	  <PPTitle>PP-Module for Email Clients</PPTitle>
       <PPVersion>1.0</PPVersion>
       <PPAuthor>National Information Assurance Partnership</PPAuthor>
       <PPPubDate>2025-06-16</PPPubDate>
@@ -26,15 +27,9 @@
       <subject>Initial release as CC:2022 PP-Module</subject>
     </entry>
   </RevisionHistory>
-    <include-pkg id="X509">
-    <git>
-      <url>https://github.com/commoncriteria/X509</url>
-      <branch>release-1.0</branch>
-    </git>
-    <url>https://www.niap-ccevs.org/protectionprofiles/511</url>
-  </include-pkg>
+
   <pp-preferences>
-    
+   	  <audit-events-in-sfrs/>
   </pp-preferences>
   
   <sec:Introduction>
@@ -318,11 +313,29 @@
 		<cc-pp-conf/>              		  
 		
 		<!-- Can be in a configuration with these PPs and Modules -->
-		<cc-pp-config-with> <PP-cc-ref>Protection Profile for Application Software, Version 2.0</PP-cc-ref></cc-pp-config-with>
+		<cc-pp-config-with> 
+			<PP-cc-ref>
+				<cc-doc-ref id="application">
+					<git>
+						<url>https://github.com/commoncriteria/application</url>
+						<branch>release-2.0</branch>
+					</git>
+					<url>https://www.niap-ccevs.org/protectionprofiles/516</url>
+				</cc-doc-ref>
+			</PP-cc-ref>
+		</cc-pp-config-with>
+		
 		<!-- Package claims -->
-        
 		<cc-pkg-claim>
-
+			<FP-cc-ref conf="conformant">
+				<cc-doc-ref id="X509">
+					<git>
+						<url>https://github.com/commoncriteria/X509</url>
+						<branch>release-1.0</branch>
+					</git>
+					<url>https://www.niap-ccevs.org/protectionprofiles/511</url>
+				</cc-doc-ref>
+			</FP-cc-ref>
         </cc-pkg-claim>
 
 	</CClaimsInfo>
@@ -360,7 +373,7 @@
       </threat>
       
       <threat name="T.NETWORK_ATTACK">
-        <from base="AppPP"/>
+        <from base="application"/>
 		<addressed-by>FCS_CKM_EXT.1 (modified from Base-PP)</addressed-by><rationale>FCS_CKM_EXT.1 mitigates the threat by requiring that the TSF provide or invoke a cryptographic function for asymmetric key generation.</rationale>
 		<addressed-by>FCS_RBG_EXT.1 (modified from Base-PP)</addressed-by><rationale>FCS_RBG_EXT.1 mitigates the threat by requiring that the TSF provide or invoke a DRBG for secure key generation.</rationale>
 		<addressed-by>FIA_X509_EXT.1 (from <xref to="X509"/>)</addressed-by><rationale>FIA_X509_EXT.1 mitigates the threat by requiring the TSF to implement or invoke an X.509 certificate validation service.</rationale>
@@ -376,7 +389,7 @@
       </threat>
       
       <threat name="T.NETWORK_EAVESDROP">
-        <from base="AppPP"/>
+        <from base="application"/>
 		<addressed-by>FCS_CKM_EXT.1 (modified from Base-PP)</addressed-by><rationale>FCS_CKM_EXT.1 mitigates the threat by requiring that the TSF provide or invoke a cryptographic function for asymmetric key generation.</rationale>
 		<addressed-by>FCS_RBG_EXT.1 (modified from Base-PP)</addressed-by><rationale>FCS_RBG_EXT.1 mitigates the threat by requiring that the TSF provide or invoke a DRBG for secure key generation.</rationale>	
 		<addressed-by>FIA_X509_EXT.1 (from <xref to="X509"/>)</addressed-by><rationale>FIA_X509_EXT.1 mitigates the threat by requiring the TSF to implement or invoke an X.509 certificate validation service.</rationale>
@@ -394,7 +407,7 @@
           
               
       <threat name="T.PHYSICAL_ACCESS">
-        <from base="AppPP"/>
+        <from base="application"/>
 		<addressed-by>FCS_CKM_EXT.3</addressed-by><rationale>FCS_CKM_EXT.3 mitigates the threat by defining the mechanism by which the TSF protects stored key data from unauthorized disclosure.</rationale>
 		<addressed-by>FCS_CKM.6</addressed-by><rationale>FCS_CKM.6 mitigates the threat by defining the mechanism by which the TSF securely destroys stored key data.</rationale>
 		<addressed-by>FCS_KYC_EXT.1</addressed-by><rationale>FCS_KYC_EXT.1 mitigates the threat by defining any key chain that the TSF implements to protect a root encryption key.</rationale>
@@ -435,12 +448,7 @@
 </sec:Security_Objectives>
   
   <sec:Security_Requirements>
-      <base-pp id="AppPP" name="Application Software" product="Application" short="App" version="2.0" >
-        <git>
-          <url>https://github.com/commoncriteria/application</url>
-          <branch>release-2.0</branch>
-        </git>
-        <url>https://www.niap-ccevs.org/protectionprofiles/516</url>
+      <base-pp ref="application">
       
       <modified-sfrs>
         
