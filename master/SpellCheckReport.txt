@@ -2,6 +2,7 @@ output/email-client-release-linkable.html: 38F
 output/email-client-release-linkable.html: 56A
 output/email-client-release-linkable.html: 56B
 output/email-client-release-linkable.html: ActiveSync
+output/email-client-release-linkable.html: AppPP
 output/email-client-release-linkable.html: CAPA
 output/email-client-release-linkable.html: CDH
 output/email-client-release-linkable.html: CEM
@@ -34,6 +35,7 @@ output/email-client-release.html: 38F
 output/email-client-release.html: 56A
 output/email-client-release.html: 56B
 output/email-client-release.html: ActiveSync
+output/email-client-release.html: AppPP
 output/email-client-release.html: CAPA
 output/email-client-release.html: CDH
 output/email-client-release.html: CEM
@@ -80,6 +82,7 @@ output/email-client.html: 38F
 output/email-client.html: 56A
 output/email-client.html: 56B
 output/email-client.html: ActiveSync
+output/email-client.html: AppPP
 output/email-client.html: CAPA
 output/email-client.html: CDH
 output/email-client.html: CEM

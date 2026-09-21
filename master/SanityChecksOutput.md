@@ -1,3 +1,8 @@
+transforms/xsl/module2html.xsl:449: namespace error : Failed to parse QName 'xsl:'
+                 --><xsl::apply-templates select="cc:cc-doc-ref[@id=cc:from-doc/
+                         ^
+compilation error: file transforms/xsl/module-commons.xsl line 70 element apply-template
+xsltStylePreCompute: unknown xsl:apply-template
 * Error: Detected dangling id-reference to saslimap from attribute
         on/Module[1]""/sec:Security_Requirements[1]""/sel-sfrs[1]""/sec:sel_fia[1]""/f-component[1]""/depends[1]""/on[1]""
 * Error: Detected dangling id-reference to saslsmtp from attribute
