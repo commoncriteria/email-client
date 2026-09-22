@@ -1009,7 +1009,7 @@ The following sections list Common Criteria and technology terms used in this do
 		</div></div><div class="eacategory">Guidance</div><div class="ea">
 			There are no additional Guidance evaluation activities for this component<a id="period_127" href="#period_127">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
 		  If the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> performs its own key destruction, the evaluator shall perform the following test:
-		<span class="testlist-"><ul><li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FCS_CKM.6:1</a>
+		<span class="testlist-"><ul><li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FCS_CKM.6:1</a>:<br>
 		For each type of authorization service, encryption mode, and encryption operation, a known authorization factor
 		and chain of keys must be provided to the evaluator with an associated ciphertext data set (e.g., if a passphrase
 		is used to create an intermediate key, then the ciphertext containing the encrypted key as well as the intermediate
@@ -1161,40 +1161,40 @@ The following sections list Common Criteria and technology terms used in this do
         Version 
         1.0</a>) for certificate and certificate chain verification
 			  and in <a href="#FDP_NOT_EXT.1">FDP_NOT_EXT.1</a><a id="period_185" href="#period_185">. </a><p></p>
-	          <span class="testlist-"><ul><li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FCS_SMIME_EXT.1:1</a>The evaluator shall both send and receive a message with no protection (no signature or encryption)
+	          <span class="testlist-"><ul><li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FCS_SMIME_EXT.1:1</a>:<br>The evaluator shall both send and receive a message with no protection (no signature or encryption)
 					and verify that the message is transmitted properly and can be viewed at the receiving agent<a id="period_186" href="#period_186">. </a>This 
 					transmission can be performed as part of a number of mechanisms&#894; it is sufficient to observe that the
-					message arrives at the intended recipient with the same content as when sent<a id="period_187" href="#period_187">. </a></li><li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FCS_SMIME_EXT.1:2</a>The evaluator shall both send and receive a signed message using each of the algorithms specified
+					message arrives at the intended recipient with the same content as when sent<a id="period_187" href="#period_187">. </a></li><li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FCS_SMIME_EXT.1:2</a>:<br>The evaluator shall both send and receive a signed message using each of the algorithms specified
 					in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> corresponding to the requirement and verify that the signature is valid for both sent and
 					received messages<a id="period_188" href="#period_188">. </a>After verifying the signatures are valid, the evaluator shall send a signed
 					message using each of the algorithms specified in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> and use a man-in-the-middle tool to modify 
 					at least one byte of the message such that the signature is no longer valid<a id="period_189" href="#period_189">. </a>This can be done by
 					modifying the content of the message over which the signature is calculated or by modifying the
 					signature itself<a id="period_190" href="#period_190">. </a>The evaluator shall then verify that the received message fails the signature
-					validation check<a id="period_191" href="#period_191">. </a></li><li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FCS_SMIME_EXT.1:3</a>The evaluator shall send an encrypted message from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> receiver using each of the
+					validation check<a id="period_191" href="#period_191">. </a></li><li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FCS_SMIME_EXT.1:3</a>:<br>The evaluator shall send an encrypted message from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> receiver using each of the
 					algorithms specified in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_192" href="#period_192">. </a>
 					The evaluator shall verify that each message is encrypted and the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> receiver can successfully 
 					decrypt each message<a id="period_193" href="#period_193">. </a>
 					The evaluator shall then use the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> receiver to send an encrypted reply back to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> for each
 					message sent at the start of this test<a id="period_194" href="#period_194">. </a>
 					The evaluator shall verify that each reply is encrypted and the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> can successfully decrypt
-					each reply<a id="period_195" href="#period_195">. </a></li><li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FCS_SMIME_EXT.1:4</a>The evaluator shall verify that the contents are encrypted in transit and that the received 
-					message decrypts<a id="period_196" href="#period_196">. </a></li><li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FCS_SMIME_EXT.1:5</a>After verifying the message decrypts, the evaluator shall send an encrypted message using each
+					each reply<a id="period_195" href="#period_195">. </a></li><li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FCS_SMIME_EXT.1:4</a>:<br>The evaluator shall verify that the contents are encrypted in transit and that the received 
+					message decrypts<a id="period_196" href="#period_196">. </a></li><li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FCS_SMIME_EXT.1:5</a>:<br>After verifying the message decrypts, the evaluator shall send an encrypted message using each
 					of the algorithms specified in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> and use a man-in-the-middle tool to modify at least one byte 
 					of the message such that the encryption is no longer valid<a id="period_197" href="#period_197">. </a>The evaluator shall then verify that the
-					received message fails to decrypt<a id="period_198" href="#period_198">. </a></li><li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FCS_SMIME_EXT.1:6</a>The evaluator shall send an encrypted message to the email client using an encryption algorithm 
+					received message fails to decrypt<a id="period_198" href="#period_198">. </a></li><li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FCS_SMIME_EXT.1:6</a>:<br>The evaluator shall send an encrypted message to the email client using an encryption algorithm 
 					not supported according to the signatureAlgorithm field<a id="period_199" href="#period_199">. </a>
 					The evaluator shall verify that the email client does not display or decrypt the contents of the 
-					message<a id="period_200" href="#period_200">. </a></li><li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test FCS_SMIME_EXT.1:7</a>The evaluator shall send a signed message to the email client using a signature algorithm not
+					message<a id="period_200" href="#period_200">. </a></li><li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test FCS_SMIME_EXT.1:7</a>:<br>The evaluator shall send a signed message to the email client using a signature algorithm not
 					supported according to the digestAlgorithm ID (e.g., SHA1)<a id="period_201" href="#period_201">. </a>The evaluator shall then verify that the 
 					email client provides a notification that the contents cannot be verified because the signature 
-					algorithm is not supported<a id="period_202" href="#period_202">. </a></li><li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FCS_SMIME_EXT.1:8</a>The evaluator shall send an encrypted message to the email client using an encryption algorithm not
+					algorithm is not supported<a id="period_202" href="#period_202">. </a></li><li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FCS_SMIME_EXT.1:8</a>:<br>The evaluator shall send an encrypted message to the email client using an encryption algorithm not
 					supported according to the AlgorithmIdentifier field<a id="period_203" href="#period_203">. </a>The evaluator shall then verify that the email
-					client does not display or decrypt the contents of the message<a id="period_204" href="#period_204">. </a></li><li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FCS_SMIME_EXT.1:9</a>The evaluator shall send the email client a message signed by a certificate without
+					client does not display or decrypt the contents of the message<a id="period_204" href="#period_204">. </a></li><li class="test-"><a id="_t_10" class="defined" href="#_t_10">Test FCS_SMIME_EXT.1:9</a>:<br>The evaluator shall send the email client a message signed by a certificate without
 					the digitalSignature bit set<a id="period_205" href="#period_205">. </a>The evaluator shall then verify that the email client notifies the
-					user that the signature is invalid<a id="period_206" href="#period_206">. </a></li><li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FCS_SMIME_EXT.1:10</a>The evaluator shall send the email client a message signed by a certificate without the Email 
+					user that the signature is invalid<a id="period_206" href="#period_206">. </a></li><li class="test-"><a id="_t_11" class="defined" href="#_t_11">Test FCS_SMIME_EXT.1:10</a>:<br>The evaluator shall send the email client a message signed by a certificate without the Email 
 					Protection purpose in the extendedKeyUsage<a id="period_207" href="#period_207">. </a>The evaluator shall then verify that the email client
-					notifies the user that the signature is invalid<a id="period_208" href="#period_208">. </a></li><li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FCS_SMIME_EXT.1:11</a>The evaluator shall verify that the email client uses OCSP or downloads the <abbr class="dyn-abbr"><a href="#abbr_CRL">CRL</a></abbr> at the assigned 
+					notifies the user that the signature is invalid<a id="period_208" href="#period_208">. </a></li><li class="test-"><a id="_t_12" class="defined" href="#_t_12">Test FCS_SMIME_EXT.1:11</a>:<br>The evaluator shall verify that the email client uses OCSP or downloads the <abbr class="dyn-abbr"><a href="#abbr_CRL">CRL</a></abbr> at the assigned 
 					frequency<a id="period_209" href="#period_209">. </a></li></ul></span>
 	        </div></div></div></div></div>
 	  
@@ -1230,10 +1230,10 @@ The following sections list Common Criteria and technology terms used in this do
 		The evaluator shall verify that the operational guidance provides a description (with appropriate visual 
 		figures) of the <abbr class="dyn-abbr"><a href="#abbr_S/MIME">S/MIME</a></abbr> status notifications, including how each of the following are indicated: encryption, 
 		verified and validated signature, and unverified and unvalidated signature<a id="period_215" href="#period_215">. </a>		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests and may perform them in conjunction with the tests for <a href="#FCS_SMIME_EXT.1">FCS_SMIME_EXT.1</a>:<p></p>
-		<span class="testlist-"><ul><li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FDP_NOT_EXT.1:1</a>The evaluator shall send the client an unencrypted and unsigned email and verify that no notifications
-			are present upon viewing<a id="period_216" href="#period_216">. </a></li><li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FDP_NOT_EXT.1:2</a>The evaluator shall send the client an encrypted email and verify that the encrypted notification is
-			present upon viewing<a id="period_217" href="#period_217">. </a></li><li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FDP_NOT_EXT.1:3</a>The evaluator shall send the client a valid signed email and verify that the signed notification is
-			present upon viewing<a id="period_218" href="#period_218">. </a></li><li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FDP_NOT_EXT.1:4</a>The evaluator shall send the client an invalid signed email (for example, using a certificate that
+		<span class="testlist-"><ul><li class="test-"><a id="_t_13" class="defined" href="#_t_13">Test FDP_NOT_EXT.1:1</a>:<br>The evaluator shall send the client an unencrypted and unsigned email and verify that no notifications
+			are present upon viewing<a id="period_216" href="#period_216">. </a></li><li class="test-"><a id="_t_14" class="defined" href="#_t_14">Test FDP_NOT_EXT.1:2</a>:<br>The evaluator shall send the client an encrypted email and verify that the encrypted notification is
+			present upon viewing<a id="period_217" href="#period_217">. </a></li><li class="test-"><a id="_t_15" class="defined" href="#_t_15">Test FDP_NOT_EXT.1:3</a>:<br>The evaluator shall send the client a valid signed email and verify that the signed notification is
+			present upon viewing<a id="period_218" href="#period_218">. </a></li><li class="test-"><a id="_t_16" class="defined" href="#_t_16">Test FDP_NOT_EXT.1:4</a>:<br>The evaluator shall send the client an invalid signed email (for example, using a certificate that
 			does not contain the correct email address or a certificate that does not chain to the root store) and 
 			verify that the invalid signature notification is present upon viewing<a id="period_219" href="#period_219">. </a></li></ul></span>
 		</div></div></div></div></div>
@@ -1377,10 +1377,10 @@ The following sections list Common Criteria and technology terms used in this do
 		shall be described in the operational guidance<a id="period_253" href="#period_253">. </a><p></p>
 		  Cryptographic Configuration: The evaluator shall verify that the operational guidance has instructions for 
 		  manipulating all of the claimed mechanisms<a id="period_254" href="#period_254">. </a>		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests:
-		<span class="testlist-"><ul><li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FMT_SMF.1/EmailClient:1</a>The evaluator shall verify that all functions perform as intended by enabling, disabling, and configuring
-		  the functions<a id="period_255" href="#period_255">. </a></li><li class="test-"><a id="_t_18" class="defined" href="#_t_18">Test FMT_SMF.1/EmailClient:2</a>The evaluator shall set management functions which are controlled by the (enterprise) administrator and 
+		<span class="testlist-"><ul><li class="test-"><a id="_t_17" class="defined" href="#_t_17">Test FMT_SMF.1/EmailClient:1</a>:<br>The evaluator shall verify that all functions perform as intended by enabling, disabling, and configuring
+		  the functions<a id="period_255" href="#period_255">. </a></li><li class="test-"><a id="_t_18" class="defined" href="#_t_18">Test FMT_SMF.1/EmailClient:2</a>:<br>The evaluator shall set management functions which are controlled by the (enterprise) administrator and 
 		  cannot be overridden by the user<a id="period_256" href="#period_256">. </a>The evaluator shall apply these functions to the client, attempt to override
-		  each setting as the user, and ensure that the email client does not permit it<a id="period_257" href="#period_257">. </a></li><li class="test-"><a id="_t_19" class="defined" href="#_t_19">Test FMT_SMF.1/EmailClient:3</a>[Conditional: the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> has a key recovery capability] The evaluator shall devise a test that ensures
+		  each setting as the user, and ensure that the email client does not permit it<a id="period_257" href="#period_257">. </a></li><li class="test-"><a id="_t_19" class="defined" href="#_t_19">Test FMT_SMF.1/EmailClient:3</a>:<br>[Conditional: the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> has a key recovery capability] The evaluator shall devise a test that ensures
 		  that the key recovery capability has been or can be disabled following the guidance provided by the vendor</li></ul></span>
 		</div></div></div></div></div>
 	
@@ -1445,11 +1445,11 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
 		  The evaluator shall confirm that the operational guidance contains instructions for establishing the 
 		  connection to the Mail Transfer Agent<a id="period_269" href="#period_269">. </a>		</div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
 		The evaluator shall perform the following tests:
-		<span class="testlist-"><ul><li class="test-"><a id="_t_20" class="defined" href="#_t_20">Test FTP_ITC.1:1</a>The evaluator shall ensure that the email client is able to initiate or receive communications using
+		<span class="testlist-"><ul><li class="test-"><a id="_t_20" class="defined" href="#_t_20">Test FTP_ITC.1:1</a>:<br>The evaluator shall ensure that the email client is able to initiate or receive communications using
 			any selected or assigned protocols specified in the requirement over TLS, setting up the connections as 
-			described in the operational guidance and ensuring that communication is successful<a id="period_270" href="#period_270">. </a></li><li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FTP_ITC.1:2</a>The evaluator shall ensure that the email client is able to initiate or receive communications
+			described in the operational guidance and ensuring that communication is successful<a id="period_270" href="#period_270">. </a></li><li class="test-"><a id="_t_21" class="defined" href="#_t_21">Test FTP_ITC.1:2</a>:<br>The evaluator shall ensure that the email client is able to initiate or receive communications
 			with a Mail Transfer Agent using any assigned protocols specified in the requirement over TLS, setting up
-			the connections as described in the operational guidance and ensuring that communication is successful<a id="period_271" href="#period_271">. </a></li><li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FTP_ITC.1:3</a>The evaluator shall ensure, for each communication channel with an authorized IT entity in 
+			the connections as described in the operational guidance and ensuring that communication is successful<a id="period_271" href="#period_271">. </a></li><li class="test-"><a id="_t_22" class="defined" href="#_t_22">Test FTP_ITC.1:3</a>:<br>The evaluator shall ensure, for each communication channel with an authorized IT entity in 
 			tests 1 and 2, the channel data is not sent in plaintext<a id="period_272" href="#period_272">. </a>To perform this test, the evaluator shall 
 			use a sniffer and a packet analyzer<a id="period_273" href="#period_273">. </a>The packet analyzer must indicate that the protocol in use is TLS<a id="period_274" href="#period_274">. </a></li></ul></span>
 		</div></div></div></div></div>
@@ -1762,9 +1762,9 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
 	    are not rendered or executed and images and external resources are not automatically downloaded<a id="period_422" href="#period_422">. </a>	    </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
 	      The evaluator shall ensure that the operational guidance contains instructions for enabling 
 		  plaintext-only mode<a id="period_423" href="#period_423">. </a>	    </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests:
-	    <span class="testlist-"><ul><li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FDP_REN_EXT.1:1</a>[Conditional: HTML is selected in <a href="#FDP_REN_EXT.1.1">FDP_REN_EXT.1.1</a>] The evaluator shall send a message to the client 
+	    <span class="testlist-"><ul><li class="test-"><a id="_t_23" class="defined" href="#_t_23">Test FDP_REN_EXT.1:1</a>:<br>[Conditional: HTML is selected in <a href="#FDP_REN_EXT.1.1">FDP_REN_EXT.1.1</a>] The evaluator shall send a message to the client 
 		  containing HTML embedded objects and shall verify that the HTML renders<a id="period_424" href="#period_424">. </a>The evaluator shall then enable 
-		  plaintext-only mode and verify that the HTML does not render<a id="period_425" href="#period_425">. </a></li><li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FDP_REN_EXT.1:2</a>[Conditional: JavaScript is selected in <a href="#FDP_REN_EXT.1.1">FDP_REN_EXT.1.1</a>] The evaluator shall send a message to the
+		  plaintext-only mode and verify that the HTML does not render<a id="period_425" href="#period_425">. </a></li><li class="test-"><a id="_t_24" class="defined" href="#_t_24">Test FDP_REN_EXT.1:2</a>:<br>[Conditional: JavaScript is selected in <a href="#FDP_REN_EXT.1.1">FDP_REN_EXT.1.1</a>] The evaluator shall send a message to the
 		  client containing JavaScript embedded objects and shall verify that the JavaScript renders and executes<a id="period_426" href="#period_426">. </a>
 		  The evaluator shall then enable plaintext-only mode and verify that the JavaScript does not render or 
 		  execute<a id="period_427" href="#period_427">. </a></li></ul></span>
@@ -1888,10 +1888,10 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
 			  are supported, and justify the subset of those characters chosen for testing<a id="period_461" href="#period_461">. </a><p></p>
               Support for Password/Passphrase characteristics: In addition to the analysis above, the evaluator shall 
 			  also perform the following tests on a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> configured according to the Operational Guidance<a id="period_462" href="#period_462">. </a><p></p>
-                <span class="testlist-"><ul><li class="test-"><a id="_t_25" class="defined" href="#_t_25">Test FCS_CKM_EXT.5:1</a>Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports passwords/passphrases of 64 characters<a id="period_463" href="#period_463">. </a></li><li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FCS_CKM_EXT.5:2</a>Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not accept more than the maximum number of characters 
-					specified in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a><a id="period_464" href="#period_464">. </a></li><li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FCS_CKM_EXT.5:3</a>Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not accept less than the minimum number of characters specified 
+                <span class="testlist-"><ul><li class="test-"><a id="_t_25" class="defined" href="#_t_25">Test FCS_CKM_EXT.5:1</a>:<br>Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports passwords/passphrases of 64 characters<a id="period_463" href="#period_463">. </a></li><li class="test-"><a id="_t_26" class="defined" href="#_t_26">Test FCS_CKM_EXT.5:2</a>:<br>Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not accept more than the maximum number of characters 
+					specified in <a href="#FCS_CKM_EXT.5.1">FCS_CKM_EXT.5.1</a><a id="period_464" href="#period_464">. </a></li><li class="test-"><a id="_t_27" class="defined" href="#_t_27">Test FCS_CKM_EXT.5:3</a>:<br>Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not accept less than the minimum number of characters specified 
 					in <a href="#FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</a><a id="period_465" href="#period_465">. </a>If the minimum length is settable by the administrator, the evaluator 
-					determines the minimum length or lengths to test<a id="period_466" href="#period_466">. </a></li><li class="test-"><a id="_t_28" class="defined" href="#_t_28">Test FCS_CKM_EXT.5:4</a>Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports passwords consisting of all characters listed in <a href="#FCS_CKM_EXT.5.2">FCS_CKM_EXT.5.2</a>
+					determines the minimum length or lengths to test<a id="period_466" href="#period_466">. </a></li><li class="test-"><a id="_t_28" class="defined" href="#_t_28">Test FCS_CKM_EXT.5:4</a>:<br>Ensure that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> supports passwords consisting of all characters listed in <a href="#FCS_CKM_EXT.5.2">FCS_CKM_EXT.5.2</a>
 					and of varying lengths within the range specified in <a href="#FCS_CKM_EXT.5.4">FCS_CKM_EXT.5.4</a><a id="period_467" href="#period_467">. </a></li></ul></span>
                 </div></div></div></div></div>
         
@@ -2017,10 +2017,10 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
             along with email client-specific options or procedures that might not be reflected in the specification<a id="period_493" href="#period_493">. </a>            </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
             The evaluator shall confirm that the operational guidance contains instructions for establishing the 
 			connection to the Mail Transfer Agent<a id="period_494" href="#period_494">. </a>            </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall also perform the following tests:
-            <span class="testlist-"><ul><li class="test-"><a id="SASL" class="defined" href="#SASL">Test FIA_SASL_EXT.1:1</a>The evaluator shall ensure that the email client is able to initiate communications 
+            <span class="testlist-"><ul><li class="test-"><a id="SASL" class="defined" href="#SASL">Test FIA_SASL_EXT.1:1</a>:<br>The evaluator shall ensure that the email client is able to initiate communications 
 				that require <abbr class="dyn-abbr"><a href="#abbr_SASL">SASL</a></abbr> (i.e., <abbr class="dyn-abbr"><a href="#abbr_POP">POP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_IMAP">IMAP</a></abbr>, and <abbr class="dyn-abbr"><a href="#abbr_SMTP">SMTP</a></abbr>), 
                 setting up the connections as described in the operational guidance and ensuring that communication is
-				successful<a id="period_495" href="#period_495">. </a></li><li class="test-"><a id="_t_30" class="defined" href="#_t_30">Test FIA_SASL_EXT.1:2</a>The evaluator shall ensure, for each communication channel with an authorized IT entity 
+				successful<a id="period_495" href="#period_495">. </a></li><li class="test-"><a id="_t_30" class="defined" href="#_t_30">Test FIA_SASL_EXT.1:2</a>:<br>The evaluator shall ensure, for each communication channel with an authorized IT entity 
 				in <a href="#SASL" class="dynref">Test FIA_SASL_EXT.1:1</a>, 
                 that a valid <abbr class="dyn-abbr"><a href="#abbr_SASL">SASL</a></abbr> handshake is performed<a id="period_496" href="#period_496">. </a>To perform this test, the evaluator shall use a sniffer 
 				and a packet analyzer<a id="period_497" href="#period_497">. </a>
@@ -2060,10 +2060,10 @@ SFP from outside the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>: 
 			sources<a id="period_504" href="#period_504">. </a>	    </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
 	    The evaluator shall verify that the operational guidance includes instructions on how to configure 
 		the email client with trusted add-on sources<a id="period_505" href="#period_505">. </a>	    </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">The evaluator shall perform the following tests:
-	    <span class="testlist-"><ul><li class="test-"><a id="_t_31" class="defined" href="#_t_31">Test FPT_AON_EXT.2:1</a>The evaluator shall create or obtain an add-on signed by a trusted source and attempt to install
+	    <span class="testlist-"><ul><li class="test-"><a id="_t_31" class="defined" href="#_t_31">Test FPT_AON_EXT.2:1</a>:<br>The evaluator shall create or obtain an add-on signed by a trusted source and attempt to install
 			it<a id="period_506" href="#period_506">. </a>The evaluator shall then verify that the signature on the add-on is valid and that the add-on can be 
-				installed<a id="period_507" href="#period_507">. </a></li><li class="test-"><a id="_t_32" class="defined" href="#_t_32">Test FPT_AON_EXT.2:2</a>The evaluator shall create or obtain an add-on signed with an invalid certificate and attempt to
-			install it<a id="period_508" href="#period_508">. </a>The evaluator shall then verify that the signed add-on is rejected and cannot be installed<a id="period_509" href="#period_509">. </a></li><li class="test-"><a id="_t_33" class="defined" href="#_t_33">Test FPT_AON_EXT.2:3</a>The evaluator shall create or obtain an add-on signed by a trusted source, modify the add-on
+				installed<a id="period_507" href="#period_507">. </a></li><li class="test-"><a id="_t_32" class="defined" href="#_t_32">Test FPT_AON_EXT.2:2</a>:<br>The evaluator shall create or obtain an add-on signed with an invalid certificate and attempt to
+			install it<a id="period_508" href="#period_508">. </a>The evaluator shall then verify that the signed add-on is rejected and cannot be installed<a id="period_509" href="#period_509">. </a></li><li class="test-"><a id="_t_33" class="defined" href="#_t_33">Test FPT_AON_EXT.2:3</a>:<br>The evaluator shall create or obtain an add-on signed by a trusted source, modify the add-on
 			without resigning it, and attempt to install it<a id="period_510" href="#period_510">. </a>The evaluator shall then verify that the signed add-on
 				is rejected and cannot be installed<a id="period_511" href="#period_511">. </a></li></ul></span>
 	    </div></div></div></div></div>
